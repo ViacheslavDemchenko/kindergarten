@@ -46,8 +46,22 @@ body {
   margin: 0 auto;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  max-width: 116.5rem;
+  max-width: 120rem;
   height: 100%;
+}
+
+section,
+header {
+  width: 100%;
+}
+
+.section__title {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5rem;
+  color: #4F4F4F;
 }
 
 /* Box-sizing-model */
@@ -577,14 +591,13 @@ template {
 /* SECTIONS */
 
 .header {
-  width: 100%;
   min-height: 100vh;
   background: url(../img/header-girl-desktop@1x.png) 75% 24.4rem/54.7rem 69.9rem no-repeat, url(../img/header-bg-desktop@1x.jpg) center/cover no-repeat;
 }
 
-.first-section {
-  width: 100%;
-  min-height: 100vh;
+.second-section__title {
+  max-width: 74.3rem;
+  margin: 4.7rem 0 5rem 0;
 }
 
 /* BLOCKS */
@@ -752,7 +765,7 @@ template {
 }
 
 .header-content__title {
-  width: 62.8rem;
+  max-width: 62.8rem;
   margin: 0 0 4.1rem 0;
   font-family: "Museo Sans Cyrl";
   font-style: normal;
@@ -785,7 +798,7 @@ template {
 }
 
 .header-content__text {
-  width: 47rem;
+  max-width: 47rem;
 }
 
 .content__text--bold,
@@ -835,6 +848,94 @@ template {
 .policy-block .policy a {
   color: #727272;
   text-decoration: underline;
+}
+
+.advantages {
+  margin-bottom: 6.5rem;
+}
+
+.advantages-row {
+  display: flex;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  width: 57.5rem;
+  height: 17.4rem;
+  padding: 2.1rem 3rem 1.9rem 3rem;
+}
+
+.advantages__item--first {
+  background: url(../img/book@1x.png) 100% 100%/34rem 18rem no-repeat, #fff1ea;
+}
+
+.advantages__item--second {
+  background: url(../img/globe@1x.png) 100% 100%/37rem 17rem no-repeat, #fff1ea;
+}
+
+.advantages__item--third {
+  background: url(../img/diamond@1x.png) 100% 100%/35rem 18rem no-repeat, rgba(145, 195, 223, 0.1);
+}
+
+.advantages__item--fourth {
+  background: url(../img/cup@1x.png) 100% 100%/35rem 16rem no-repeat, rgba(145, 195, 223, 0.1);
+}
+
+.advantages__item--fifth {
+  background: url(../img/pie_chart@1x.png) 100% 100%/35rem 16rem no-repeat, #fff1ea;
+}
+
+.advantages__item--sixth {
+  background: url(../img/bell@1x.png) 100% 100%/35rem 16rem no-repeat, #fff1ea;
+}
+
+.advantages__item--seventh {
+  background: url(../img/bubble@1x.png) 100% 100%/35rem 16rem no-repeat, rgba(145, 195, 223, 0.1);
+}
+
+.advantages__item--eighth {
+  background: url(../img/cup@1x.png) 100% 100%/35rem 16rem no-repeat, rgba(145, 195, 223, 0.1);
+}
+
+.advantages__item .item__text {
+  max-width: 29rem;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: #4F4F4F;
+}
+
+.advantages__item .item__more {
+  position: relative;
+  margin: auto 0 0 2rem;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  color: #3F9DD2;
+}
+
+.advantages__item .item__more::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: -2.5rem;
+  transform: translateY(-50%);
+  width: 2.1rem;
+  height: 2.1rem;
+  background-image: url(../img/icons/more.svg);
+}
+
+.advantages__item:nth-child(odd) {
+  margin-right: 2rem;
 }
 
 @media screen and (min-width: 32rem) {
@@ -888,5 +989,9 @@ template {
 @media screen and (min-width: 192rem) {
   .header-top {
     width: calc(100% - 0.5rem);
+  }
+
+  .advantages__item {
+    width: calc(50% - 0.5rem);
   }
 }
