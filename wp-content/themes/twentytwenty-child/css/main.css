@@ -38,7 +38,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
+  background: #E5E5E5;
 }
 
 .container {
@@ -605,6 +605,16 @@ template {
   text-align: center;
 }
 
+.fourth-section__title {
+  width: 55rem;
+  margin: 4.4rem 0 5.1rem 0;
+}
+
+.fifth-section__title {
+  margin: 6.6rem 0 3rem 0;
+  text-align: center;
+}
+
 /* BLOCKS */
 
 .header-top {
@@ -724,7 +734,7 @@ template {
 }
 
 .header-center {
-  background: #FBFBFC;
+  background: #E5E5E5;
 }
 
 .header-center .nav {
@@ -953,6 +963,7 @@ template {
 
 .gallery-thumbs {
   width: 53.9rem;
+  margin-bottom: 8.7rem;
 }
 
 .gallery-thumbs .swiper-slide {
@@ -973,6 +984,7 @@ template {
   width: 4rem !important;
   height: 4rem !important;
   border-radius: 0.5rem;
+  outline: none;
   background: linear-gradient(278.41deg, #D1916D 0%, #F3B79D 100%);
 }
 
@@ -1006,6 +1018,206 @@ template {
   margin-left: -0.5rem;
 }
 
+.tabs {
+  max-width: 120rem;
+  margin-bottom: 9.4rem;
+}
+
+.tabs-titles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabs-titles .title__item {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding: 2rem 0;
+  margin: 0 !important;
+  width: 31rem;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2.9rem;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #4F4F4F;
+  background: #fff1ea;
+  cursor: pointer;
+}
+
+.tabs-titles .title__item--active {
+  background: linear-gradient(278.41deg, #B4734E 3.22%, #CE8F6F 39.41%, #DFA184 63.97%, #F3B79D 94.64%);
+}
+
+.tabs-content {
+  padding: 3.6rem 3rem 2.6rem 3rem;
+  background: #fff;
+}
+
+.tabs-content .content__item {
+  display: none;
+}
+
+.tabs-content .content__item--active {
+  display: block;
+}
+
+.tabs .tabs-content-list {
+  display: flex;
+}
+
+.tabs .tabs-content-list .list-col:not(:last-child) {
+  margin-right: 8.9rem;
+}
+
+.tabs .tabs-content-list .item__lesson {
+  display: flex;
+  align-items: center;
+}
+
+.tabs .tabs-content-list .item__lesson:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.tabs .tabs-content-list .item__lesson-text {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  text-align: center;
+  color: #4F4F4F;
+}
+
+.tabs .tabs-content-list .item__lesson-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1.9rem;
+  background: linear-gradient(90deg, #91C3DF 0%, #62B7E7 112.5%);
+  border-radius: 0.5rem;
+}
+
+.tabs .tabs-content-list .item__lesson-icon svg {
+  width: 1.4rem;
+  height: 1.9rem;
+  fill: #fff;
+}
+
+.swiper-wrap {
+  position: relative;
+}
+
+.swiper-wrap .swiper-button-next,
+.swiper-wrap .swiper-button-prev {
+  position: absolute;
+  top: calc(50% - 4.6rem) !important;
+  transform: translateY(-50%);
+  width: 4rem !important;
+  height: 4rem !important;
+  border-radius: 0.5rem;
+  outline: none;
+  background: linear-gradient(278.41deg, #D1916D 0%, #F3B79D 100%);
+}
+
+.swiper-wrap .swiper-button-next::after,
+.swiper-wrap .swiper-button-prev::after {
+  content: url(../img/icons/arrow-forward-ios.svg) !important;
+  transform: translate(0.2rem, -1.3rem);
+  width: 2.4rem !important;
+  height: 2.4rem !important;
+}
+
+.swiper-wrap .swiper-button-prev {
+  left: -1.4rem !important;
+}
+
+.swiper-wrap .swiper-button-prev::after {
+  transform: rotate(180deg) translate(0.1rem, -1.5rem) !important;
+}
+
+.swiper-wrap .swiper-button-next {
+  left: auto;
+  right: -1.4rem !important;
+}
+
+.swiper-wrap .swiper-button-next,
+.swiper-wrap .swiper-container-rtl.swiper-button-prev {
+  margin-right: -0.5rem;
+}
+
+.swiper-wrap .swiper-button-prev,
+.swiper-wrap .swiper-container-rtl.swiper-button-prev {
+  margin-left: -0.5rem;
+}
+
+.teachers-top {
+  margin-bottom: 3.1rem;
+}
+
+.teachers-top .swiper-slide {
+  display: flex;
+  background: #fff;
+}
+
+.teachers-top .slide__img {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding: 2.9rem 0 2.9rem 3.1rem;
+}
+
+.teachers-top .slide__text {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding: 5.5rem 6.5rem 6.9rem 5.6rem;
+}
+
+.teachers-top .slide__text .teacher__name {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  color: #4F4F4F;
+}
+
+.teachers-top .slide__text p {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: #4F4F4F;
+}
+
+.teachers-top .slide__text .teacher__position {
+  margin-bottom: 1.8rem;
+}
+
+.teachers-top .slide__text .teacher__experience {
+  margin-bottom: 2rem;
+}
+
+.teachers-thumbs {
+  width: 60.7rem;
+  margin-bottom: 5.7rem;
+}
+
+.teachers-thumbs .swiper-slide {
+  width: 12.7rem !important;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 32rem) {
   .container-fluid {
     padding-left: 0.6rem;
@@ -1015,6 +1227,21 @@ template {
   .container {
     padding-left: 0.6rem;
     padding-right: 0.6rem;
+  }
+
+  .tabs-titles .title__item {
+    margin-left: 0.15rem;
+    margin-right: 0.15rem;
+  }
+
+  .teachers-top .slide__img {
+    margin-left: 0.15rem;
+    margin-right: 0.15rem;
+  }
+
+  .teachers-top .slide__text {
+    margin-left: 0.15rem;
+    margin-right: 0.15rem;
   }
 }
 
@@ -1028,6 +1255,21 @@ template {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+
+  .tabs-titles .title__item {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+
+  .teachers-top .slide__img {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+
+  .teachers-top .slide__text {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
 }
 
 @media screen and (min-width: 80rem) {
@@ -1040,6 +1282,21 @@ template {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+
+  .tabs-titles .title__item {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+
+  .teachers-top .slide__img {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+
+  .teachers-top .slide__text {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
 }
 
 @media screen and (min-width: 102.4rem) {
@@ -1051,6 +1308,35 @@ template {
   .container {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .tabs-titles .title__item {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+
+  .teachers-top .slide__img {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+
+  .teachers-top .slide__img {
+    width: calc(50% - 0.5rem);
+  }
+
+  .teachers-top .slide__text {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+
+  .teachers-top .slide__text {
+    width: calc(50% - 0.5rem);
+  }
+}
+
+@media screen and (min-width: 144rem) {
+  .tabs-titles .title__item {
+    width: calc(25% - 0.5rem);
   }
 }
 

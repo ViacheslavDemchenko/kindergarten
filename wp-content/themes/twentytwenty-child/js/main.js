@@ -24,6 +24,31 @@ var galleryTop = new Swiper('.gallery-top', {
 });
 "use strict";
 
+var teachersThumbs = new Swiper('.teachers-thumbs', {
+  spaceBetween: 33,
+  slidesPerView: 4,
+  loop: true,
+  freeMode: true,
+  loopedSlides: 5,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true
+});
+var teachersTop = new Swiper('.teachers-top', {
+  speed: 400,
+  spaceBetween: 22,
+  slidesPerView: 1,
+  loop: true,
+  loopedSlides: 5,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+  thumbs: {
+    swiper: teachersThumbs
+  }
+});
+"use strict";
+
 /*!
  * @copyright Copyright (c) 2017 IcoMoon.io
  * @license   Licensed under MIT license
