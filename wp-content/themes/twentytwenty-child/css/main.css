@@ -615,6 +615,193 @@ template {
   text-align: center;
 }
 
+.sixth-section__title {
+  text-align: center;
+  margin: 7.6rem 0 4.6rem 0;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5.6rem;
+  color: #4F4F4F;
+}
+
+.seventh-section__title {
+  text-align: center;
+  margin-bottom: 1.1rem;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5.6rem;
+  color: #4F4F4F;
+}
+
+.seventh-section__desc {
+  text-align: center;
+  margin-bottom: 3.4rem;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.2rem;
+  line-height: 3.1rem;
+  color: #686868;
+}
+
+.eighth-section__title {
+  text-align: center;
+  margin: 0.8rem 0 5.1rem 0;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5.6rem;
+  color: #4F4F4F;
+}
+
+.footer {
+  padding: 3.7rem 3rem 2.6rem 2rem;
+}
+
+.footer-cols {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5.3rem;
+}
+
+.footer .col {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.footer .col__item {
+  display: flex;
+}
+
+.footer .col__item:not(:last-child) {
+  margin-bottom: 1.9rem;
+}
+
+.footer .col .col__icon {
+  margin-right: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+}
+
+.footer .col .col__icon svg {
+  width: 2rem;
+  height: 2rem;
+  fill: #fff;
+}
+
+.footer .col .col__icon--first {
+  background: linear-gradient(278.41deg, #D1916D 0%, #F3B79D 100%);
+}
+
+.footer .col .col__icon--second,
+.footer .col .col__icon--third,
+.footer .col .col__icon--fourth {
+  background: linear-gradient(90deg, #91C3DF 0%, #62B7E7 112.5%);
+}
+
+.footer .col .col__text {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #4F4F4F;
+}
+
+.footer .col .col__text a {
+  display: block;
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+}
+
+.footer .col .address__item {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  color: #3F9DD2;
+}
+
+.footer .col .address__item:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.footer .col .nav__item {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  color: #3F9DD2;
+}
+
+.footer .col .nav__item:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.footer .col .social__link {
+  display: inline-block;
+  filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.07)), drop-shadow(0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198)), drop-shadow(0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275)), drop-shadow(0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035)), drop-shadow(0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725)), drop-shadow(0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802));
+  border-radius: 0.5rem;
+}
+
+.footer .col .social__link img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.footer .policy {
+  text-align: center;
+  margin-bottom: 0.9rem;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  color: #828282;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-bottom p {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  color: #3F9DD2;
+}
+
+.footer-bottom p:not(:last-child) {
+  margin-right: 6.5rem;
+}
+
 /* BLOCKS */
 
 .header-top {
@@ -669,6 +856,8 @@ template {
 .header-top__block--4 .header-top__text a {
   color: #3F9DD2;
   text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
 }
 
 .header-top__block--1,
@@ -997,7 +1186,7 @@ template {
 }
 
 .swiper-button-prev {
-  left: -1.2rem !important;
+  left: -1.9rem !important;
 }
 
 .swiper-button-prev::after {
@@ -1005,17 +1194,7 @@ template {
 }
 
 .swiper-button-next {
-  right: -0.6rem !important;
-}
-
-.swiper-button-next,
-.swiper-container-rtl.swiper-button-prev {
-  margin-right: -0.5rem;
-}
-
-.swiper-button-prev,
-.swiper-container-rtl.swiper-button-prev {
-  margin-left: -0.5rem;
+  right: -1.4rem !important;
 }
 
 .tabs {
@@ -1218,6 +1397,195 @@ template {
   cursor: pointer;
 }
 
+.subscription {
+  margin-bottom: 7.4rem;
+}
+
+.subscription-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscription .subscription__item {
+  width: 32.9rem;
+  min-height: 45.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.8rem 3.1rem 4.6rem 3.8rem;
+  background: #fff;
+  filter: drop-shadow(0px 100px 80px rgba(206, 206, 206, 0.07)), drop-shadow(0px 22.3363px 17.869px rgba(206, 206, 206, 0.0417275)), drop-shadow(0px 6.6501px 5.32008px rgba(206, 206, 206, 0.0282725));
+}
+
+.subscription .subscription__item-title {
+  margin-bottom: 2.4rem;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.9rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #4F4F4F;
+}
+
+.subscription .subscription__item-desc {
+  margin: 0 0 1.8rem 2.5rem;
+  align-self: flex-start;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #4F4F4F;
+}
+
+.subscription .subscription__item .rate-list {
+  margin-bottom: 4.9rem;
+}
+
+.subscription .subscription__item .rate-list .rate__item {
+  display: flex;
+  align-items: center;
+}
+
+.subscription .subscription__item .rate-list .rate__item:not(:last-child) {
+  margin-bottom: 0.9rem;
+}
+
+.subscription .subscription__item .rate-list .rate__item-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1.9rem;
+  background: linear-gradient(90deg, #91C3DF 0%, #62B7E7 112.5%);
+  border-radius: 0.5rem;
+}
+
+.subscription .subscription__item .rate-list .rate__item-icon svg {
+  width: 1.4rem;
+  height: 1.9rem;
+  fill: #fff;
+}
+
+.subscription .subscription__item .rate-list .rate__item-text {
+  max-width: 15rem;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #4F4F4F;
+}
+
+.subscription .subscription__item .subscription__price {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.8rem;
+  background: linear-gradient(90deg, #91C3DF 0%, #62B7E7 112.5%);
+}
+
+.subscription .subscription__item .subscription__price p {
+  background: white;
+  mix-blend-mode: screen;
+}
+
+.excursion {
+  max-width: 114.9rem;
+  height: 547px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1rem 1rem 1rem;
+  margin-bottom: 8.1rem;
+  background: url(../img/children-desktop@1x.png) 50% 100%/37.8rem 24.6rem no-repeat, #fff;
+}
+
+.excursion-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.excursion-form .input-wrap {
+  display: flex;
+  margin-bottom: 1.6rem;
+}
+
+.policy-block__checkbox--excursion {
+  color: #828282;
+}
+
+.header-form__btn--excursion {
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5.3rem;
+}
+
+.reviews-list .reviews__item {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.reviews-list .reviews__item:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.reviews .reviews-img {
+  position: relative;
+  width: 37.9rem;
+  height: 20.9rem;
+}
+
+.reviews .reviews-img img {
+  border-radius: 0.5rem;
+}
+
+.reviews .img__overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 21rem;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 32%, #f4bfa3 100%);
+}
+
+.reviews .reviews-icon {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.reviews .reviews-icon svg {
+  width: 10rem;
+  height: 10rem;
+  fill: #fff;
+}
+
+.reviews .reviews__btn {
+  width: 28.9rem;
+  padding: 2.55rem 4.92rem;
+  margin-bottom: 13.1rem;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+}
+
 @media screen and (min-width: 32rem) {
   .container-fluid {
     padding-left: 0.6rem;
@@ -1227,6 +1595,11 @@ template {
   .container {
     padding-left: 0.6rem;
     padding-right: 0.6rem;
+  }
+
+  .footer .col {
+    margin-left: 0.15rem;
+    margin-right: 0.15rem;
   }
 
   .tabs-titles .title__item {
@@ -1256,6 +1629,11 @@ template {
     padding-right: 1rem;
   }
 
+  .footer .col {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+
   .tabs-titles .title__item {
     margin-left: 0.25rem;
     margin-right: 0.25rem;
@@ -1283,6 +1661,11 @@ template {
     padding-right: 1rem;
   }
 
+  .footer .col {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+
   .tabs-titles .title__item {
     margin-left: 0.25rem;
     margin-right: 0.25rem;
@@ -1308,6 +1691,11 @@ template {
   .container {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .footer .col {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
   }
 
   .tabs-titles .title__item {
@@ -1341,6 +1729,10 @@ template {
 }
 
 @media screen and (min-width: 192rem) {
+  .footer .col {
+    width: calc(25% - 0.5rem);
+  }
+
   .header-top {
     width: calc(100% - 0.5rem);
   }
