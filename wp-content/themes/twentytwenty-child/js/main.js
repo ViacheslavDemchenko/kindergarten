@@ -1,11 +1,12 @@
 "use strict";
 
 var galleryThumbs = new Swiper('.gallery-thumbs', {
-  spaceBetween: 21,
+  spaceBetween: 10,
   slidesPerView: 4,
+  centeredSlides: true,
   loop: true,
   freeMode: true,
-  loopedSlides: 5,
+  loopedSlides: 4,
   watchSlidesVisibility: true,
   watchSlidesProgress: true
 });
@@ -13,38 +14,94 @@ var galleryTop = new Swiper('.gallery-top', {
   spaceBetween: 22,
   slidesPerView: 2,
   loop: true,
-  loopedSlides: 5,
+  freeMode: true,
+  loopedSlides: 2,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
   },
   thumbs: {
-    swiper: galleryThumbs
+    swiper: {
+      el: '.gallery-thumbs',
+      slidesPerView: 2,
+      spaceBetween: 10,
+      loop: true
+    }
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1
+    }
   }
 });
 "use strict";
 
-var teachersThumbs = new Swiper('.teachers-thumbs', {
-  spaceBetween: 33,
+// const teachersThumbs = new Swiper('.teachers-thumbs', {
+//     spaceBetween: 33,
+//     slidesPerView: 4,
+//     loop: true,
+//     freeMode: true,
+//     loopedSlides: 5,
+//     watchSlidesVisibility: true,
+//     watchSlidesProgress: true,
+//   });
+//   const teachersTop = new Swiper('.teachers-top', {
+//     speed: 400,
+//     spaceBetween: 22,
+//     slidesPerView: 1,
+//     loop: true,
+//     freeMode: true,
+//     loopedSlides: 5,
+//     navigation: {
+//       nextEl: '.swiper-button-next',
+//       prevEl: '.swiper-button-prev',
+//     },
+//     thumbs: {
+//       swiper: {
+//         el: '.teachers-thumbs',
+//         slidesPerView: 2,
+//         spaceBetween: 5,
+//         loop: true
+//       }
+//     },
+//     breakpoints: {
+//       320: {
+//         slidesPerView: 1
+//       }
+//     }
+// });
+var galleryThumbs = new Swiper('.teachers-thumbs', {
+  spaceBetween: 10,
   slidesPerView: 4,
+  centeredSlides: true,
   loop: true,
   freeMode: true,
-  loopedSlides: 5,
+  loopedSlides: 4,
   watchSlidesVisibility: true,
   watchSlidesProgress: true
 });
-var teachersTop = new Swiper('.teachers-top', {
-  speed: 400,
+var galleryTop = new Swiper('.teachers-top', {
   spaceBetween: 22,
-  slidesPerView: 1,
+  slidesPerView: 2,
   loop: true,
-  loopedSlides: 5,
+  freeMode: true,
+  loopedSlides: 2,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
   },
   thumbs: {
-    swiper: teachersThumbs
+    swiper: {
+      el: '.teachers-thumbs',
+      slidesPerView: 2,
+      spaceBetween: 10,
+      loop: true
+    }
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1
+    }
   }
 });
 "use strict";

@@ -56,11 +56,12 @@ header {
 }
 
 .section__title {
+  text-align: center;
   font-family: "Museo Sans Cyrl";
   font-style: normal;
   font-weight: 700;
-  font-size: 4rem;
-  line-height: 5rem;
+  font-size: 2rem;
+  line-height: 2.8rem;
   color: #4F4F4F;
 }
 
@@ -592,59 +593,74 @@ template {
 
 .header {
   min-height: 100vh;
-  background: url(../img/header-girl-desktop@1x.png) 75% 24.4rem/54.7rem 69.9rem no-repeat, url(../img/header-bg-desktop@1x.jpg) center/cover no-repeat;
+  background: url(../img/header-bg-desktop@1x.jpg) center/cover no-repeat;
+}
+
+.header-menu {
+  display: none;
 }
 
 .second-section__title {
-  max-width: 74.3rem;
-  margin: 4.7rem 0 5rem 0;
+  margin: 3rem 0;
 }
 
 .third-section__title {
-  margin: 6.4rem 0 4.8rem 0;
+  margin: 0.8rem 0 2rem 0;
   text-align: center;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  color: #4F4F4F;
 }
 
 .fourth-section__title {
-  width: 55rem;
-  margin: 4.4rem 0 5.1rem 0;
+  text-align: center;
+  margin: 0.8rem 0 3rem 0;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  color: #4F4F4F;
 }
 
 .fifth-section__title {
-  margin: 6.6rem 0 3rem 0;
+  margin: 3rem 0 3rem 0;
   text-align: center;
 }
 
 .sixth-section__title {
   text-align: center;
-  margin: 7.6rem 0 4.6rem 0;
+  margin: 0 0 2rem 0;
   font-family: "Museo Sans Cyrl";
   font-style: normal;
   font-weight: 700;
-  font-size: 4rem;
-  line-height: 5.6rem;
+  font-size: 2rem;
+  line-height: 2.8rem;
   color: #4F4F4F;
 }
 
 .seventh-section__title {
   text-align: center;
-  margin-bottom: 1.1rem;
+  margin: 0.8rem 0 2rem 0;
   font-family: "Museo Sans Cyrl";
   font-style: normal;
   font-weight: 700;
-  font-size: 4rem;
-  line-height: 5.6rem;
+  font-size: 2rem;
+  line-height: 2.8rem;
   color: #4F4F4F;
 }
 
 .seventh-section__desc {
   text-align: center;
-  margin-bottom: 3.4rem;
+  margin-bottom: 2rem;
   font-family: "Museo Sans Cyrl";
   font-style: normal;
   font-weight: normal;
-  font-size: 2.2rem;
-  line-height: 3.1rem;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
   color: #686868;
 }
 
@@ -654,8 +670,8 @@ template {
   font-family: "Museo Sans Cyrl";
   font-style: normal;
   font-weight: 700;
-  font-size: 4rem;
-  line-height: 5.6rem;
+  font-size: 2rem;
+  line-height: 2.8rem;
   color: #4F4F4F;
 }
 
@@ -665,8 +681,8 @@ template {
 
 .footer-cols {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 5.3rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .footer .col {
@@ -678,11 +694,12 @@ template {
   margin-right: 1.5rem;
 }
 
-.footer .col__item {
-  display: flex;
+.footer .col:not(:last-child) {
+  margin-bottom: 2rem;
 }
 
-.footer .col__item:not(:last-child) {
+.footer .col__item {
+  display: flex;
   margin-bottom: 1.9rem;
 }
 
@@ -691,14 +708,14 @@ template {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 0.5rem;
 }
 
 .footer .col .col__icon svg {
-  width: 2rem;
-  height: 2rem;
+  width: 1.2rem;
+  height: 1.2rem;
   fill: #fff;
 }
 
@@ -716,8 +733,8 @@ template {
   font-family: "Museo Sans Cyrl";
   font-style: normal;
   font-weight: normal;
-  font-size: 1.6rem;
-  line-height: 1.9rem;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
   color: #4F4F4F;
 }
 
@@ -729,11 +746,13 @@ template {
 }
 
 .footer .col .address__item {
+  display: block;
+  margin-bottom: 1.5rem;
   font-family: "Museo Sans Cyrl";
   font-style: normal;
   font-weight: normal;
-  font-size: 1.6rem;
-  line-height: 2.2rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
   -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
   -webkit-text-decoration-skip-ink: none;
@@ -741,16 +760,14 @@ template {
   color: #3F9DD2;
 }
 
-.footer .col .address__item:not(:last-child) {
-  margin-bottom: 2rem;
-}
-
 .footer .col .nav__item {
+  display: block;
+  margin-bottom: 1.5rem;
   font-family: "Museo Sans Cyrl";
   font-style: normal;
   font-weight: normal;
-  font-size: 1.6rem;
-  line-height: 2.2rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
   -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
   color: #3F9DD2;
@@ -785,9 +802,11 @@ template {
 .footer-bottom {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-.footer-bottom p {
+.footer-bottom a {
+  display: block;
   font-family: "Museo Sans Cyrl";
   font-style: normal;
   font-weight: 300;
@@ -798,8 +817,8 @@ template {
   color: #3F9DD2;
 }
 
-.footer-bottom p:not(:last-child) {
-  margin-right: 6.5rem;
+.footer-bottom a:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 /* BLOCKS */
@@ -945,10 +964,6 @@ template {
   color: #4F4F4F;
 }
 
-.header-bottom {
-  margin-bottom: 8.2rem;
-}
-
 .header-bottom .nav {
   padding: 2.2rem 10.3rem;
 }
@@ -969,21 +984,49 @@ template {
 }
 
 .header-content__title {
-  max-width: 62.8rem;
+  max-width: 25rem;
   margin: 0 0 4.1rem 0;
+  text-align: center;
   font-family: "Museo Sans Cyrl";
   font-style: normal;
   font-weight: 700;
-  font-size: 4.8rem;
-  line-height: 6.2rem;
+  font-size: 3rem;
+  line-height: 4.2rem;
   color: #4F4F4F;
+}
+
+.header-content-cols {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header-content .header-content__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-content .header-content__left {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.header-content .header-content__right {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .header-content-block {
   position: relative;
   display: flex;
-  align-items: center;
-  margin: 0 0 3.6rem 2rem;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 0 2.3rem 2rem;
 }
 
 .header-content-block::before {
@@ -998,36 +1041,42 @@ template {
 }
 
 .header-content__img {
-  margin-right: 2.7rem;
+  margin-bottom: 1.5rem;
+  width: 27rem;
 }
 
 .header-content__text {
-  max-width: 47rem;
-}
-
-.content__text--bold,
-.content__text {
   display: inline;
+  text-align: center;
   font-family: "Museo Sans Cyrl";
   font-style: normal;
   font-weight: 700;
-  font-size: 2.2rem;
-  line-height: 3.5rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
   color: #727272;
 }
 
-.content__text {
+.header-content__text p {
   font-weight: 400;
 }
 
 .header-form__phone {
-  margin-right: 1.3rem;
+  width: 100%;
+  margin-bottom: 1.2rem;
   padding: 2.6rem 4.4rem;
   border: none;
 }
 
 .header-form__btn {
-  padding: 2.55rem 4.92rem;
+  padding: 2.55rem 3rem;
+  width: 100%;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+}
+
+.header-form .inner-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .policy-block {
@@ -1037,7 +1086,8 @@ template {
 }
 
 .policy-block__checkbox {
-  margin-right: 0.4rem;
+  align-self: flex-start;
+  margin: 0.4rem 0.4rem 0 0;
 }
 
 .policy-block .policy {
@@ -1055,51 +1105,52 @@ template {
 }
 
 .advantages {
-  margin-bottom: 6.5rem;
+  margin-bottom: 3rem;
 }
 
 .advantages-row {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .advantages__item {
   display: flex;
   flex-direction: column;
-  width: 57.5rem;
-  height: 17.4rem;
+  width: 35.5rem;
+  height: 18rem;
   padding: 2.1rem 3rem 1.9rem 3rem;
 }
 
 .advantages__item--first {
-  background: url(../img/book@1x.png) 100% 100%/34rem 18rem no-repeat, #fff1ea;
+  background: url(../img/book@1x.png) 100% 100%/22rem 12rem no-repeat, #fff1ea;
 }
 
 .advantages__item--second {
-  background: url(../img/globe@1x.png) 100% 100%/37rem 17rem no-repeat, #fff1ea;
+  background: url(../img/globe@1x.png) 100% 100%/26rem 12rem no-repeat, #fff1ea;
 }
 
 .advantages__item--third {
-  background: url(../img/diamond@1x.png) 100% 100%/35rem 18rem no-repeat, rgba(145, 195, 223, 0.1);
+  background: url(../img/diamond@1x.png) 100% 100%/22rem 13rem no-repeat, rgba(145, 195, 223, 0.1);
 }
 
 .advantages__item--fourth {
-  background: url(../img/cup@1x.png) 100% 100%/35rem 16rem no-repeat, rgba(145, 195, 223, 0.1);
+  background: url(../img/cup@1x.png) 100% 100%/22rem 12rem no-repeat, rgba(145, 195, 223, 0.1);
 }
 
 .advantages__item--fifth {
-  background: url(../img/pie_chart@1x.png) 100% 100%/35rem 16rem no-repeat, #fff1ea;
+  background: url(../img/pie_chart@1x.png) 100% 100%/22rem 13rem no-repeat, #fff1ea;
 }
 
 .advantages__item--sixth {
-  background: url(../img/bell@1x.png) 100% 100%/35rem 16rem no-repeat, #fff1ea;
+  background: url(../img/bell@1x.png) 100% 100%/22rem 13rem no-repeat, #fff1ea;
 }
 
 .advantages__item--seventh {
-  background: url(../img/bubble@1x.png) 100% 100%/35rem 16rem no-repeat, rgba(145, 195, 223, 0.1);
+  background: url(../img/bubble@1x.png) 100% 100%/22rem 13rem no-repeat, rgba(145, 195, 223, 0.1);
 }
 
 .advantages__item--eighth {
-  background: url(../img/cup@1x.png) 100% 100%/35rem 16rem no-repeat, rgba(145, 195, 223, 0.1);
+  background: url(../img/cup@1x.png) 100% 100%/22rem 12rem no-repeat, rgba(145, 195, 223, 0.1);
 }
 
 .advantages__item .item__text {
@@ -1107,14 +1158,14 @@ template {
   font-family: "Museo Sans Cyrl";
   font-style: normal;
   font-weight: normal;
-  font-size: 1.8rem;
-  line-height: 2.5rem;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
   color: #4F4F4F;
 }
 
 .advantages__item .item__more {
   position: relative;
-  margin: auto 0 0 2rem;
+  margin: 0 0 0 2.5rem;
   font-family: "Museo Sans Cyrl";
   font-style: normal;
   font-weight: normal;
@@ -1133,13 +1184,13 @@ template {
   top: 50%;
   left: -2.5rem;
   transform: translateY(-50%);
-  width: 2.1rem;
-  height: 2.1rem;
-  background-image: url(../img/icons/more.svg);
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url(../img/icons/more.svg) center/cover no-repeat;
 }
 
 .advantages__item:nth-child(odd) {
-  margin-right: 2rem;
+  margin-bottom: 2.1rem;
 }
 
 .swiper-object {
@@ -1151,12 +1202,11 @@ template {
 }
 
 .gallery-thumbs {
-  width: 53.9rem;
-  margin-bottom: 8.7rem;
+  width: 25rem;
+  margin-bottom: 3rem;
 }
 
 .gallery-thumbs .swiper-slide {
-  width: 11.9rem !important;
   cursor: pointer;
 }
 
@@ -1167,6 +1217,7 @@ template {
 .swiper-button-next,
 .swiper-button-prev {
   position: absolute;
+  display: none !important;
   top: calc(50% - 2.7rem) !important;
   left: 0;
   transform: translateY(-50%);
@@ -1199,12 +1250,12 @@ template {
 
 .tabs {
   max-width: 120rem;
-  margin-bottom: 9.4rem;
 }
 
 .tabs-titles {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 .tabs-titles .title__item {
@@ -1214,12 +1265,12 @@ template {
   margin-right: 1.5rem;
   padding: 2rem 0;
   margin: 0 !important;
-  width: 31rem;
+  width: 100%;
   font-family: "Museo Sans Cyrl";
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 2.9rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
   text-align: center;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -1233,7 +1284,7 @@ template {
 }
 
 .tabs-content {
-  padding: 3.6rem 3rem 2.6rem 3rem;
+  padding: 3rem;
   background: #fff;
 }
 
@@ -1247,10 +1298,12 @@ template {
 
 .tabs .tabs-content-list {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .tabs .tabs-content-list .list-col:not(:last-child) {
-  margin-right: 8.9rem;
+  margin-bottom: 4rem;
 }
 
 .tabs .tabs-content-list .item__lesson {
@@ -1342,6 +1395,8 @@ template {
 
 .teachers-top .swiper-slide {
   display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
   background: #fff;
 }
 
@@ -1350,7 +1405,7 @@ template {
   word-wrap: break-word;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-  padding: 2.9rem 0 2.9rem 3.1rem;
+  padding: 2.9rem 0 0 0;
 }
 
 .teachers-top .slide__text {
@@ -1358,15 +1413,14 @@ template {
   word-wrap: break-word;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-  padding: 5.5rem 6.5rem 6.9rem 5.6rem;
 }
 
 .teachers-top .slide__text .teacher__name {
   font-family: "Museo Sans Cyrl";
   font-style: normal;
   font-weight: 700;
-  font-size: 2.4rem;
-  line-height: 3.4rem;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
   color: #4F4F4F;
 }
 
@@ -1388,7 +1442,7 @@ template {
 }
 
 .teachers-thumbs {
-  width: 60.7rem;
+  width: 26rem;
   margin-bottom: 5.7rem;
 }
 
@@ -1398,17 +1452,16 @@ template {
 }
 
 .subscription {
-  margin-bottom: 7.4rem;
+  margin-bottom: 3rem;
 }
 
 .subscription-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .subscription .subscription__item {
-  width: 32.9rem;
-  min-height: 45.6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1417,31 +1470,35 @@ template {
   filter: drop-shadow(0px 100px 80px rgba(206, 206, 206, 0.07)), drop-shadow(0px 22.3363px 17.869px rgba(206, 206, 206, 0.0417275)), drop-shadow(0px 6.6501px 5.32008px rgba(206, 206, 206, 0.0282725));
 }
 
+.subscription .subscription__item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .subscription .subscription__item-title {
-  margin-bottom: 2.4rem;
+  margin-bottom: 1.5rem;
   font-family: "Museo Sans Cyrl";
   font-style: normal;
   font-weight: 700;
-  font-size: 1.8rem;
-  line-height: 2.9rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #4F4F4F;
 }
 
 .subscription .subscription__item-desc {
-  margin: 0 0 1.8rem 2.5rem;
+  margin: 0 0 1.8rem 2rem;
   align-self: flex-start;
   font-family: "Museo Sans Cyrl";
   font-style: normal;
   font-weight: 700;
-  font-size: 1.6rem;
-  line-height: 2.6rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
   color: #4F4F4F;
 }
 
 .subscription .subscription__item .rate-list {
-  margin-bottom: 4.9rem;
+  margin-bottom: 2.5rem;
 }
 
 .subscription .subscription__item .rate-list .rate__item {
@@ -1457,16 +1514,16 @@ template {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   margin-right: 1.9rem;
   background: linear-gradient(90deg, #91C3DF 0%, #62B7E7 112.5%);
   border-radius: 0.5rem;
 }
 
 .subscription .subscription__item .rate-list .rate__item-icon svg {
-  width: 1.4rem;
-  height: 1.9rem;
+  width: 1rem;
+  height: 1.5rem;
   fill: #fff;
 }
 
@@ -1475,8 +1532,8 @@ template {
   font-family: "Museo Sans Cyrl";
   font-style: normal;
   font-weight: normal;
-  font-size: 1.6rem;
-  line-height: 1.9rem;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
   color: #4F4F4F;
 }
 
@@ -1484,8 +1541,8 @@ template {
   font-family: "Museo Sans Cyrl";
   font-style: normal;
   font-weight: 700;
-  font-size: 2.4rem;
-  line-height: 3.8rem;
+  font-size: 2rem;
+  line-height: 3rem;
   background: linear-gradient(90deg, #91C3DF 0%, #62B7E7 112.5%);
 }
 
@@ -1496,13 +1553,12 @@ template {
 
 .excursion {
   max-width: 114.9rem;
-  height: 547px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4rem 1rem 1rem 1rem;
-  margin-bottom: 8.1rem;
-  background: url(../img/children-desktop@1x.png) 50% 100%/37.8rem 24.6rem no-repeat, #fff;
+  padding: 1rem 1rem 18rem 1rem;
+  margin-bottom: 3rem;
+  background: url(../img/children-desktop@1x.png) 50% 100%/27.8rem 19.6rem no-repeat, #fff;
 }
 
 .excursion-form {
@@ -1514,6 +1570,7 @@ template {
 .excursion-form .input-wrap {
   display: flex;
   margin-bottom: 1.6rem;
+  flex-wrap: wrap;
 }
 
 .policy-block__checkbox--excursion {
@@ -1532,25 +1589,27 @@ template {
 
 .reviews-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 5.3rem;
 }
 
 .reviews-list .reviews__item {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
 }
 
 .reviews-list .reviews__item:not(:last-child) {
-  margin-right: 1.6rem;
+  margin-bottom: 1rem;
 }
 
 .reviews .reviews-img {
   position: relative;
-  width: 37.9rem;
-  height: 20.9rem;
+  width: 30rem;
 }
 
 .reviews .reviews-img img {
+  width: 30rem;
   border-radius: 0.5rem;
 }
 
@@ -1561,7 +1620,6 @@ template {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 21rem;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 32%, #f4bfa3 100%);
 }
 
@@ -1582,8 +1640,125 @@ template {
 .reviews .reviews__btn {
   width: 28.9rem;
   padding: 2.55rem 4.92rem;
-  margin-bottom: 13.1rem;
+  margin-bottom: 3rem;
   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+}
+
+.header-top--mobile {
+  display: block;
+  padding-top: 2.4rem;
+  margin-bottom: 3.5rem;
+}
+
+.cmn-toggle-switch {
+  position: absolute;
+  z-index: 9999;
+  top: 1.5rem;
+  right: 1rem;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 4.4rem;
+  height: 4rem;
+  overflow: hidden;
+  font-size: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  transition: background 1s;
+}
+
+.cmn-toggle-switch:focus {
+  outline: none;
+}
+
+.cmn-toggle-switch span {
+  position: absolute;
+  top: 2.4rem;
+  left: 0.5rem;
+  right: 0.5rem;
+  width: 3.2rem;
+  margin: auto;
+  display: block;
+  height: 0.1rem;
+  border-radius: 0.5rem;
+  background-color: #3F9DD2;
+}
+
+.cmn-toggle-switch span::before,
+.cmn-toggle-switch span::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 0.1rem;
+  border-radius: 0.5rem;
+  background-color: #3F9DD2;
+}
+
+.cmn-toggle-switch span::before {
+  top: 0.9rem;
+}
+
+.cmn-toggle-switch span::after {
+  bottom: 0.9rem;
+}
+
+.cmn-toggle-switch__htx {
+  width: 5rem;
+  height: 5rem;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: all 1s ease-out;
+}
+
+.cmn-toggle-switch__htx span {
+  transition: background 2s;
+}
+
+.cmn-toggle-switch__htx span::before,
+.cmn-toggle-switch__htx span::after {
+  transition-duration: 1s, 1s;
+  transition-delay: 0.3s, 0;
+}
+
+.cmn-toggle-switch__htx span::before {
+  transition-property: top, transform;
+}
+
+.cmn-toggle-switch__htx span::after {
+  transition-property: bottom, transform;
+}
+
+.cmn-toggle-switch__htx.active {
+  top: 0.5rem;
+  right: 7%;
+  background-color: transparent;
+}
+
+.cmn-toggle-switch__htx.active span {
+  background: none;
+  width: 3rem;
+  right: 1.5rem;
+}
+
+.cmn-toggle-switch__htx.active span::before,
+.cmn-toggle-switch__htx.active span::after {
+  transition-delay: 0, 0.5s;
+}
+
+.cmn-toggle-switch__htx.active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.cmn-toggle-switch__htx.active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
 }
 
 @media screen and (min-width: 32rem) {
@@ -1598,6 +1773,16 @@ template {
   }
 
   .footer .col {
+    margin-left: 0.15rem;
+    margin-right: 0.15rem;
+  }
+
+  .header-content .header-content__left {
+    margin-left: 0.15rem;
+    margin-right: 0.15rem;
+  }
+
+  .header-content .header-content__right {
     margin-left: 0.15rem;
     margin-right: 0.15rem;
   }
@@ -1634,6 +1819,16 @@ template {
     margin-right: 0.25rem;
   }
 
+  .header-content .header-content__left {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+
+  .header-content .header-content__right {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+
   .tabs-titles .title__item {
     margin-left: 0.25rem;
     margin-right: 0.25rem;
@@ -1666,6 +1861,24 @@ template {
     margin-right: 0.25rem;
   }
 
+  .header-content .header-content__left {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+
+  .header-content .header-content__left {
+    width: calc(100% - 0.5rem);
+  }
+
+  .header-content .header-content__right {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+
+  .header-content .header-content__right {
+    width: calc(100% - 0.5rem);
+  }
+
   .tabs-titles .title__item {
     margin-left: 0.25rem;
     margin-right: 0.25rem;
@@ -1682,6 +1895,13 @@ template {
   }
 }
 
+@media (min-width: 80rem) {
+  .cmn-toggle-switch__htx {
+    width: 7.4rem;
+    height: 7.4rem;
+  }
+}
+
 @media screen and (min-width: 102.4rem) {
   .container-fluid {
     padding-left: 1rem;
@@ -1694,6 +1914,16 @@ template {
   }
 
   .footer .col {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+
+  .header-content .header-content__left {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+
+  .header-content .header-content__right {
     margin-left: 0.25rem;
     margin-right: 0.25rem;
   }
@@ -1737,7 +1967,457 @@ template {
     width: calc(100% - 0.5rem);
   }
 
+  .header-content .header-content__left {
+    width: calc(58.33333% - 0.5rem);
+  }
+
+  .header-content .header-content__right {
+    width: calc(41.66667% - 0.5rem);
+  }
+
   .advantages__item {
     width: calc(50% - 0.5rem);
+  }
+}
+
+@media (min-width: 425px) {
+  .section__title {
+    font-size: 2.2rem;
+    line-height: 3.1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-content__title {
+    max-width: 48rem;
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+
+  .header-content__text {
+    max-width: 43rem;
+    text-align: center;
+  }
+
+  .header-form__phone {
+    margin-right: 0;
+  }
+
+  .header-form__btn {
+    width: 100%;
+  }
+
+  .header-form .inner-wrap {
+    max-width: 32.4rem;
+    margin: auto;
+  }
+
+  .policy-block {
+    max-width: 30rem;
+    margin: 1.1rem auto 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-content .header-content__right img {
+    width: 54.7rem;
+    height: 69.9rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .header-content__title {
+    max-width: 37rem;
+    font-size: 2.5rem;
+    line-height: 3.8rem;
+  }
+
+  .header-content .header-content__left {
+    padding-top: 6rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header-menu {
+    display: block;
+  }
+
+  .header-content__title {
+    max-width: 48rem;
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-top--mobile {
+    display: none;
+    margin-bottom: 0;
+  }
+
+  .cmn-toggle-switch {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section__title {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  .second-section__title {
+    max-width: 74.3rem;
+    margin: 4.7rem 0 5rem 0;
+  }
+
+  .third-section__title {
+    margin: 0.8rem 0 5.1rem 0;
+    font-size: 4rem;
+    line-height: 5.6rem;
+  }
+
+  .fourth-section__title {
+    width: 55rem;
+    margin: 4.4rem 0 5.1rem 0;
+    font-size: 4rem;
+    line-height: 5.6rem;
+  }
+
+  .fifth-section__title {
+    margin: 6.6rem 0 3rem 0;
+    font-size: 4rem;
+    line-height: 5.6rem;
+  }
+
+  .sixth-section__title {
+    margin: 7.6rem 0 4.6rem 0;
+    font-size: 4rem;
+    line-height: 5.6rem;
+  }
+
+  .seventh-section__title {
+    margin: 0.8rem 0 5.1rem 0;
+    font-size: 4rem;
+    line-height: 5.6rem;
+  }
+
+  .seventh-section__desc {
+    margin-bottom: 3.4rem;
+    font-size: 2.2rem;
+    line-height: 3.1rem;
+  }
+
+  .eighth-section__title {
+    margin: 0.8rem 0 5.1rem 0;
+    font-size: 4rem;
+    line-height: 5.6rem;
+  }
+
+  .footer-cols {
+    justify-content: space-between;
+    margin-bottom: 5.3rem;
+  }
+
+  .footer .col__item:not(:last-child) {
+    margin-bottom: 1.9rem;
+  }
+
+  .footer .col .col__icon {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .footer .col .col__icon svg {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .footer .col .col__text {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+
+  .footer .col .address__item {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+
+  .footer .col .address__item:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  .footer .col .nav__item {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+
+  .footer .col .nav__item:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  .footer-bottom {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+
+  .footer-bottom a:not(:last-child) {
+    margin-right: 6.5rem;
+  }
+
+  .header-form__btn {
+    padding: 2.55rem 4.92rem;
+  }
+
+  .advantages {
+    margin-bottom: 6.5rem;
+  }
+
+  .advantages__item {
+    width: 57.5rem;
+    height: 17.4rem;
+  }
+
+  .advantages__item--first {
+    background-size: 34rem 18rem;
+  }
+
+  .advantages__item--second {
+    background-size: 37rem 17rem;
+  }
+
+  .advantages__item--third {
+    background-size: 35rem 18rem;
+  }
+
+  .advantages__item--fourth {
+    background-size: 35rem 16rem;
+  }
+
+  .advantages__item--fifth {
+    background-size: 35rem 16rem;
+  }
+
+  .advantages__item--sixth {
+    background-size: 35rem 16rem;
+  }
+
+  .advantages__item--seventh {
+    background-size: 35rem 16rem;
+  }
+
+  .advantages__item--eighth {
+    background-size: 35rem 16rem;
+  }
+
+  .advantages__item .item__text {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+
+  .advantages__item .item__more {
+    margin: auto 0 0 2rem;
+  }
+
+  .advantages__item .item__more::before {
+    width: 2.1rem;
+    height: 2.1rem;
+  }
+
+  .advantages__item:nth-child(odd) {
+    margin-right: 2rem;
+  }
+
+  .gallery-thumbs {
+    width: 53.9rem;
+    margin-bottom: 8.7rem;
+  }
+
+  .gallery-thumbs .swiper-slide {
+    width: 11.9rem !important;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: block;
+  }
+
+  .tabs {
+    margin-bottom: 9.4rem;
+  }
+
+  .tabs-titles .title__item {
+    width: 31rem;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+  }
+
+  .tabs-content {
+    padding: 3.6rem 3rem 2.6rem 3rem;
+  }
+
+  .tabs .tabs-content-list {
+    flex-direction: row;
+  }
+
+  .tabs .tabs-content-list .list-col:not(:last-child) {
+    margin: 0 8.9rem 0 0;
+  }
+
+  .teachers-top .swiper-slide {
+    flex-direction: row;
+    padding-bottom: 0;
+  }
+
+  .teachers-top .slide__img {
+    padding: 2.9rem 0 2.9rem 3.1rem;
+  }
+
+  .teachers-top .slide__text {
+    padding: 5.5rem 6.5rem 6.9rem 5.6rem;
+  }
+
+  .teachers-top .slide__text .teacher__name {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+  }
+
+  .teachers-thumbs {
+    width: 60.7rem;
+  }
+
+  .subscription {
+    margin-bottom: 7.4rem;
+  }
+
+  .subscription-list {
+    justify-content: space-between;
+  }
+
+  .subscription .subscription__item {
+    width: 32.9rem;
+    min-height: 45.6rem;
+  }
+
+  .subscription .subscription__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .subscription .subscription__item-title {
+    margin-bottom: 2.4rem;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+  }
+
+  .subscription .subscription__item-desc {
+    margin: 0 0 1.8rem 2.5rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+
+  .subscription .subscription__item .rate-list {
+    margin-bottom: 4.9rem;
+  }
+
+  .subscription .subscription__item .rate-list .rate__item-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .subscription .subscription__item .rate-list .rate__item-icon svg {
+    width: 1.4rem;
+    height: 1.9rem;
+  }
+
+  .subscription .subscription__item .rate-list .rate__item-text {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+
+  .subscription .subscription__item .subscription__price {
+    font-size: 2.4rem;
+    line-height: 3.8rem;
+  }
+
+  .excursion {
+    padding: 4rem 1rem 1rem 1rem;
+    margin-bottom: 8.1rem;
+    background-size: 37.8rem 24.6rem;
+  }
+
+  .reviews-list {
+    justify-content: space-between;
+  }
+
+  .reviews-list .reviews__item:not(:last-child) {
+    margin: 0 1.6rem 0 0;
+  }
+
+  .reviews .reviews-img {
+    width: 37.9rem;
+    height: 20.9rem;
+  }
+
+  .reviews .reviews-img img {
+    width: 37.9rem;
+    height: 20.9rem;
+  }
+
+  .reviews .reviews__btn {
+    margin-bottom: 13.1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-content__title {
+    max-width: 60rem;
+    font-size: 4rem;
+    line-height: 5.5rem;
+  }
+
+  .header-content .header-content__left {
+    padding-top: 5rem;
+  }
+
+  .header-content__text {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .header-form__phone {
+    width: 100%;
+    margin-right: 1.3rem;
+  }
+
+  .header-form .inner-wrap {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1366px) {
+  .header-content-block {
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0 3.6rem 2rem;
+  }
+
+  .header-content__img {
+    margin-right: 2.7rem;
+    width: 13.7rem;
+    height: 12.4rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .header-content__title {
+    max-width: 62.8rem;
+    font-size: 4.8rem;
+    line-height: 6.2rem;
+  }
+
+  .header-content__text {
+    max-width: 47rem;
+    font-size: 2.2rem;
+    line-height: 3.5rem;
   }
 }
