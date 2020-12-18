@@ -592,7 +592,6 @@ template {
 /* SECTIONS */
 
 .header {
-  min-height: 100vh;
   background: url(../img/header-bg-desktop@1x.jpg) center/cover no-repeat;
 }
 
@@ -631,9 +630,13 @@ template {
   text-align: center;
 }
 
+.sixth-section {
+  width: 100%;
+}
+
 .sixth-section__title {
   text-align: center;
-  margin: 0 0 2rem 0;
+  margin: 2rem 0;
   font-family: "Museo Sans Cyrl";
   font-style: normal;
   font-weight: 700;
@@ -685,13 +688,16 @@ template {
   flex-wrap: wrap;
 }
 
+.footer .cols-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer .col {
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  align-items: center;
+  width: 100%;
 }
 
 .footer .col:not(:last-child) {
@@ -939,6 +945,7 @@ template {
   border-radius: 0.5rem;
   outline: none;
   background: linear-gradient(278.41deg, #B4734E 3.22%, #CE8F6F 39.41%, #DFA184 63.97%, #F3B79D 94.64%);
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
 }
 
 .header-center {
@@ -1060,7 +1067,6 @@ template {
 .header-form__btn {
   padding: 2.55rem 3rem;
   width: 100%;
-  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
 }
 
 .header-form .inner-wrap {
@@ -1098,6 +1104,10 @@ template {
   margin-bottom: 3rem;
   max-width: 57.5rem;
   margin: auto;
+}
+
+.advantages-row {
+  margin-bottom: 2.1rem;
 }
 
 .advantages__item {
@@ -1384,23 +1394,14 @@ template {
 .teachers-top .swiper-slide {
   display: flex;
   flex-direction: column;
-  padding-bottom: 2rem;
+  align-items: center;
+  padding: 0 1rem 2rem 1rem;
   background: #fff;
 }
 
 .teachers-top .slide__img {
-  box-sizing: border-box;
-  word-wrap: break-word;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  width: 90%;
   padding: 2.9rem 0 0 0;
-}
-
-.teachers-top .slide__text {
-  box-sizing: border-box;
-  word-wrap: break-word;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
 }
 
 .teachers-top .slide__text .teacher__name {
@@ -1544,7 +1545,7 @@ template {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 1rem 18rem 1rem;
+  padding: 1rem 1rem 20rem 1rem;
   margin-bottom: 3rem;
   background: url(../img/children-desktop@1x.png) 50% 100%/27.8rem 19.6rem no-repeat, #fff;
 }
@@ -1556,6 +1557,7 @@ template {
 }
 
 .excursion-form .input-wrap {
+  max-width: 32.4rem;
   display: flex;
   margin-bottom: 1.6rem;
   flex-wrap: wrap;
@@ -1565,8 +1567,9 @@ template {
   color: #828282;
 }
 
-.header-form__btn--excursion {
-  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+.excursion__btn {
+  width: 100%;
+  padding: 2.55rem 3rem;
 }
 
 .reviews {
@@ -1629,7 +1632,6 @@ template {
   width: 28.9rem;
   padding: 2.55rem 4.92rem;
   margin-bottom: 3rem;
-  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
 }
 
 .header-top--mobile {
@@ -1760,22 +1762,7 @@ template {
     padding-right: 0.6rem;
   }
 
-  .footer .col {
-    margin-left: 0.15rem;
-    margin-right: 0.15rem;
-  }
-
   .tabs-titles .title__item {
-    margin-left: 0.15rem;
-    margin-right: 0.15rem;
-  }
-
-  .teachers-top .slide__img {
-    margin-left: 0.15rem;
-    margin-right: 0.15rem;
-  }
-
-  .teachers-top .slide__text {
     margin-left: 0.15rem;
     margin-right: 0.15rem;
   }
@@ -1792,22 +1779,7 @@ template {
     padding-right: 1rem;
   }
 
-  .footer .col {
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
-  }
-
   .tabs-titles .title__item {
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
-  }
-
-  .teachers-top .slide__img {
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
-  }
-
-  .teachers-top .slide__text {
     margin-left: 0.25rem;
     margin-right: 0.25rem;
   }
@@ -1824,22 +1796,7 @@ template {
     padding-right: 1rem;
   }
 
-  .footer .col {
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
-  }
-
   .tabs-titles .title__item {
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
-  }
-
-  .teachers-top .slide__img {
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
-  }
-
-  .teachers-top .slide__text {
     margin-left: 0.25rem;
     margin-right: 0.25rem;
   }
@@ -1863,32 +1820,9 @@ template {
     padding-right: 1rem;
   }
 
-  .footer .col {
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
-  }
-
   .tabs-titles .title__item {
     margin-left: 0.25rem;
     margin-right: 0.25rem;
-  }
-
-  .teachers-top .slide__img {
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
-  }
-
-  .teachers-top .slide__img {
-    width: calc(50% - 0.5rem);
-  }
-
-  .teachers-top .slide__text {
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
-  }
-
-  .teachers-top .slide__text {
-    width: calc(50% - 0.5rem);
   }
 }
 
@@ -1899,10 +1833,6 @@ template {
 }
 
 @media screen and (min-width: 192rem) {
-  .footer .col {
-    width: calc(25% - 0.5rem);
-  }
-
   .header-top {
     width: calc(100% - 0.5rem);
   }
@@ -1919,6 +1849,36 @@ template {
   }
 }
 
+@media (min-width: 480px) {
+  .teachers-top .slide__img {
+    padding: 2.9rem 0 2.9rem 0;
+  }
+}
+
+@media (min-width: 560px) {
+  .footer .col {
+    width: 40%;
+  }
+
+  .footer-bottom a:not(:last-child) {
+    margin: 0 1rem 0 0;
+  }
+
+  .tabs .tabs-content-list {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .subscription-list {
+    justify-content: center;
+  }
+
+  .subscription .subscription__item:first-child {
+    margin-right: 1rem;
+  }
+}
+
 @media screen and (min-width: 560px) {
   .header-content__title {
     max-width: 48rem;
@@ -1932,9 +1892,60 @@ template {
 }
 
 @media (min-width: 768px) {
+  .footer-cols {
+    flex-wrap: nowrap;
+    margin-bottom: 5.3rem;
+  }
+
+  .footer .col:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .header-content .header-content__right img {
     width: 54.7rem;
     height: 69.9rem;
+  }
+
+  .tabs-titles {
+    flex-direction: row;
+  }
+
+  .tabs .tabs-content-list {
+    justify-content: space-between;
+  }
+
+  .tabs .tabs-content-list .list-col:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .teachers-top .swiper-slide {
+    flex-direction: row;
+    padding: 1rem;
+  }
+
+  .teachers-top .slide__img {
+    width: 50%;
+    margin-right: 1rem;
+    padding: 0;
+  }
+
+  .teachers-top .slide__text {
+    width: 50%;
+  }
+
+  .teachers-thumbs {
+    width: 54rem;
+  }
+
+  .excursion {
+    padding-bottom: 23rem;
+    background: url(../img/children-desktop@1x.png) 50% 100%/33rem 22rem no-repeat, #fff;
+  }
+
+  .reviews-list .reviews__item:first-child {
+    margin-right: 2rem;
   }
 }
 
@@ -1982,6 +1993,7 @@ template {
 
   .header-content__title {
     max-width: 48rem;
+    text-align: left;
     font-size: 3.2rem;
     line-height: 4.2rem;
   }
@@ -2004,6 +2016,7 @@ template {
 
   .header-form__btn {
     max-width: 18rem;
+    width: 100%;
   }
 }
 
@@ -2011,6 +2024,23 @@ template {
   .second-section__title {
     text-align: left;
     max-width: 50rem;
+  }
+
+  .fourth-section__title {
+    width: 55rem;
+    text-align: left;
+    margin: 4.4rem 0 5.1rem 0;
+    font-size: 4rem;
+    line-height: 5.6rem;
+  }
+
+  .footer-bottom {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+
+  .footer-bottom a:not(:last-child) {
+    margin-right: 6.5rem;
   }
 
   .header-content-cols {
@@ -2050,6 +2080,7 @@ template {
 
   .advantages-row {
     display: flex;
+    margin-bottom: 0;
   }
 
   .advantages__item {
@@ -2058,6 +2089,37 @@ template {
 
   .advantages__item:nth-child(odd) {
     margin-right: 1rem;
+  }
+
+  .tabs .tabs-content-list .list-col {
+    width: 33%;
+    justify-content: flex-start;
+  }
+
+  .teachers-top .slide__img {
+    padding: 2.9rem 0 2.9rem 3.1rem;
+  }
+
+  .teachers-top .slide__text {
+    padding: 5.5rem 6.5rem 6.9rem 5.6rem;
+  }
+
+  .subscription-list {
+    justify-content: space-between;
+  }
+
+  .subscription .subscription__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .excursion {
+    padding: 4rem 1rem 27rem 1rem;
+    margin-bottom: 8.1rem;
+    background-size: 37.8rem 24.6rem;
+  }
+
+  .reviews-list .reviews__item:not(:last-child) {
+    margin: 0 1.6rem 0 0;
   }
 
   .header-top--mobile {
@@ -2083,13 +2145,6 @@ template {
 
   .third-section__title {
     margin: 0.8rem 0 5.1rem 0;
-    font-size: 4rem;
-    line-height: 5.6rem;
-  }
-
-  .fourth-section__title {
-    width: 55rem;
-    margin: 4.4rem 0 5.1rem 0;
     font-size: 4rem;
     line-height: 5.6rem;
   }
@@ -2122,11 +2177,6 @@ template {
     margin: 0.8rem 0 5.1rem 0;
     font-size: 4rem;
     line-height: 5.6rem;
-  }
-
-  .footer-cols {
-    justify-content: space-between;
-    margin-bottom: 5.3rem;
   }
 
   .footer .col__item:not(:last-child) {
@@ -2164,15 +2214,6 @@ template {
 
   .footer .col .nav__item:not(:last-child) {
     margin-bottom: 2rem;
-  }
-
-  .footer-bottom {
-    font-size: 1.6rem;
-    line-height: 2.2rem;
-  }
-
-  .footer-bottom a:not(:last-child) {
-    margin-right: 6.5rem;
   }
 
   .advantages {
@@ -2244,10 +2285,6 @@ template {
     display: block;
   }
 
-  .tabs {
-    margin-bottom: 9.4rem;
-  }
-
   .tabs-titles .title__item {
     width: 31rem;
     font-size: 1.8rem;
@@ -2258,51 +2295,18 @@ template {
     padding: 3.6rem 3rem 2.6rem 3rem;
   }
 
-  .tabs .tabs-content-list {
-    flex-direction: row;
-  }
-
-  .tabs .tabs-content-list .list-col:not(:last-child) {
-    margin: 0 8.9rem 0 0;
-  }
-
-  .teachers-top .swiper-slide {
-    flex-direction: row;
-    padding-bottom: 0;
-  }
-
-  .teachers-top .slide__img {
-    padding: 2.9rem 0 2.9rem 3.1rem;
-  }
-
-  .teachers-top .slide__text {
-    padding: 5.5rem 6.5rem 6.9rem 5.6rem;
-  }
-
   .teachers-top .slide__text .teacher__name {
     font-size: 2.4rem;
     line-height: 3.4rem;
-  }
-
-  .teachers-thumbs {
-    width: 60.7rem;
   }
 
   .subscription {
     margin-bottom: 7.4rem;
   }
 
-  .subscription-list {
-    justify-content: space-between;
-  }
-
   .subscription .subscription__item {
     width: 32.9rem;
     min-height: 45.6rem;
-  }
-
-  .subscription .subscription__item:not(:last-child) {
-    margin-bottom: 0;
   }
 
   .subscription .subscription__item-title {
@@ -2341,18 +2345,8 @@ template {
     line-height: 3.8rem;
   }
 
-  .excursion {
-    padding: 4rem 1rem 1rem 1rem;
-    margin-bottom: 8.1rem;
-    background-size: 37.8rem 24.6rem;
-  }
-
   .reviews-list {
     justify-content: space-between;
-  }
-
-  .reviews-list .reviews__item:not(:last-child) {
-    margin: 0 1.6rem 0 0;
   }
 
   .reviews .reviews-img {
@@ -2373,6 +2367,7 @@ template {
 @media screen and (min-width: 1366px) {
   .header-content .header-content__left {
     padding-top: 5rem;
+    align-items: flex-start;
   }
 
   .header-form__phone {
@@ -2432,5 +2427,9 @@ template {
 
   .advantages__item:nth-child(odd) {
     margin-right: 2rem;
+  }
+
+  .excursion {
+    background: url(../img/children-desktop@1x.png) 50% 100%/39rem 25rem no-repeat, #fff;
   }
 }

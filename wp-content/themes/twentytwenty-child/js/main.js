@@ -12,10 +12,15 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
 });
 var galleryTop = new Swiper('.gallery-top', {
   spaceBetween: 22,
-  slidesPerView: 2,
+  slidesPerView: 3,
+  slidesOffsetAfter: 200,
+  slidesOffsetBefore: 200,
+  grabCursor: true,
   loop: true,
   freeMode: true,
   loopedSlides: 2,
+  normalizeSlideIndex: true,
+  slideVisibleClass: 'swiper-slide-visible',
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
@@ -31,9 +36,13 @@ var galleryTop = new Swiper('.gallery-top', {
   breakpoints: {
     320: {
       slidesPerView: 1
+    },
+    1920: {
+      slidesPerView: 3
     }
   }
 });
+console.log();
 "use strict";
 
 // const teachersThumbs = new Swiper('.teachers-thumbs', {
@@ -101,6 +110,9 @@ var galleryTop = new Swiper('.teachers-top', {
   breakpoints: {
     320: {
       slidesPerView: 1
+    },
+    1366: {
+      slidesPerView: 2
     }
   }
 });
