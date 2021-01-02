@@ -628,6 +628,12 @@ template {
   transform: translateX(-100%);
   max-width: 40rem;
   width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
   padding-left: 3rem;
   background: #fbfbfc;
   transition: transform .5s ease-out;
@@ -636,6 +642,22 @@ template {
 .header-menu-wrap--open {
   z-index: 9999;
   transform: translateX(0);
+}
+
+.header-menu-inner {
+  padding: 0 1rem 8rem 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.header-menu-inner::-webkit-scrollbar {
+  height: 1rem;
+  width: .5rem;
+  background: rgba(217, 212, 230, 0.7);
+}
+
+.header-menu-inner::-webkit-scrollbar-thumb {
+  background: #3F9DD2;
 }
 
 .second-section__title {
@@ -2338,6 +2360,8 @@ template {
     transform: translateX(0);
     width: 100%;
     max-width: 100%;
+    height: auto;
+    overflow: visible;
     padding-left: 0;
     background: transparent;
   }
@@ -2417,6 +2441,17 @@ template {
 }
 
 @media (min-width: 1024px) {
+  .header-menu-wrap {
+    height: auto;
+    overflow: visible;
+  }
+
+  .header-menu-inner {
+    width: 100%;
+    margin-bottom: 5.2rem;
+    overflow: initial;
+  }
+
   .second-section__title {
     text-align: left;
     max-width: 50rem;
