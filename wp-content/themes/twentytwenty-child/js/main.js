@@ -177,16 +177,29 @@ var galleryTop = new Swiper('.gallery-top', {
 (function () {
   var btnExcursionHead = document.querySelector('.header-top__btn');
   var popupExcursion = document.querySelector('.popup-excursion');
+  var popupCall = document.querySelector('.popup-call');
   var popupClose = document.querySelectorAll('.popup-close');
+  var callLink = document.querySelectorAll('.call__link');
+  var body = document.getElementsByTagName('body')[0];
   btnExcursionHead.addEventListener('click', popupExcursionShow);
   popupClose.forEach(function (close) {
     close.addEventListener('click', function () {
       close.parentElement.style.display = 'none';
+      body.classList.remove('no-scroll');
     });
+  });
+  callLink.forEach(function (link) {
+    link.addEventListener('click', popupCallShow);
   });
 
   function popupExcursionShow() {
     popupExcursion.style.display = 'block';
+    body.classList.add('no-scroll');
+  }
+
+  function popupCallShow() {
+    popupCall.style.display = 'block';
+    body.classList.add('no-scroll');
   }
 })();
 "use strict";
