@@ -84,6 +84,10 @@ header {
   background: rgba(128, 128, 128, 0.5);
 }
 
+input {
+  cursor: pointer;
+}
+
 /* Box-sizing-model */
 
 *,
@@ -913,6 +917,11 @@ template {
   align-items: center;
 }
 
+.header-content .header-content__right img {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .header-content-block {
   display: flex;
   flex-direction: column;
@@ -923,13 +932,14 @@ template {
 .header-content__img {
   position: relative;
   margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
 }
 
 .header-content__img::before {
   position: absolute;
   content: "";
   top: -1.8rem;
-  left: -1.8rem;
+  left: -.8rem;
   width: 4rem;
   height: 4rem;
   border-radius: 0.5rem;
@@ -1113,11 +1123,17 @@ template {
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
+}
+
+.swiper-slide img {
+  border-radius: .5rem;
 }
 
 .kindergarten-button-next,
 .kindergarten-button-prev {
   display: none;
+  cursor: pointer;
 }
 
 .gallery-thumbs {
@@ -1128,6 +1144,10 @@ template {
 .gallery-thumbs .swiper-slide {
   width: 12rem !important;
   cursor: pointer;
+}
+
+.gallery-thumbs .swiper-slide img {
+  border-radius: .5rem;
 }
 
 .gallery-top {
@@ -1269,6 +1289,7 @@ template {
 .swiper-wrap .teachers-button-next,
 .swiper-wrap .teachers-button-prev {
   display: none;
+  cursor: pointer;
 }
 
 .teachers-top {
@@ -1281,6 +1302,7 @@ template {
   align-items: center;
   padding: 0 1rem 2rem 1rem;
   background: #fff;
+  cursor: pointer;
 }
 
 .teachers-top .slide__img {
@@ -1289,6 +1311,7 @@ template {
   align-items: center;
   margin-bottom: 1rem;
   padding: 2.9rem 0 0 0;
+  border-radius: .5rem;
 }
 
 .teachers-top .slide__text .teacher__name {
@@ -1325,6 +1348,10 @@ template {
 .teachers-thumbs .swiper-slide {
   width: 12.7rem !important;
   cursor: pointer;
+}
+
+.teachers-thumbs .swiper-slide img {
+  border-radius: .5rem;
 }
 
 .subscription {
@@ -1428,13 +1455,15 @@ template {
 }
 
 .excursion {
+  position: relative;
   max-width: 114.9rem;
+  min-height: 55.1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 1rem 20rem 1rem;
+  padding: 1rem;
   margin-bottom: 3rem;
-  background: url(../img/children-desktop@1x.png) 50% 100%/27.8rem 19.6rem no-repeat, #fff;
+  background: #fff;
 }
 
 .excursion-form {
@@ -1448,6 +1477,19 @@ template {
   display: flex;
   margin-bottom: 1.6rem;
   flex-wrap: wrap;
+}
+
+.excursion-form .header-form__phone {
+  max-width: 100%;
+  margin: 0 0 1.2rem 0;
+}
+
+.excursion-form__img {
+  position: absolute;
+  bottom: -3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25rem;
 }
 
 .policy-block__checkbox--excursion {
@@ -1484,6 +1526,7 @@ template {
 .reviews .reviews-img {
   position: relative;
   width: 30rem;
+  border-radius: .5rem;
 }
 
 .reviews .reviews-img img {
@@ -1498,6 +1541,7 @@ template {
   left: 0;
   right: 0;
   bottom: 0;
+  border-radius: .5rem;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 32%, #f4bfa3 100%);
 }
 
@@ -2169,6 +2213,11 @@ template {
     margin-right: 1rem;
   }
 
+  .excursion-form__img {
+    bottom: -4rem;
+    width: 35rem;
+  }
+
   .footer .col {
     width: 40%;
   }
@@ -2250,7 +2299,10 @@ template {
 
   .excursion {
     padding-bottom: 23rem;
-    background: url(../img/children-desktop@1x.png) 50% 100%/33rem 22rem no-repeat, #fff;
+  }
+
+  .excursion-form__img {
+    bottom: -4.2rem;
   }
 
   .reviews-list .reviews__item:first-child {
@@ -2415,6 +2467,8 @@ template {
   .header-content__title {
     max-width: 48rem;
     text-align: left;
+    align-self: flex-start;
+    margin-left: 1rem;
     font-size: 3.2rem;
     line-height: 4.2rem;
   }
@@ -2489,6 +2543,7 @@ template {
   .header-form__phone {
     width: 100%;
     margin: 0 1.3rem 0 0;
+    padding: 2.1rem 4.4rem;
   }
 
   .header-form .inner-wrap {
@@ -2540,9 +2595,8 @@ template {
   }
 
   .excursion {
-    padding: 4rem 1rem 27rem 1rem;
+    padding: .8rem 1rem 0;
     margin-bottom: 8.1rem;
-    background-size: 37.8rem 24.6rem;
   }
 
   .reviews-list .reviews__item:not(:last-child) {
@@ -2610,7 +2664,7 @@ template {
   }
 
   .seventh-section__title {
-    margin: 0.8rem 0 5.1rem 0;
+    margin: 0.8rem 0 1.1rem 0;
     font-size: 4rem;
     line-height: 5.6rem;
   }
@@ -2928,6 +2982,25 @@ template {
     padding: 3rem 6.5rem 6rem 4rem;
   }
 
+  .excursion {
+    padding-top: 5rem;
+  }
+
+  .excursion-form .input-wrap {
+    flex-wrap: nowrap;
+    max-width: 100%;
+    width: 58.5rem;
+  }
+
+  .excursion-form .header-form__phone {
+    width: 28.3rem;
+    margin: 0 1.3rem 0 0;
+  }
+
+  .excursion-form__img {
+    width: 38.9rem;
+  }
+
   .popup-details {
     width: 117rem;
     padding: 3rem 40.8rem 6rem 5.2rem !important;
@@ -2979,6 +3052,7 @@ template {
 
   .header-content__title {
     max-width: 62.8rem;
+    margin-left: 0;
     font-size: 4.8rem;
     line-height: 6.2rem;
   }
@@ -2999,6 +3073,10 @@ template {
 }
 
 @media (min-width: 1920px) {
+  .header-content__img::before {
+    left: -1.8rem;
+  }
+
   .header-content__img {
     margin-right: 2.7rem;
     width: 13.7rem;
@@ -3007,9 +3085,5 @@ template {
 
   .advantages__item:nth-child(odd) {
     margin-right: 2rem;
-  }
-
-  .excursion {
-    background: url(../img/children-desktop@1x.png) 50% 100%/39rem 25rem no-repeat, #fff;
   }
 }
