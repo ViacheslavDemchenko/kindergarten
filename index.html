@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./wp-content/themes/twentytwenty-child/css/main.min.css">
     <link rel="stylesheet" href="./wp-content/themes/twentytwenty-child/fonts/fonts.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.6/swiper-bundle.min.css">
     <link rel="icon" href="#!" type="image/x-icon">
     <link rel="shortcut icon" href="#!" type="image/x-icon">
     <link rel="apple-touch-icon" href="#!">
@@ -133,7 +133,13 @@
                   </div>
                 </form>
               </div>
-              <div class="header-content__right"><img src="./wp-content/themes/twentytwenty-child/img/header-girl-desktop@1x.png" width="553" height="705" alt="Девочка рисует"></div>
+              <div class="header-content__right">
+                <picture>
+                  <source type="image/webp" media="(min-width: 450px)" srcset="./wp-content/themes/twentytwenty-child/img/header-girl-desktop@1x.webp 1x, ./wp-content/themes/twentytwenty-child/img/header-girl-desktop@2x.webp 2x">
+                  <source media="(min-width: 450px)" srcset="./wp-content/themes/twentytwenty-child/img/header-girl-desktop@1x.png 1x, ./wp-content/themes/twentytwenty-child/img/header-girl-desktop@1x.png 2x">
+                  <source type="image/webp" srcset="./wp-content/themes/twentytwenty-child/img/header-girl-sm@1x.webp 1x, ./wp-content/themes/twentytwenty-child/img/header-girl-sm@2x.webp 2x"><img src="./wp-content/themes/twentytwenty-child/img/header-girl-sm@1x.png" srcset="./wp-content/themes/twentytwenty-child/img/header-girl-sm@2x.png 2x" alt="Девочка рисует" width="547" height="695">
+                </picture>
+              </div>
             </div>
           </div>
         </div>
@@ -953,7 +959,7 @@
       </div>
       <button class="btn header-top__btn popup-details__btn">Записаться на экскурсию</button>
     </div>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.6/swiper-bundle.min.js"></script>
     <script src="./wp-content/themes/twentytwenty-child/js/main.js"></script>
   </body>
 </html>
