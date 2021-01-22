@@ -727,7 +727,7 @@ template {
 .header-top__block--1 .header-top__icon {
   width: 4rem;
   height: 4rem;
-  background: linear-gradient(278.41deg, #81F79F 0%, #58FAAC 100%);
+  background: linear-gradient(278.41deg, #D1916D 0%, #F3B79D 100%);
   border-radius: 0.5rem;
 }
 
@@ -831,7 +831,7 @@ template {
 .header-top__block--1 .header-top__icon {
   width: 4rem;
   height: 4rem;
-  background: linear-gradient(278.41deg, #81F79F 0%, #58FAAC 100%);
+  background: linear-gradient(278.41deg, #D1916D 0%, #F3B79D 100%);
   border-radius: 0.5rem;
 }
 
@@ -847,16 +847,16 @@ template {
   border: none;
   border-radius: 0.5rem;
   outline: none;
-  background: linear-gradient(278.41deg, #81F79F 3.22%, #2EFE9A 39.41%, #58FAAC 94.64%);
+  background: linear-gradient(278.41deg, #B4734E 3.22%, #CE8F6F 39.41%, #DFA184 63.97%, #F3B79D 94.64%);
   box-shadow: 0 10rem 8rem rgba(0, 0, 0, 0.07), 0 4.17776rem 3.34221rem rgba(0, 0, 0, 0.0503198), 0 2.23363rem 1.7869rem rgba(0, 0, 0, 0.0417275), 0 1.25216rem 1.00172rem rgba(0, 0, 0, 0.035), 0 0.66501rem 0.53201rem rgba(0, 0, 0, 0.0282725), 0 0.27673rem 0.22138rem rgba(0, 0, 0, 0.0196802);
 }
 
 .btn:hover {
-  background: #81F79F;
+  background: #CE8F70;
 }
 
 .btn:active {
-  background: #2EFE9A;
+  background: #C27E5D;
 }
 
 .header-center {
@@ -1205,7 +1205,7 @@ template {
   height: 4rem !important;
   border-radius: 0.5rem;
   outline: none;
-  background: linear-gradient(278.41deg, #81F79F 0%, #58FAAC 100%);
+  background: linear-gradient(278.41deg, #D1916D 0%, #F3B79D 100%);
 }
 
 .swiper-button-next::after,
@@ -1263,7 +1263,7 @@ template {
 }
 
 .tabs-titles .title__item--active {
-  background: linear-gradient(278.41deg, #81F79F 3.22%, #2EFE9A 39.41%, #58FAAC 94.64%);
+  background: linear-gradient(278.41deg, #B4734E 3.22%, #CE8F6F 39.41%, #DFA184 63.97%, #F3B79D 94.64%);
 }
 
 .tabs-content {
@@ -1788,7 +1788,7 @@ template {
 }
 
 .footer .col .col__icon--first {
-  background: linear-gradient(278.41deg, #81F79F 0%, #58FAAC 100%);
+  background: linear-gradient(278.41deg, #D1916D 0%, #F3B79D 100%);
 }
 
 .footer .col .col__icon--second,
@@ -2961,7 +2961,7 @@ template {
     height: 4rem !important;
     border-radius: 0.5rem;
     outline: none;
-    background: linear-gradient(278.41deg, #81F79F 0%, #58FAAC 100%);
+    background: linear-gradient(278.41deg, #D1916D 0%, #F3B79D 100%);
   }
 
   .kindergarten-button-next::after,
@@ -3007,7 +3007,7 @@ template {
     height: 4rem !important;
     border-radius: 0.5rem;
     outline: none;
-    background: linear-gradient(278.41deg, #81F79F 0%, #58FAAC 100%);
+    background: linear-gradient(278.41deg, #D1916D 0%, #F3B79D 100%);
   }
 
   .swiper-wrap .teachers-button-next::after,
@@ -3164,5 +3164,37 @@ template {
 @media (-webkit-min-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .header {
     background: url(../img/header-bg-sm@2x.jpg) center/cover no-repeat;
+  }
+
+  .advantages__item--first {
+    background: url(../img/book@2x.png) 100% 100%/22rem 12rem no-repeat, #fff1ea;
+  }
+
+  .advantages__item--second {
+    background: url(../img/globe@2x.png) 100% 100%/26rem 12rem no-repeat, #fff1ea;
+  }
+
+  .advantages__item--third {
+    background: url(../img/diamond@2x.png) 100% 100%/22rem 13rem no-repeat, rgba(145, 195, 223, 0.1);
+  }
+
+  .advantages__item--fourth {
+    background: url(../img/cup@2x.png) 100% 100%/22rem 12rem no-repeat, rgba(145, 195, 223, 0.1);
+  }
+
+  .advantages__item--fifth {
+    background: url(../img/pie_chart@2x.png) 100% 100%/22rem 13rem no-repeat, #fff1ea;
+  }
+
+  .advantages__item--sixth {
+    background: url(../img/bell@2x.png) 100% 100%/22rem 13rem no-repeat, #fff1ea;
+  }
+
+  .advantages__item--seventh {
+    background: url(../img/bubble@2x.png) 100% 100%/22rem 13rem no-repeat, rgba(145, 195, 223, 0.1);
+  }
+
+  .advantages__item--eighth {
+    background: url(../img/cup@2x.png) 100% 100%/22rem 12rem no-repeat, rgba(145, 195, 223, 0.1);
   }
 }
