@@ -160,15 +160,16 @@ galleryThumbs.controller.control = galleryTop;
   }
 
   mobileMenuLinkClick();
+  document.addEventListener('click', function (e) {
+    if (e.target.classList.contains('overlay')) {
+      mobileMenuHide();
+    }
+  });
 
   function mobileMenu() {
     window.addEventListener('resize', function () {
       screenWidth = window.screen.availWidth;
-      hamburger.classList.remove('active');
-      menu.classList.remove('header-menu-wrap--open');
-      menuTop.classList.remove('header-top--mobile--open');
-      body.classList.remove('no-scroll');
-      body.classList.remove('overlay');
+      mobileMenuHide();
     });
 
     if (!hamburger.classList.contains('active')) {
@@ -179,11 +180,7 @@ galleryThumbs.controller.control = galleryTop;
       body.classList.add('no-scroll');
       body.classList.add('overlay');
     } else {
-      hamburger.classList.remove('active');
-      menu.classList.remove('header-menu-wrap--open');
-      menuTop.classList.remove('header-top--mobile--open');
-      body.classList.remove('no-scroll');
-      body.classList.remove('overlay');
+      mobileMenuHide();
     }
   }
 
@@ -199,11 +196,7 @@ galleryThumbs.controller.control = galleryTop;
     screenWidth = window.screen.availWidth;
 
     if (screenWidth > 1024) {
-      hamburger.classList.remove('active');
-      menu.classList.remove('header-menu-wrap--open');
-      menuTop.classList.remove('header-top--mobile--open');
-      body.classList.remove('no-scroll');
-      body.classList.remove('overlay');
+      mobileMenuHide();
     }
   });
 })();
@@ -218,11 +211,13 @@ galleryThumbs.controller.control = galleryTop;
   var popupClose = document.querySelectorAll('.popup-close');
   var callLink = document.querySelectorAll('.call__link');
   var body = document.getElementsByTagName('body')[0];
+  var html = body.parentNode;
   btnExcursionHead.addEventListener('click', popupExcursionShow);
   popupClose.forEach(function (close) {
     close.addEventListener('click', function () {
       close.parentElement.style.display = 'none';
       body.classList.remove('no-scroll');
+      html.classList.remove('html-overflow');
     });
   });
   callLink.forEach(function (link) {
@@ -232,11 +227,13 @@ galleryThumbs.controller.control = galleryTop;
   function popupExcursionShow() {
     popupExcursion.style.display = 'block';
     body.classList.add('no-scroll');
+    html.classList.add('html-overflow');
   }
 
   function popupCallShow() {
     popupCall.style.display = 'block';
     body.classList.add('no-scroll');
+    html.classList.add('html-overflow');
   }
 })();
 "use strict";
