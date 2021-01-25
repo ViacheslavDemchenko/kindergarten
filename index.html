@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./wp-content/themes/twentytwenty-child/css/main.min.css">
     <link rel="stylesheet" href="./wp-content/themes/twentytwenty-child/fonts/fonts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.6/swiper-bundle.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.6/swiper-bundle.min.js" defer></script>
+    <script src="./wp-content/themes/twentytwenty-child/js/main.js" defer></script>
     <link rel="icon" href="#!" type="image/x-icon">
     <link rel="shortcut icon" href="#!" type="image/x-icon">
     <link rel="apple-touch-icon" href="#!">
@@ -84,9 +86,9 @@
                     <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
                     <li class="nav__item"><a class="nav__link" href="#">Программа</a></li>
                     <li class="nav__item"><a class="nav__link" href="#">Поступление</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Лагерь</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Билингвальная группа</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+                    <li class="nav__item"><a class="nav__link" href="camp.html">Лагерь</a></li>
+                    <li class="nav__item"><a class="nav__link" href="bilingual.html">Билингвальная группа</a></li>
+                    <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
                   </ul>
                 </nav>
               </div>
@@ -96,7 +98,7 @@
                     <li class="nav__item"><a class="nav__link" href="#">Распорядок дня</a></li>
                     <li class="nav__item"><a class="nav__link" href="#">Мероприятия</a></li>
                     <li class="nav__item"><a class="nav__link" href="#">Стоимость</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Галерея</a></li>
+                    <li class="nav__item"><a class="nav__link" href="galery.html">Галерея</a></li>
                     <li class="nav__item"><a class="nav__link" href="#">Педагоги</a></li>
                     <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
                     <li class="nav__item"><a class="nav__link" href="#">Режим дня</a></li>
@@ -905,13 +907,13 @@
           <use xlink:href="./wp-content/themes/twentytwenty-child/img/icons/sprite.svg#close"></use>
         </svg>
       </div>
-      <form class="popup__form" id="popup-call" method="post">
+      <form class="popup__form" id="popup-call" method="post" action="#!">
         <input class="header-form__phone" type="text" placeholder="ВАШЕ ИМЯ">
         <input class="header-form__phone" type="text" placeholder="+7 (___) __ - __ - __">
         <button class="btn header-form__btn" type="submit">Записаться</button>
         <div class="policy-block">
           <input class="policy-block__checkbox" type="checkbox" checked>
-          <p class="policy">Вы соглашаетесь с <a href="#">условиями обработки персональных данных</a></p>
+          <p class="policy">Вы соглашаетесь с <a href="#!">условиями обработки персональных данных</a></p>
         </div>
       </form>
     </div>
@@ -922,7 +924,7 @@
           <use xlink:href="./wp-content/themes/twentytwenty-child/img/icons/sprite.svg#close"></use>
         </svg>
       </div>
-      <form class="popup__form" id="popup-excursion" method="post">
+      <form class="popup__form" id="popup-excursion" method="post" action="#!">
         <input class="header-form__phone" type="text" placeholder="Ваше имя">
         <input class="header-form__phone" type="text" placeholder="+7 (___) __ - __ - __">
         <input class="header-form__phone" type="text" placeholder="Возраст ребёнка">
@@ -959,7 +961,5 @@
       </div>
       <button class="btn header-top__btn popup-details__btn">Записаться на экскурсию</button>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.6/swiper-bundle.min.js"></script>
-    <script src="./wp-content/themes/twentytwenty-child/js/main.js"></script>
   </body>
 </html>
