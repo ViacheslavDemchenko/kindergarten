@@ -46,6 +46,7 @@ body {
   margin: 0 auto;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  width: 100%;
   max-width: 120rem;
   height: 100%;
 }
@@ -86,11 +87,24 @@ header {
 }
 
 input {
+  text-align: center;
   cursor: pointer;
 }
 
 .html-overflow {
   overflow-y: scroll;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 
 /* Box-sizing-model */
@@ -923,6 +937,604 @@ template {
   color: #4F4F4F;
 }
 
+.about-info {
+  padding-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.about-info__inner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  max-width: 56.7rem;
+}
+
+.about-info__inner .info-list {
+  width: 100%;
+}
+
+.about-info__inner .info__img {
+  margin: 0 auto;
+}
+
+.info-list {
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.info-list__item {
+  position: relative;
+  margin-bottom: 1rem;
+  font-family: "MuseoSansCyrl-500";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #4F4F4F;
+}
+
+.info-list__item::before {
+  position: absolute;
+  content: "";
+  top: 1rem;
+  left: -2rem;
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #91C3DF 0%, #62B7E7 112.5%);
+}
+
+.about-cards {
+  margin-bottom: 3rem;
+}
+
+.about-cards .cards-list .list-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-cards .card-top {
+  display: flex;
+}
+
+.about-cards .card__item {
+  max-width: 29rem;
+  width: 100%;
+  padding: 1.5rem 1.5rem 1.8rem 1.5rem;
+  margin-bottom: 2rem;
+  background: #FFFFFF;
+  box-shadow: 0 10rem 8rem rgba(206, 206, 206, 0.07), 0 2.23363rem 1.7869rem rgba(206, 206, 206, 0.0417275), 0 0.66501rem 0.53201rem rgba(206, 206, 206, 0.0282725);
+  border-radius: .5rem;
+}
+
+.about-cards .card__item .card__icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5.3rem;
+  height: 4rem;
+  background: linear-gradient(90deg, #91C3DF 0%, #62B7E7 112.5%);
+  border-radius: .5rem;
+}
+
+.about-cards .card__item .card__icon svg {
+  position: absolute;
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: #fff;
+}
+
+.about-cards .card__item .card__title {
+  margin: 0 0 1.8rem 1.2rem;
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #4F4F4F;
+}
+
+.about-cards .card__item .card__text {
+  font-family: "MuseoSansCyrl-500";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+  color: #727272;
+}
+
+.event-info {
+  padding-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.event-info__inner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  max-width: 56.7rem;
+  margin: 0 auto;
+}
+
+.event-info__inner .event-info__text {
+  width: 100%;
+  padding-left: 0;
+}
+
+.event-info__inner .event-info__img {
+  margin: 0 auto;
+}
+
+.event-info__text {
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.event-info__text p {
+  margin-bottom: 1rem;
+  font-family: "MuseoSansCyrl-500";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #4F4F4F;
+}
+
+.event-galery {
+  display: flex;
+  justify-content: center;
+}
+
+.event-galery .galery-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.event-galery .galery__item {
+  width: 100%;
+  max-width: 27.8rem;
+  height: 17rem;
+  overflow: hidden;
+}
+
+.admission-info {
+  padding-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.admission-info__inner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  max-width: 56.7rem;
+  margin: 0 auto;
+}
+
+.admission-info__inner .admission-info__text {
+  width: 100%;
+  padding-left: 0;
+}
+
+.admission-info__inner .admission-info__img {
+  margin: 0 auto;
+}
+
+.admission-info__text {
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.admission-info__text p {
+  margin-bottom: 1rem;
+  font-family: "MuseoSansCyrl-500";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #4F4F4F;
+}
+
+.admission-cards {
+  margin-bottom: 2rem;
+}
+
+.admission-cards .cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admission-cards .card-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.admission-cards .card__item {
+  max-width: 29rem;
+  min-height: 27rem;
+  width: 100%;
+  padding: 1.5rem 1.5rem 1.8rem 1.5rem;
+  margin-bottom: 2rem;
+  background: #FFFFFF;
+  box-shadow: 0 10rem 8rem rgba(206, 206, 206, 0.07), 0 2.23363rem 1.7869rem rgba(206, 206, 206, 0.0417275), 0 0.66501rem 0.53201rem rgba(206, 206, 206, 0.0282725);
+  border-radius: .5rem;
+}
+
+.admission-cards .card__item .card__icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: linear-gradient(90deg, #91C3DF 0%, #62B7E7 112.5%);
+  border-radius: .5rem;
+}
+
+.admission-cards .card__item .card__icon svg {
+  position: absolute;
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: #fff;
+}
+
+.admission-cards .card__item .card-list {
+  padding-left: 2.2rem;
+}
+
+.admission-cards .card__item .card__title {
+  margin: 0 0 0 1.2rem;
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #4F4F4F;
+}
+
+.admission-cards .card__item .card__text,
+.admission-cards .card__item .list__item {
+  font-family: "MuseoSansCyrl-500";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+  color: #727272;
+}
+
+.admission-cards .card__item .card__text p {
+  margin-top: 1.1rem;
+}
+
+.admission-cards .card__item .list__item {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.admission-cards .card__item .list__item::before {
+  position: absolute;
+  content: "";
+  top: 1rem;
+  left: -1.8rem;
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #91C3DF 0%, #62B7E7 112.5%);
+}
+
+.admission-cards .card__item a {
+  color: #3F9DD2;
+}
+
+.admission-terms {
+  margin-bottom: 3rem;
+}
+
+.admission-terms__title {
+  text-align: center;
+  max-width: 50rem;
+  margin: 0 auto 2rem auto;
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: #4F4F4F;
+}
+
+.admission-terms__inner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 56.7rem;
+  margin: 0 auto;
+}
+
+.admission-terms__inner .working-periods-list {
+  padding-left: 2.7rem;
+  margin-bottom: 1rem;
+}
+
+.admission-terms__inner .adaptation-conditions-list {
+  padding-left: 2.7rem;
+}
+
+.admission-terms__inner .working-periods,
+.admission-terms__inner .adaptation-conditions {
+  width: 100%;
+}
+
+.admission-terms__inner .working-periods__title,
+.admission-terms__inner .adaptation-conditions__title {
+  margin-bottom: 2rem;
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  color: #4F4F4F;
+}
+
+.admission-terms__inner .working-periods__item,
+.admission-terms__inner .adaptation-conditions__item {
+  position: relative;
+  font-family: "MuseoSansCyrl-500";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  color: #4F4F4F;
+}
+
+.admission-terms__inner .working-periods__item::before,
+.admission-terms__inner .adaptation-conditions__item::before {
+  position: absolute;
+  content: "";
+  top: 1.6rem;
+  left: -2rem;
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #91C3DF 0%, #62B7E7 112.5%);
+}
+
+.educators-english {
+  margin-bottom: 3rem;
+}
+
+.educators-english__title {
+  text-align: center;
+  max-width: 50rem;
+  margin: 0 auto 1rem auto;
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  color: #4F4F4F;
+}
+
+.educators-english-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 -1rem;
+}
+
+.educators-english-list .educators-english__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1rem 2rem 1rem;
+  background: #FFF;
+  box-shadow: 0 10rem 8rem rgba(206, 206, 206, 0.07), 0 2.23363rem 1.7869rem rgba(206, 206, 206, 0.0417275), 0 0.66501rem 0.53201rem rgba(206, 206, 206, 0.0282725);
+  border-radius: .5rem;
+}
+
+.educators-english-list .educators-english__item .teacher__img {
+  border-radius: .5rem .5rem 0 0;
+}
+
+.educators-english-list .educators-english__item .teacher__info {
+  width: 100%;
+  padding: 1.6rem 1rem 2.2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.educators-english-list .educators-english__item .teacher__name {
+  margin-bottom: .5rem;
+  text-align: center;
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  color: #4F4F4F;
+}
+
+.educators-english-list .educators-english__item .teacher__position {
+  font-family: "MuseoSansCyrl-500";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #828282;
+}
+
+.teaching-staff {
+  margin-bottom: 3rem;
+}
+
+.teaching-staff__title {
+  text-align: center;
+  max-width: 50rem;
+  margin: 0 auto 1rem auto;
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  color: #4F4F4F;
+}
+
+.teaching-staff-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 -1rem;
+}
+
+.teaching-staff-list .teaching-staff__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1rem 2rem 1rem;
+  background: #FFF;
+  box-shadow: 0 10rem 8rem rgba(206, 206, 206, 0.07), 0 2.23363rem 1.7869rem rgba(206, 206, 206, 0.0417275), 0 0.66501rem 0.53201rem rgba(206, 206, 206, 0.0282725);
+  border-radius: .5rem;
+}
+
+.teaching-staff-list .teaching-staff__item .teacher__img {
+  border-radius: .5rem .5rem 0 0;
+}
+
+.teaching-staff-list .teaching-staff__item .teacher__info {
+  width: 100%;
+  padding: 1.6rem 1rem 2.2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teaching-staff-list .teaching-staff__item .teacher__name {
+  margin-bottom: .5rem;
+  text-align: center;
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  color: #4F4F4F;
+}
+
+.teaching-staff-list .teaching-staff__item .teacher__position {
+  font-family: "MuseoSansCyrl-500";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #828282;
+}
+
+.additional-education {
+  margin-bottom: 3rem;
+}
+
+.additional-education__title {
+  text-align: center;
+  max-width: 50rem;
+  margin: 0 auto 1rem auto;
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  color: #4F4F4F;
+}
+
+.additional-education-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 -1rem;
+}
+
+.additional-education-list .additional-education__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1rem 2rem 1rem;
+  background: #FFF;
+  box-shadow: 0 10rem 8rem rgba(206, 206, 206, 0.07), 0 2.23363rem 1.7869rem rgba(206, 206, 206, 0.0417275), 0 0.66501rem 0.53201rem rgba(206, 206, 206, 0.0282725);
+  border-radius: .5rem;
+}
+
+.additional-education-list .additional-education__item .teacher__img {
+  border-radius: .5rem .5rem 0 0;
+}
+
+.additional-education-list .additional-education__item .teacher__info {
+  width: 100%;
+  padding: 1.6rem 1rem 2.2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.additional-education-list .additional-education__item .teacher__name {
+  margin-bottom: .5rem;
+  text-align: center;
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  color: #4F4F4F;
+}
+
+.additional-education-list .additional-education__item .teacher__position {
+  font-family: "MuseoSansCyrl-500";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #828282;
+}
+
 /* BLOCKS */
 
 .header-top {
@@ -1082,9 +1694,11 @@ template {
   margin-bottom: 1rem;
 }
 
-.btn--contact-form {
+.btn--contact-form,
+.btn--reviews-form,
+.btn--admission-form {
   width: 90%;
-  max-width: 28.3rem;
+  max-width: 27.7rem;
   padding: 2.6rem 2rem;
 }
 
@@ -2035,6 +2649,10 @@ template {
   background: linear-gradient(90deg, #91C3DF 0%, #62B7E7 112.5%);
 }
 
+.footer .col .address-list {
+  margin-right: 4rem;
+}
+
 .footer .col .col__text {
   font-family: "MuseoSansCyrl-500";
   font-weight: 500;
@@ -2505,7 +3123,7 @@ template {
 
 .contact-form__email,
 .contact-form__phone {
-  width: 90%;
+  width: 100%;
   max-width: 28.3rem;
   margin: 0 auto 2rem auto;
   padding: 2.6rem 4.4rem;
@@ -2521,6 +3139,743 @@ template {
   border: .1rem solid #F2F2F2;
   border-radius: .5rem;
   outline: none;
+}
+
+.reviews-top-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 9rem 0 0 0;
+}
+
+.reviews__title {
+  max-width: 70rem;
+  margin: 0 0 2.5rem 0;
+  text-align: center;
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #4F4F4F;
+}
+
+.swiper-wrap {
+  position: relative;
+}
+
+.swiper-wrap .reviews-button-next,
+.swiper-wrap .reviews-button-prev {
+  display: none;
+  cursor: pointer;
+}
+
+.reviews-top {
+  margin-bottom: 3.1rem;
+  box-shadow: 0 10rem 8rem rgba(206, 206, 206, 0.07), 0 2.23363rem 1.7869rem rgba(206, 206, 206, 0.0417275), 0 0.66501rem 0.53201rem rgba(206, 206, 206, 0.0282725);
+  border-radius: 0 0 .5rem .5rem;
+}
+
+.reviews-top .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem 2rem 1rem;
+  background: #fff;
+  cursor: pointer;
+}
+
+.reviews-top .slide__img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 2.9rem 0 0 0;
+  border-radius: .5rem;
+}
+
+.reviews-top .slide__text {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.reviews-top .slide__text p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.reviews-top .slide__text .slide__review {
+  margin-bottom: 4.5rem;
+  font-family: "MuseoSansCyrl-500";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #4F4F4F;
+}
+
+.reviews-top .slide__text .slide__name,
+.reviews-top .slide__text .slide__child {
+  align-self: flex-end;
+}
+
+.reviews-top .slide__text .slide__name {
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #4F4F4F;
+}
+
+.reviews-top .slide__text .slide__child {
+  font-family: "MuseoSansCyrl-500";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #828282;
+}
+
+.reviews-thumbs {
+  width: 26rem;
+  margin-bottom: 5.7rem;
+}
+
+.reviews-thumbs .swiper-slide {
+  width: 12.7rem !important;
+  cursor: pointer;
+}
+
+.reviews-thumbs .swiper-slide img {
+  border-radius: .5rem;
+}
+
+.reviews-form-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  background: #FBFBFC;
+  box-shadow: 0 10rem 8rem rgba(206, 206, 206, 0.07), 0 2.23363rem 1.7869rem rgba(206, 206, 206, 0.0417275), 0 0.66501rem 0.53201rem rgba(206, 206, 206, 0.0282725);
+  border-radius: 0 0 .5rem .5rem;
+}
+
+.reviews-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 10rem 8rem rgba(206, 206, 206, 0.07), 0 2.23363rem 1.7869rem rgba(206, 206, 206, 0.0417275), 0 0.66501rem 0.53201rem rgba(206, 206, 206, 0.0282725);
+  border-radius: .5rem;
+}
+
+.reviews-form__title,
+.reviews-form__subtitle {
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+.reviews-form__title {
+  max-width: 50rem;
+  text-align: center;
+  margin: 0 auto 1.6rem auto;
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: #4F4F4F;
+}
+
+.reviews-form__subtitle {
+  font-family: "MuseoSansCyrl-500";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #727272;
+}
+
+.reviews-form__message {
+  width: 95%;
+  margin: 0 auto 2rem auto;
+  padding: 1rem 1rem 1.5rem 2.5rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 0.1em;
+  color: #828282;
+  text-transform: uppercase;
+  border: .1rem solid #f2f2f2;
+  border-radius: .5rem;
+  outline: none;
+}
+
+.reviews-form__message:focus {
+  border: .1rem solid #EECBBA;
+}
+
+.reviews-form .inputs-wrap {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+
+.reviews-form__parent,
+.reviews-form__child,
+.reviews-form__age {
+  width: 100%;
+  max-width: 28.3rem;
+  margin: 0 auto 2rem auto;
+  padding: 2.6rem 4.4rem;
+  font-family: "MuseoSansCyrl-500";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #828282;
+  border: .1rem solid #F2F2F2;
+  border-radius: .5rem;
+  outline: none;
+}
+
+.events-top-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 9rem 0 2rem 0;
+}
+
+.events__title {
+  max-width: 70rem;
+  margin: 0 0 2.5rem 0;
+  text-align: center;
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #4F4F4F;
+}
+
+.years {
+  width: 29rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.years .years-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.years .years-list .years__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 0 auto 1rem auto;
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #FFF;
+  background: #828282;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.years .years-list .years__item:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.years .years-list .years__item--active {
+  background: linear-gradient(278.41deg, #B4734E 3.22%, #CE8F6F 39.41%, #DFA184 63.97%, #F3B79D 94.64%);
+}
+
+.events {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 1.9rem;
+}
+
+.events .event {
+  width: 100%;
+  max-width: 57.5rem;
+  max-width: 28rem;
+  margin-bottom: 2.1rem;
+  box-shadow: 0 10rem 8rem rgba(206, 206, 206, 0.07), 0 2.23363rem 1.7869rem rgba(206, 206, 206, 0.0417275), 0 0.66501rem 0.53201rem rgba(206, 206, 206, 0.0282725);
+}
+
+.events .event__img {
+  border-radius: .5rem .5rem 0 0;
+}
+
+.events .event-content {
+  padding: 1.5rem 1rem;
+  border-radius: 0 0 .5rem .5rem;
+  background: #fff;
+}
+
+.events .event-content .event-content__date {
+  display: inline-block;
+  padding: .5rem 1rem;
+  margin-bottom: 1rem;
+  font-family: "MuseoSansCyrl-500";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #FFF;
+  background: linear-gradient(90deg, #91C3DF 0%, #62B7E7 112.5%);
+  border-radius: .5rem;
+}
+
+.events .event-content .event-content__title {
+  margin-bottom: 1rem;
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: #4F4F4F;
+}
+
+.events .event-content .event-content__more {
+  font-family: "MuseoSansCyrl-500";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  color: #3F9DD2;
+}
+
+.events-pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.events-pagination .pagination-list {
+  display: flex;
+}
+
+.events-pagination .pagination-list .pagination__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1.7rem;
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #FFF;
+  background: #828282;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.events-pagination .pagination-list .pagination__btn:not(:last-child) {
+  margin-right: 1.9rem;
+}
+
+.events-pagination .pagination-list .pagination__btn--active {
+  background: linear-gradient(278.41deg, #B4734E 3.22%, #CE8F6F 39.41%, #DFA184 63.97%, #F3B79D 94.64%);
+}
+
+.about-top-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 9rem 0 4rem 0;
+}
+
+.about-img {
+  margin-bottom: 1rem;
+}
+
+.about__title,
+.about__subtitle {
+  text-align: center;
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.about__title {
+  max-width: 70rem;
+  margin: 0 0 2.5rem 0;
+  text-align: center;
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #4F4F4F;
+}
+
+.about__subtitle {
+  max-width: 66.5rem;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #727272;
+}
+
+.event-top-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 9rem 0 4rem 0;
+}
+
+.event-img {
+  margin-bottom: 1rem;
+}
+
+.event__title,
+.event__subtitle {
+  text-align: center;
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.event__title {
+  max-width: 70rem;
+  margin: 0 0 2.5rem 0;
+  text-align: center;
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #4F4F4F;
+}
+
+.event__subtitle {
+  max-width: 66.5rem;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #727272;
+}
+
+.admission-top-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 9rem 0 4rem 0;
+}
+
+.admission-img {
+  margin-bottom: 1rem;
+}
+
+.admission__title,
+.admission__subtitle {
+  text-align: center;
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.admission__title {
+  max-width: 70rem;
+  margin: 0 0 2.5rem 0;
+  text-align: center;
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #4F4F4F;
+}
+
+.admission__subtitle {
+  max-width: 66.5rem;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #727272;
+}
+
+.admission-form-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  background: #FBFBFC;
+  box-shadow: 0 10rem 8rem rgba(206, 206, 206, 0.07), 0 2.23363rem 1.7869rem rgba(206, 206, 206, 0.0417275), 0 0.66501rem 0.53201rem rgba(206, 206, 206, 0.0282725);
+  border-radius: 0 0 .5rem .5rem;
+}
+
+.admission-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 10rem 8rem rgba(206, 206, 206, 0.07), 0 2.23363rem 1.7869rem rgba(206, 206, 206, 0.0417275), 0 0.66501rem 0.53201rem rgba(206, 206, 206, 0.0282725);
+  border-radius: .5rem;
+}
+
+.admission-form__title,
+.admission-form__subtitle {
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+.admission-form__title {
+  max-width: 50rem;
+  text-align: center;
+  margin: 0 auto 1.6rem auto;
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: #4F4F4F;
+}
+
+.admission-form__subtitle {
+  font-family: "MuseoSansCyrl-500";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #727272;
+}
+
+.admission-form__message {
+  width: 95%;
+  margin: 0 auto 2rem auto;
+  padding: 1rem 1rem 1.5rem 2.5rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 0.1em;
+  color: #828282;
+  text-transform: uppercase;
+  border: .1rem solid #f2f2f2;
+  border-radius: .5rem;
+  outline: none;
+}
+
+.admission-form__message:focus {
+  border: .1rem solid #EECBBA;
+}
+
+.admission-form .inputs-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+
+.admission-form__parent,
+.admission-form__child,
+.admission-form__age {
+  width: 100%;
+  max-width: 28.3rem;
+  margin: 0 auto 2rem auto;
+  padding: 2.6rem 4.4rem;
+  font-family: "MuseoSansCyrl-500";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #828282;
+  border: .1rem solid #F2F2F2;
+  border-radius: .5rem;
+  outline: none;
+}
+
+.schedule-top-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 9rem 0 2rem 0;
+}
+
+.schedule__title {
+  max-width: 70rem;
+  margin: 0 0 2.5rem 0;
+  text-align: center;
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #4F4F4F;
+}
+
+.content__item--schedule {
+  padding-bottom: 2.3rem;
+}
+
+.content__item--schedule,
+.tabs-content__item--schedule {
+  width: 100% !important;
+}
+
+.tabs-content--schedule {
+  padding: 0 !important;
+  overflow-x: scroll;
+}
+
+th,
+td {
+  width: calc(100% / 12 * 2);
+  text-align: center;
+  padding: 1rem .3rem;
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #727272;
+}
+
+.cell-center {
+  border: 1px solid #DDDDDD;
+}
+
+.cell-left,
+.cell-right {
+  border-bottom: 1px solid #DDD;
+}
+
+.cell-left,
+.cell-top,
+.cell-center {
+  border-right: 2px solid #DDD;
+}
+
+.cell-right,
+.cell-top,
+.cell-center {
+  border-left: 2px solid #DDD;
+}
+
+.schedule-top-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 9rem 0 2rem 0;
+}
+
+.schedule-top-content__title {
+  max-width: 70rem;
+  margin: 0 0 2.5rem 0;
+  text-align: center;
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #4F4F4F;
+}
+
+.schedule-top-content .director-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background: #FFF;
+  box-shadow: 0 10rem 8rem rgba(206, 206, 206, 0.07), 0 2.23363rem 1.7869rem rgba(206, 206, 206, 0.0417275), 0 0.66501rem 0.53201rem rgba(206, 206, 206, 0.0282725);
+  border-radius: .5rem;
+}
+
+.schedule-top-content .director-block .director__img {
+  margin-bottom: 1rem;
+}
+
+.schedule-top-content .director-block .director__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.schedule-top-content .director-block .director__content .director__text {
+  font-family: "MuseoSansCyrl-500";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: #4F4F4F;
+}
+
+.schedule-top-content .director-block .director__content .director__text p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.schedule-top-content .director-block .director__content .director__text p:last-child {
+  margin-bottom: 4.5rem;
+}
+
+.schedule-top-content .director-block .director__content .director__name {
+  align-self: flex-end;
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #4F4F4F;
+}
+
+.schedule-top-content .director-block .director__content .director__position {
+  align-self: flex-end;
+  font-family: "MuseoSansCyrl-500";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #828282;
 }
 
 /* POP-UPS */
@@ -2807,6 +4162,10 @@ template {
   .teachers-top .slide__img {
     padding: 2.9rem 0 2.9rem 0;
   }
+
+  .reviews-top .slide__img {
+    padding: 2.9rem 0 2.9rem 0;
+  }
 }
 
 @media screen and (min-width: 500px) {
@@ -2815,6 +4174,18 @@ template {
   }
 
   .camp-list {
+    padding-left: 2rem;
+  }
+
+  .info-list {
+    padding-left: 2rem;
+  }
+
+  .event-info__text {
+    padding-left: 2rem;
+  }
+
+  .admission-info__text {
     padding-left: 2rem;
   }
 }
@@ -2892,6 +4263,49 @@ template {
 }
 
 @media screen and (min-width: 560px) {
+  .about-cards .cards-list .list-row {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .about-cards .card__item {
+    width: calc(100% / 12 * 6);
+    max-width: 27rem;
+  }
+
+  .about-cards .card__item:nth-child(odd) {
+    margin-right: 1rem;
+  }
+
+  .event-galery .galery-list {
+    justify-content: space-between;
+    max-width: 54.8rem;
+    margin: 0 auto;
+  }
+
+  .event-galery .galery__item:nth-child(odd) {
+    margin-right: 0.8rem;
+  }
+
+  .event-galery .galery__item {
+    width: calc(100% / 12 * 6);
+    max-width: 27rem;
+  }
+
+  .admission-cards .cards-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .admission-cards .card__item {
+    width: calc(100% / 12 * 6);
+    max-width: 32rem;
+  }
+
+  .admission-cards .card__item:not(:last-child) {
+    margin-right: 1rem;
+  }
+
   .header-content__title {
     max-width: 48rem;
     font-size: 3.2rem;
@@ -2937,6 +4351,68 @@ template {
   .contact__address .address-list .address__text span {
     display: inline-block;
   }
+
+  .reviews__title {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+
+  .reviews-form__subtitle {
+    max-width: 47.5rem;
+  }
+
+  .events__title {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+
+  .years {
+    width: 100%;
+    margin-bottom: 3.9rem;
+  }
+
+  .events {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .events .event {
+    width: calc(100% / 12 * 6);
+    max-width: 26rem;
+  }
+
+  .events .event:not(:nth-child(even)) {
+    margin-right: 1rem;
+  }
+
+  .about__title {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+
+  .event__title {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+
+  .admission__title {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+
+  .admission-form__subtitle {
+    max-width: 47.5rem;
+  }
+
+  .schedule__title {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+
+  .schedule-top-content__title {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
 }
 
 @media (min-width: 612px) {
@@ -2966,12 +4442,50 @@ template {
     margin: 0 auto;
   }
 
-  .btn--camp:first-child {
-    margin: 0 1.9rem 0 0;
+  .about-info__inner .info__img-wrap {
+    max-width: 57.4rem;
+    margin: 0 0 0 auto;
   }
 
-  .btn--contact-form {
-    padding: 2rem;
+  .event-info__inner .event-info__img-wrap {
+    max-width: 57.4rem;
+    margin: 0 auto;
+  }
+
+  .admission-info__inner .admission-info__img-wrap {
+    max-width: 57.4rem;
+    margin: 0 auto;
+  }
+
+  .educators-english-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .educators-english-list .educators-english__item {
+    max-width: 32rem;
+  }
+
+  .teaching-staff-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .teaching-staff-list .teaching-staff__item {
+    max-width: 32rem;
+  }
+
+  .additional-education-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .additional-education-list .additional-education__item {
+    max-width: 32rem;
+  }
+
+  .btn--camp:first-child {
+    margin: 0 1.9rem 0 0;
   }
 
   .header-content__text {
@@ -3023,20 +4537,50 @@ template {
     line-height: 2.6rem;
   }
 
-  .contact-form .inputs-wrap {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
   .contact-form .policy-block--contact-form {
     max-width: 100%;
   }
 
-  .contact-form__email,
-  .contact-form__phone {
-    margin: 0 2.5rem 0 0;
+  .reviews-form .policy-block--reviews-form {
+    max-width: 100%;
+  }
+
+  .years .years-list .years__item {
     font-size: 1.6rem;
-    line-height: 2.6rem;
+    line-height: 2.2rem;
+  }
+
+  .events .event {
+    width: calc(100% / 12 * 6);
+    max-width: 35rem;
+  }
+
+  .events .event-content .event-content__date {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  .events .event-content .event-content__title {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .events .event-content .event-content__more {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+
+  .events-pagination .pagination-list .pagination__btn {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+
+  .admission-form .policy-block--admission-form {
+    max-width: 100%;
+  }
+
+  .admission-form__age {
+    margin-right: 0;
   }
 }
 
@@ -3139,6 +4683,34 @@ template {
 
   .contact-form {
     padding: 1.5rem 3rem 3rem 3rem;
+  }
+
+  .reviews-top .swiper-slide {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .reviews-top .slide__img {
+    width: 50%;
+    margin: 0 1rem 0 0;
+    padding: 1.5rem 0 0 0;
+  }
+
+  .reviews-top .slide__text {
+    width: 50%;
+  }
+
+  .reviews-thumbs {
+    width: 53.8rem;
+  }
+
+  .reviews-form {
+    padding: 1.5rem 1rem 3rem 1rem;
+  }
+
+  .admission-form {
+    padding: 1.5rem 1rem 3rem 1rem;
   }
 
   .popup {
@@ -3261,6 +4833,135 @@ template {
     margin: 0 auto 2rem auto;
   }
 
+  .about-info {
+    flex-direction: row;
+    padding-bottom: 5rem;
+  }
+
+  .about-info__inner {
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+
+  .about-info__inner .info-list {
+    width: calc(100% / 12 * 6);
+  }
+
+  .about-info__inner .info__img {
+    width: calc(100% / 12 * 6);
+  }
+
+  .about-info__inner .info__img-wrap {
+    max-width: 57.4rem;
+  }
+
+  .about-cards .card__item:nth-child(odd) {
+    margin-right: 0;
+  }
+
+  .about-cards .card__item:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  .event-info {
+    flex-direction: row;
+    padding-bottom: 5rem;
+  }
+
+  .event-info__inner {
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+
+  .event-info__inner .event-info__text {
+    width: calc(100% / 12 * 6);
+  }
+
+  .event-info__inner .event-info__img {
+    width: calc(100% / 12 * 6);
+  }
+
+  .event-info__inner .event-info__img-wrap {
+    max-width: 57.4rem;
+  }
+
+  .event-galery .galery-list {
+    max-width: 88rem;
+  }
+
+  .event-galery .galery__item:nth-child(odd) {
+    margin-right: 0;
+  }
+
+  .event-galery .galery__item {
+    max-width: 27.8rem;
+  }
+
+  .admission-info {
+    flex-direction: row;
+    padding-bottom: 5rem;
+  }
+
+  .admission-info__inner {
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+
+  .admission-info__inner .admission-info__text {
+    width: calc(100% / 12 * 6);
+  }
+
+  .admission-info__inner .admission-info__img {
+    width: calc(100% / 12 * 6);
+  }
+
+  .admission-info__inner .admission-info__img-wrap {
+    max-width: 57.4rem;
+  }
+
+  .admission-cards .card__item {
+    width: calc(100% / 12 * 4);
+    max-width: 37.7rem;
+    min-height: 32rem;
+  }
+
+  .admission-terms__title {
+    margin: 0 auto 2rem auto;
+  }
+
+  .admission-terms__inner {
+    flex-direction: row;
+    max-width: 100%;
+  }
+
+  .admission-terms__inner .working-periods,
+  .admission-terms__inner .adaptation-conditions {
+    width: calc(100% / 12 * 6);
+  }
+
+  .admission-terms__inner .working-periods__title,
+  .admission-terms__inner .adaptation-conditions__title {
+    width: calc(100% / 12 * 6);
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+    margin: 0 0 0.5rem .8rem;
+  }
+
+  .educators-english__title {
+    margin: 0 auto 2rem auto;
+  }
+
+  .teaching-staff__title {
+    margin: 0 auto 2rem auto;
+  }
+
+  .additional-education__title {
+    margin: 0 auto 2rem auto;
+  }
+
   .header-content__title {
     max-width: 37rem;
     font-size: 2.5rem;
@@ -3294,6 +4995,77 @@ template {
   .contact__address .address__title {
     margin: 0 auto 2rem 2.8rem;
   }
+
+  .reviews__title {
+    font-size: 2.5rem;
+    line-height: 3.8rem;
+  }
+
+  .reviews-form .inputs-wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2.7rem;
+  }
+
+  .reviews-form__parent,
+  .reviews-form__child,
+  .reviews-form__age {
+    margin: 0 2.5rem 0 0;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+
+  .reviews-form__age {
+    margin-right: 0;
+  }
+
+  .events__title {
+    font-size: 2.5rem;
+    line-height: 3.8rem;
+  }
+
+  .about__title {
+    font-size: 2.5rem;
+    line-height: 3.8rem;
+  }
+
+  .event__title {
+    font-size: 2.5rem;
+    line-height: 3.8rem;
+  }
+
+  .admission__title {
+    font-size: 2.5rem;
+    line-height: 3.8rem;
+  }
+
+  .admission-form .inputs-wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2.7rem;
+  }
+
+  .admission-form__parent,
+  .admission-form__child,
+  .admission-form__age {
+    margin: 0 2.5rem 0 0;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+
+  .schedule__title {
+    font-size: 2.5rem;
+    line-height: 3.8rem;
+  }
+
+  .tabs-content--schedule {
+    overflow-x: auto;
+  }
+
+  .schedule-top-content__title {
+    font-size: 2.5rem;
+    line-height: 3.8rem;
+  }
 }
 
 @media (min-width: 930px) {
@@ -3321,13 +5093,107 @@ template {
     align-self: center;
   }
 
+  .about-cards {
+    margin-bottom: 7rem;
+  }
+
+  .about-cards .card__item {
+    width: calc(100% / 12 * 6);
+    max-width: 37.7rem;
+    padding: 2.8rem 3rem 3.7rem 3rem;
+  }
+
+  .about-cards .card__item .card__icon {
+    width: 4.9rem;
+  }
+
+  .about-cards .card__item .card__title {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  .about-cards .card__item .card__text {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+
+  .admission-cards {
+    margin-bottom: 7rem;
+  }
+
+  .admission-cards .card__item {
+    max-width: 37.7rem;
+    padding: 2.8rem 3rem 3.7rem 3rem;
+  }
+
+  .admission-cards .card__item .card__title {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  .admission-cards .card__item .card__text,
+  .admission-cards .card__item .list__item {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+
+  .educators-english-list {
+    justify-content: center;
+  }
+
+  .educators-english-list .educators-english__item {
+    margin: 0 1rem 2rem 1rem;
+  }
+
+  .educators-english-list .educators-english__item .teacher__name {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+  }
+
+  .educators-english-list .educators-english__item .teacher__position {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+
+  .teaching-staff-list {
+    justify-content: center;
+  }
+
+  .teaching-staff-list .teaching-staff__item {
+    margin: 0 1rem 2rem 1rem;
+  }
+
+  .teaching-staff-list .teaching-staff__item .teacher__name {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+  }
+
+  .teaching-staff-list .teaching-staff__item .teacher__position {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+
+  .additional-education-list {
+    justify-content: center;
+  }
+
+  .additional-education-list .additional-education__item {
+    margin: 0 1rem 2rem 1rem;
+  }
+
+  .additional-education-list .additional-education__item .teacher__name {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+  }
+
+  .additional-education-list .additional-education__item .teacher__position {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+
   .header-top {
     display: flex;
     justify-content: space-between;
-  }
-
-  .btn--contact-form {
-    padding: 3rem 2rem;
   }
 
   .header-center {
@@ -3458,6 +5324,143 @@ template {
     font-size: 3.2rem;
     line-height: 4.2rem;
   }
+
+  .contact-form .inputs-wrap {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contact-form__email,
+  .contact-form__phone {
+    margin: 0 2.5rem 0 0;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+
+  .reviews-top-content {
+    padding: 0 0 0 0;
+  }
+
+  .reviews__title {
+    max-width: 96rem;
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+
+  .reviews-form__message {
+    padding: 2.2rem 2rem 2.2rem 5.2rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+
+  .events-top-content {
+    padding: 0 0 4rem 0;
+  }
+
+  .events__title {
+    max-width: 96rem;
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+
+  .years .years-list .years__item:not(:last-child) {
+    margin-right: 2.9rem;
+  }
+
+  .events {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .events .event {
+    width: calc(100% / 12 * 6);
+    max-width: 49rem;
+  }
+
+  .events .event-content {
+    padding: 2.1rem 1.9rem 3rem 1.9rem;
+  }
+
+  .events .event-content .event-content__title {
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+  }
+
+  .about-top-content {
+    padding: 0 0 7rem 0;
+  }
+
+  .about__title {
+    max-width: 96rem;
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+
+  .event-top-content {
+    padding: 0 0 7rem 0;
+  }
+
+  .event__title {
+    max-width: 96rem;
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+
+  .admission-top-content {
+    padding: 0 0 7rem 0;
+  }
+
+  .admission__title {
+    max-width: 96rem;
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+
+  .admission-form__message {
+    padding: 2.2rem 2rem 2.2rem 5.2rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+
+  .schedule-top-content {
+    padding: 0 0 4rem 0;
+  }
+
+  .schedule__title {
+    max-width: 96rem;
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+
+  .schedule-top-content {
+    padding: 0 0 7rem 0;
+  }
+
+  .schedule-top-content__title {
+    max-width: 96rem;
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+
+  .schedule-top-content .director-block {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2.9rem 5.1rem 2.9rem 3.3rem;
+  }
+
+  .schedule-top-content .director-block .director__img,
+  .schedule-top-content .director-block .director__content {
+    width: calc(100% / 12 * 6);
+  }
+
+  .schedule-top-content .director-block .director__img {
+    margin: 0 4.6rem 0 0;
+  }
+
+  .schedule-top-content .director-block .director__content .director__text p:last-child {
+    margin-bottom: 12rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -3562,6 +5565,10 @@ template {
     display: none;
   }
 
+  .footer .col .address-list {
+    margin-right: 0;
+  }
+
   .footer-bottom {
     font-size: 1.6rem;
     line-height: 2.2rem;
@@ -3586,6 +5593,31 @@ template {
   .contact__map .map__wrap {
     width: 100%;
     height: 40rem;
+  }
+
+  .reviews-top .slide__img {
+    padding: 2.9rem 0 2.9rem 3.1rem;
+  }
+
+  .reviews-top .slide__text {
+    padding: 5.5rem 6.5rem 6.9rem 5.6rem;
+  }
+
+  th,
+  td {
+    padding: 1.6rem .5rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+}
+
+@media screen and (min-width: 1171px) {
+  .about-cards .cards-list .list-row {
+    justify-content: space-between;
+  }
+
+  .admission-cards .cards-list {
+    justify-content: space-between;
   }
 }
 
@@ -3855,6 +5887,26 @@ template {
     width: 1.4rem;
     height: 1.9rem;
   }
+
+  .reviews-top .swiper-slide {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reviews-top .slide__img {
+    width: 90%;
+  }
+
+  .reviews-top .slide__text {
+    width: auto;
+    padding: 2rem 2rem 2rem 5.2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .event-galery .galery-list {
+    max-width: 100%;
+  }
 }
 
 @media (min-width: 1365px) {
@@ -3982,6 +6034,72 @@ template {
     width: 38.9rem;
   }
 
+  .swiper-wrap .reviews-button-next,
+  .swiper-wrap .reviews-button-prev {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: calc(50% - 4.6rem) !important;
+    transform: translateY(-50%);
+    width: 4rem !important;
+    height: 4rem !important;
+    border-radius: 0.5rem;
+    outline: none;
+    background: linear-gradient(278.41deg, #D1916D 0%, #F3B79D 100%);
+  }
+
+  .swiper-wrap .reviews-button-next::after,
+  .swiper-wrap .reviews-button-prev::after {
+    position: absolute;
+    content: url(../img/icons/arrow-forward-ios.svg) !important;
+    transform: translate(0.8rem, 0.7rem);
+    width: 2.4rem !important;
+    height: 2.4rem !important;
+  }
+
+  .swiper-wrap .reviews-button-prev {
+    left: -1.4rem !important;
+  }
+
+  .swiper-wrap .reviews-button-prev::after {
+    transform: rotate(180deg) translate(-0.6rem, -0.7rem) !important;
+  }
+
+  .swiper-wrap .reviews-button-next {
+    left: auto;
+    right: -1.4rem !important;
+  }
+
+  .swiper-wrap .reviews-button-next,
+  .swiper-wrap .reviews-container-rtl.reviews-button-prev {
+    margin-right: -0.5rem;
+  }
+
+  .swiper-wrap .reviews-button-prev,
+  .swiper-wrap .reviews-container-rtl.reviews-button-prev {
+    margin-left: -0.5rem;
+  }
+
+  .reviews-top .swiper-slide {
+    flex-direction: row;
+    padding: 2.9rem 5.3rem 2.9rem 3.1rem;
+  }
+
+  .reviews-top .slide__img {
+    width: 50%;
+    margin-right: 4.6rem;
+    padding: 0;
+  }
+
+  .reviews-top .slide__text {
+    width: 50%;
+    padding: 0;
+  }
+
+  .reviews-top .slide__text .slide__review {
+    margin-bottom: 8.5rem;
+  }
+
   .popup-details {
     width: 117rem;
     padding: 3rem 40.8rem 6rem 5.2rem !important;
@@ -4090,8 +6208,142 @@ template {
     line-height: 5rem;
   }
 
-  .btn--contact-form {
-    min-width: 27.7rem;
+  .about-info {
+    padding-bottom: 7rem;
+  }
+
+  .info-list__item {
+    margin-bottom: 0;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+  }
+
+  .info-list__item::before {
+    top: 1.5rem;
+    left: -2.9rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .about-cards .card__item {
+    width: calc(100% / 12 * 4);
+  }
+
+  .event-info {
+    padding-bottom: 7rem;
+  }
+
+  .event-info__text p {
+    margin-bottom: 0;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+  }
+
+  .event-galery .galery__item {
+    margin-bottom: 2rem !important;
+  }
+
+  .admission-info {
+    padding-bottom: 7rem;
+  }
+
+  .admission-info__text p {
+    margin-bottom: 0;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+  }
+
+  .admission-cards .card__item .list__item::before {
+    top: 50%;
+    transform: translateY(-50%);
+    left: -2.9rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .admission-terms {
+    margin-bottom: 6.7rem;
+  }
+
+  .admission-terms__title {
+    max-width: calc(100% / 12 * 10);
+    margin: 0 auto 4rem auto;
+    font-size: 3.6rem;
+    line-height: 5rem;
+  }
+
+  .admission-terms__inner .working-periods__item::before,
+  .admission-terms__inner .adaptation-conditions__item::before {
+    top: 1.5rem;
+    left: -2.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .educators-english {
+    margin-bottom: 7rem;
+  }
+
+  .educators-english__title {
+    max-width: calc(100% / 12 * 10);
+    margin: 0 auto 4rem auto;
+    font-size: 3.6rem;
+    line-height: 5rem;
+  }
+
+  .educators-english-list {
+    margin: 0 -1.5rem;
+  }
+
+  .educators-english-list .educators-english__item {
+    max-width: 37rem;
+    margin: 0 1.5rem 2rem 1.5rem;
+  }
+
+  .teaching-staff {
+    margin-bottom: 7rem;
+  }
+
+  .teaching-staff__title {
+    max-width: calc(100% / 12 * 10);
+    margin: 0 auto 4rem auto;
+    font-size: 3.6rem;
+    line-height: 5rem;
+  }
+
+  .teaching-staff-list {
+    margin: 0 -1.5rem;
+  }
+
+  .teaching-staff-list .teaching-staff__item {
+    max-width: 37rem;
+    margin: 0 1.5rem 2rem 1.5rem;
+  }
+
+  .additional-education {
+    margin-bottom: 7rem;
+  }
+
+  .additional-education__title {
+    max-width: calc(100% / 12 * 10);
+    margin: 0 auto 4rem auto;
+    font-size: 3.6rem;
+    line-height: 5rem;
+  }
+
+  .additional-education-list {
+    margin: 0 -1.5rem;
+  }
+
+  .additional-education-list .additional-education__item {
+    max-width: 37rem;
+    margin: 0 1.5rem 2rem 1.5rem;
+  }
+
+  .btn--contact-form,
+  .btn--reviews-form,
+  .btn--admission-form {
+    max-width: 27.7rem;
   }
 
   .bilingual__title {
@@ -4176,6 +6428,122 @@ template {
     font-size: 2.2rem;
     line-height: 3.1rem;
   }
+
+  .reviews__title {
+    max-width: calc(100% / 12 * 9);
+    margin: 0 auto 4rem auto;
+    font-size: 4rem;
+    line-height: 5.6rem;
+  }
+
+  .reviews-form__title {
+    max-width: 100%;
+    font-size: 4rem;
+    line-height: 5.6rem;
+  }
+
+  .reviews-form__subtitle {
+    max-width: calc(100% / 12 * 10);
+    margin: 0 auto 4rem auto;
+    padding: 0 3.5rem;
+    font-size: 2.2rem;
+    line-height: 3.1rem;
+  }
+
+  .events__title {
+    max-width: calc(100% / 12 * 9);
+    margin: 0 auto 3rem auto;
+    font-size: 4rem;
+    line-height: 5.6rem;
+  }
+
+  .events {
+    justify-content: space-between;
+  }
+
+  .events .event {
+    max-width: 57.5rem;
+  }
+
+  .events .event:not(:nth-child(even)) {
+    margin-right: 0;
+  }
+
+  .events .event-content .event-content__title {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+  }
+
+  .about__title {
+    max-width: calc(100% / 12 * 9);
+    margin: 0 auto 3rem auto;
+    font-size: 4rem;
+    line-height: 5.6rem;
+  }
+
+  .about__subtitle {
+    max-width: calc(100% / 12 * 10);
+    padding: 0 3.5rem;
+    font-size: 2.2rem;
+    line-height: 3.1rem;
+  }
+
+  .event__title {
+    max-width: calc(100% / 12 * 9);
+    margin: 0 auto 3rem auto;
+    font-size: 4rem;
+    line-height: 5.6rem;
+  }
+
+  .event__subtitle {
+    max-width: calc(100% / 12 * 10);
+    margin: 0 auto;
+    padding: 0 3.5rem;
+    font-size: 2.2rem;
+    line-height: 3.1rem;
+  }
+
+  .admission__title {
+    max-width: calc(100% / 12 * 9);
+    margin: 0 auto 3rem auto;
+    font-size: 4rem;
+    line-height: 5.6rem;
+  }
+
+  .admission__subtitle {
+    max-width: calc(100% / 12 * 10);
+    padding: 0 3.5rem;
+    font-size: 2.2rem;
+    line-height: 3.1rem;
+  }
+
+  .admission-form__title {
+    max-width: 100%;
+    font-size: 4rem;
+    line-height: 5.6rem;
+  }
+
+  .admission-form__subtitle {
+    max-width: calc(100% / 12 * 10);
+    margin: 0 auto 4rem auto;
+    padding: 0 3.5rem;
+    font-size: 2.2rem;
+    line-height: 3.1rem;
+  }
+
+  .schedule__title {
+    max-width: calc(100% / 12 * 9);
+    margin: 0 auto 3rem auto;
+    font-size: 4rem;
+    line-height: 5.6rem;
+  }
+
+  .schedule-top-content__title {
+    max-width: calc(100% / 12 * 9);
+    margin: 0 auto 3rem auto;
+    font-size: 4rem;
+    line-height: 5.6rem;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -4187,6 +6555,16 @@ template {
     max-width: 117.2rem;
     padding: 3.5rem 11.2rem 6.6rem 11.2rem;
     margin-bottom: 4.8rem;
+  }
+
+  .reviews-form {
+    max-width: 117.2rem;
+    padding: 3.5rem 11.2rem 5.1rem 11.2rem;
+  }
+
+  .admission-form {
+    max-width: 117.2rem;
+    padding: 3.5rem 11.2rem 5.1rem 11.2rem;
   }
 }
 
@@ -4202,6 +6580,21 @@ template {
 
   .bilingual-program__list {
     margin-bottom: 4rem;
+  }
+
+  .info-list {
+    padding-left: 3rem;
+    margin-bottom: 0;
+  }
+
+  .event-info__text {
+    padding-left: 3rem;
+    margin-bottom: 0;
+  }
+
+  .admission-info__text {
+    padding-left: 3rem;
+    margin-bottom: 0;
   }
 
   .header-top {
@@ -4246,6 +6639,24 @@ template {
   }
 
   .camp-img {
+    max-width: 117.5rem;
+    height: 20rem;
+    margin-bottom: 3rem;
+  }
+
+  .about-img {
+    max-width: 117.5rem;
+    height: 20rem;
+    margin-bottom: 3rem;
+  }
+
+  .event-img {
+    max-width: 117.5rem;
+    height: 20rem;
+    margin-bottom: 3rem;
+  }
+
+  .admission-img {
     max-width: 117.5rem;
     height: 20rem;
     margin-bottom: 3rem;

@@ -271,6 +271,69 @@
 ;
 
 (function () {
+  if (document.querySelector('.reviews-top')) {
+    var galleryTop = new Swiper('.reviews-top', {
+      spaceBetween: 22,
+      slidesPerView: 1,
+      loop: true,
+      loopedSlides: 1,
+      navigation: {
+        nextEl: '.reviews-button-next',
+        prevEl: '.reviews-button-prev'
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          loopedSlides: 1
+        },
+        1200: {
+          slidesPerView: 2
+        },
+        1365: {
+          slidesPerView: 1
+        }
+      }
+    });
+    var galleryThumbs = new Swiper('.reviews-thumbs', {
+      spaceBetween: 14,
+      centeredSlides: true,
+      // slidesPerView: 'auto',
+      slidesPerView: 4,
+      slideToClickedSlide: true,
+      loop: true,
+      loopedSlides: 1
+    });
+    galleryTop.controller.control = galleryThumbs;
+    galleryThumbs.controller.control = galleryTop;
+  }
+})();
+"use strict";
+
+;
+
+(function () {
+  if (document.querySelector('.tabs--schedule')) {
+    var tabsTitles = document.querySelectorAll('.tabs--schedule .title__item');
+    var tabsContent = document.querySelectorAll('.tabs-content--schedule .content__item');
+    tabsTitles.forEach(function (title, i) {
+      title.addEventListener('click', function () {
+        tabsContent.forEach(function (content) {
+          content.style.display = 'none';
+        });
+        tabsTitles.forEach(function (title) {
+          title.classList.remove('title__item--active');
+        });
+        tabsContent[i].style.display = 'block';
+        title.classList.add('title__item--active');
+      });
+    });
+  }
+})();
+"use strict";
+
+;
+
+(function () {
   if (document.querySelector('.tabs')) {
     var tabsTitles = document.querySelectorAll('.tabs .title__item');
     var tabsContent = document.querySelectorAll('.tabs .content__item');
