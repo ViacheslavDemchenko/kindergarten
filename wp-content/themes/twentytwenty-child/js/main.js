@@ -1,105 +1,25 @@
 "use strict";
 
-// const galleryThumbs = new Swiper('.gallery-thumbs', {
-//   spaceBetween: 10,
-//   slidesPerView: 4,
-//   centeredSlides: true,
-//   loop: true,
-//   freeMode: true,
-//   loopedSlides: 4,
-//   watchSlidesVisibility: true,
-//   watchSlidesProgress: true
-// });
-// const galleryTop = new Swiper('.gallery-top', {
-//   spaceBetween: 22,
-//   slidesPerView: 3,
-//   slidesOffsetAfter: 200,
-//   slidesOffsetBefore: 200,
-//   grabCursor: true,
-//   loop: true,
-//   freeMode: true,
-//   loopedSlides: 2,
-//   normalizeSlideIndex: true,
-//   slideVisibleClass: 	'swiper-slide-visible',
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-//   thumbs: {
-//     swiper: {
-//       el: '.gallery-thumbs',
-//       slidesPerView: 2,
-//       spaceBetween: 10,
-//       loop: true
-//     },
-//   },
-//   breakpoints: {
-//     320: {
-//       slidesPerView: 1
-//     },
-//     1920: {
-//       slidesPerView: 3
-//     }
-//   }
-// });
-// const galleryThumbs = new Swiper('.gallery-thumbs', {
-//   spaceBetween: 10,
-//   slidesPerView: 4,
-//   loop: true,
-//   loopedSlides: 1,
-//   centeredSlides: true,
-//     breakpoints: {
-//       320: {
-//         slidesPerView: 2,
-//         loopedSlides: 1
-//       }
-//     }
-// });
-// const galleryTop = new Swiper('.gallery-top', {
-// spaceBetween: 22,
-// slidesPerView: 2,
-// loop: true,
-// loopedSlides: 1,
-// // autoplay: {
-// //   delay: 3000,
-// // },
-// navigation: {
-//   nextEl: '.kindergarten-button-next',
-//   prevEl: '.kindergarten-button-prev',
-// },
-// thumbs: {
-//   swiper: {
-//     el: '.gallery-thumbs',
-//     slidesPerView: 4,
-//     spaceBetween: 10,
-//     loop: true,
-//     loopedSlides: 1,
-//     centeredSlides: true,
-//       breakpoints: {
-//         320: {
-//           slidesPerView: 2,
-//           loopedSlides: 1
-//         }
-//       }
-//   },
-// },
-// breakpoints: {
-//   320: {
-//     slidesPerView: 1,
-//     loopedSlides: 1
-//   },
-//   560: {
-//     slidesPerView: 1,
-//     loopedSlides: 1
-//   },
-//   1200: {
-//     slidesPerView: 2
-//   },
-//   1365: {
-//     slidesPerView: 2
-//   }
-// }
-// });
+;
+
+(function () {
+  function getYear() {
+    var date = new Date(),
+        currentYear = date.getFullYear(),
+        yearWrite = document.querySelector('.year');
+
+    if (currentYear > 2020) {
+      yearWrite.innerHTML = "\u0412\u0441\u0435 \u043F\u0440\u0430\u0432\u0430 \u0437\u0430\u0449\u0438\u0449\u0435\u043D\u044B \xA9 2020 \u2014 ".concat(currentYear);
+    } else {
+      yearWrite.innerHTML = "\u0412\u0441\u0435 \u043F\u0440\u0430\u0432\u0430 \u0437\u0430\u0449\u0438\u0449\u0435\u043D\u044B \xA9 ".concat(currentYear);
+    }
+  }
+
+  ;
+  getYear();
+})();
+"use strict";
+
 ;
 
 (function () {
@@ -107,8 +27,10 @@
     var galleryTop = new Swiper('.gallery-top', {
       spaceBetween: 22,
       slidesPerView: 2,
+      grabCursor: true,
       loop: true,
-      loopedSlides: 2,
+      loopAdditionalSlides: 4,
+      loopedSlides: 1,
       navigation: {
         nextEl: '.kindergarten-button-next',
         prevEl: '.kindergarten-button-prev'
@@ -132,12 +54,34 @@
     });
     var galleryThumbs = new Swiper('.gallery-thumbs', {
       spaceBetween: 10,
-      centeredSlides: true,
-      // slidesPerView: 'auto',
+      grabCursor: true,
       slidesPerView: 4,
+      loopAdditionalSlides: 4,
       slideToClickedSlide: true,
       loop: true,
-      loopedSlides: 4
+      loopedSlides: 1,
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          loopedSlides: 1,
+          loopAdditionalSlides: 4
+        },
+        560: {
+          slidesPerView: 2,
+          loopedSlides: 1,
+          loopAdditionalSlides: 4
+        },
+        1200: {
+          slidesPerView: 4,
+          loopedSlides: 1,
+          loopAdditionalSlides: 4
+        },
+        1365: {
+          slidesPerView: 4,
+          loopedSlides: 1,
+          loopAdditionalSlides: 4
+        }
+      }
     });
     galleryTop.controller.control = galleryThumbs;
     galleryThumbs.controller.control = galleryTop;
@@ -176,8 +120,7 @@
   var body = document.getElementsByTagName('body')[0];
   var menuLinks = document.querySelectorAll('.nav__link');
   var menu = document.querySelector('.header-menu-wrap');
-  var menuTop = document.querySelector('.header-top--mobile'); // const headerContent = document.querySelector('.header-content');
-
+  var menuTop = document.querySelector('.header-top--mobile');
   var screenWidth = window.screen.availWidth;
   hamburger.addEventListener('click', mobileMenu);
 
@@ -190,11 +133,6 @@
   }
 
   mobileMenuLinkClick();
-  document.addEventListener('click', function (e) {
-    if (e.target.classList.contains('overlay')) {
-      mobileMenuHide();
-    }
-  });
 
   function mobileMenu() {
     window.addEventListener('resize', function () {
@@ -205,10 +143,8 @@
     if (!hamburger.classList.contains('active')) {
       hamburger.classList.add('active');
       menu.classList.add('header-menu-wrap--open');
-      menuTop.classList.add('header-top--mobile--open'); // headerContent.classList.add('header-content--open');
-
+      menuTop.classList.add('header-top--mobile--open');
       body.classList.add('no-scroll');
-      body.classList.add('overlay');
     } else {
       mobileMenuHide();
     }
@@ -219,7 +155,6 @@
     menu.classList.remove('header-menu-wrap--open');
     menuTop.classList.remove('header-top--mobile--open');
     body.classList.remove('no-scroll');
-    body.classList.remove('overlay');
   }
 
   window.addEventListener('resize', function () {
@@ -271,47 +206,6 @@
 ;
 
 (function () {
-  if (document.querySelector('.reviews-top')) {
-    var galleryTop = new Swiper('.reviews-top', {
-      spaceBetween: 22,
-      slidesPerView: 1,
-      loop: true,
-      loopedSlides: 1,
-      navigation: {
-        nextEl: '.reviews-button-next',
-        prevEl: '.reviews-button-prev'
-      },
-      breakpoints: {
-        320: {
-          slidesPerView: 1,
-          loopedSlides: 1
-        },
-        1200: {
-          slidesPerView: 2
-        },
-        1365: {
-          slidesPerView: 1
-        }
-      }
-    });
-    var galleryThumbs = new Swiper('.reviews-thumbs', {
-      spaceBetween: 14,
-      centeredSlides: true,
-      // slidesPerView: 'auto',
-      slidesPerView: 4,
-      slideToClickedSlide: true,
-      loop: true,
-      loopedSlides: 1
-    });
-    galleryTop.controller.control = galleryThumbs;
-    galleryThumbs.controller.control = galleryTop;
-  }
-})();
-"use strict";
-
-;
-
-(function () {
   if (document.querySelector('.tabs--schedule')) {
     var tabsTitles = document.querySelectorAll('.tabs--schedule .title__item');
     var tabsContent = document.querySelectorAll('.tabs-content--schedule .content__item');
@@ -353,124 +247,6 @@
 })();
 "use strict";
 
-// const teachersThumbs = new Swiper('.teachers-thumbs', {
-//     spaceBetween: 33,
-//     slidesPerView: 4,
-//     loop: true,
-//     freeMode: true,
-//     loopedSlides: 5,
-//     watchSlidesVisibility: true,
-//     watchSlidesProgress: true,
-//   });
-//   const teachersTop = new Swiper('.teachers-top', {
-//     speed: 400,
-//     spaceBetween: 22,
-//     slidesPerView: 1,
-//     loop: true,
-//     freeMode: true,
-//     loopedSlides: 5,
-//     navigation: {
-//       nextEl: '.swiper-button-next',
-//       prevEl: '.swiper-button-prev',
-//     },
-//     thumbs: {
-//       swiper: {
-//         el: '.teachers-thumbs',
-//         slidesPerView: 2,
-//         spaceBetween: 5,
-//         loop: true
-//       }
-//     },
-//     breakpoints: {
-//       320: {
-//         slidesPerView: 1
-//       }
-//     }
-// });
-//   const galleryThumbs = new Swiper('.teachers-thumbs', {
-//     spaceBetween: 14,
-//     slidesPerView: 4,
-//     loop: true,
-//     loopedSlides: 1,
-//       breakpoints: {
-//         320: {
-//           slidesPerView: 2,
-//           loopedSlides: 1
-//         },
-//         1200: {
-//           slidesPerView: 2
-//         },
-//         1365: {
-//           slidesPerView: 2
-//         }
-//       }
-//   });
-// const galleryTop = new Swiper('.teachers-top', {
-//   spaceBetween: 22,
-//   slidesPerView: 2,
-//   loop: true,
-//   loopedSlides: 1,
-//   // autoplay: {
-//   //   delay: 3000,
-//   // },
-//   navigation: {
-//     nextEl: '.teachers-button-next',
-//     prevEl: '.teachers-button-prev',
-//   },
-//   thumbs: {
-//     swiper: {
-//       el: '.teachers-thumbs',
-//       slidesPerView: 4,
-//       spaceBetween: 10,
-//       loop: true,
-//       loopedSlides: 1,
-//         breakpoints: {
-//           320: {
-//             slidesPerView: 2,
-//             loopedSlides: 1
-//           },
-//           1200: {
-//             slidesPerView: 2
-//           },
-//           1365: {
-//             slidesPerView: 2
-//           }
-//         }
-//     },
-//   },
-//   breakpoints: {
-//     320: {
-//       slidesPerView: 1,
-//       loopedSlides: 1
-//     },
-//     1200: {
-//       slidesPerView: 2
-//     },
-//     1365: {
-//       slidesPerView: 1
-//     }
-//   }
-// });
-// const teachersTop = new Swiper('.teachers-top', {
-//   spaceBetween: 22,
-//   slidesPerView: 2,
-//   loop: true,
-//   loopedSlides: 1,
-//   navigation: {
-//     nextEl: '.teachers-button-next',
-//     prevEl: '.teachers-button-prev',
-//   },
-// });
-// const teachersThumbs = new Swiper('.teachers-thumbs', {
-//   spaceBetween: 14,
-//   slidesPerView: 4,
-//   loop: true,
-//   loopedSlides: 1,
-//   centeredSlides: true,
-//   slideToClickedSlide: true,
-// });
-// teachersTop.controller.control = teachersThumbs;
-// teachersThumbs.controller.control = teachersTop;
 ;
 
 (function () {
@@ -478,7 +254,9 @@
     var galleryTop = new Swiper('.teachers-top', {
       spaceBetween: 22,
       slidesPerView: 1,
+      grabCursor: true,
       loop: true,
+      loopAdditionalSlides: 4,
       loopedSlides: 1,
       navigation: {
         nextEl: '.teachers-button-next',
@@ -499,12 +277,34 @@
     });
     var galleryThumbs = new Swiper('.teachers-thumbs', {
       spaceBetween: 14,
-      centeredSlides: true,
-      // slidesPerView: 'auto',
+      grabCursor: true,
       slidesPerView: 4,
+      loopAdditionalSlides: 4,
       slideToClickedSlide: true,
       loop: true,
-      loopedSlides: 1
+      loopedSlides: 1,
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          loopedSlides: 1,
+          loopAdditionalSlides: 4
+        },
+        560: {
+          slidesPerView: 2,
+          loopedSlides: 1,
+          loopAdditionalSlides: 4
+        },
+        1200: {
+          slidesPerView: 4,
+          loopedSlides: 1,
+          loopAdditionalSlides: 4
+        },
+        1365: {
+          slidesPerView: 4,
+          loopedSlides: 1,
+          loopAdditionalSlides: 4
+        }
+      }
     });
     galleryTop.controller.control = galleryThumbs;
     galleryThumbs.controller.control = galleryTop;

@@ -7,11 +7,11 @@
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./wp-content/themes/twentytwenty-child/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./wp-content/themes/twentytwenty-child/css/main.min.css">
     <link rel="stylesheet" href="./wp-content/themes/twentytwenty-child/fonts/fonts.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.6/swiper-bundle.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.6/swiper-bundle.min.js" defer></script>
-    <script src="./wp-content/themes/twentytwenty-child/js/main.js" defer></script>
+    <script src="./wp-content/themes/twentytwenty-child/js/swiper-bundle.min.js" defer></script>
+    <script src="./wp-content/themes/twentytwenty-child/js/main.min.js" defer></script>
     <link rel="icon" href="#!" type="image/x-icon">
     <link rel="shortcut icon" href="#!" type="image/x-icon">
     <link rel="apple-touch-icon" href="#!">
@@ -20,8 +20,7 @@
     <div class="container-fluid">
       <header class="header">
         <div class="container">
-          <div class="header-top--mobile">
-            <div class="header-top__block--1">
+          <div class="header-top--mobile"><a class="header-top__block--1" href="index.html">
               <div class="header-top__icon">
                 <svg>
                   <use xlink:href="./wp-content/themes/twentytwenty-child/img/icons/sprite.svg#star"></use>
@@ -30,9 +29,8 @@
               <div class="header-top__text"> 
                 <p>Детский сад </p>
                 <p>«Ладошки»</p>
-              </div>
-            </div>
-            <button class="cmn-toggle-switch cmn-toggle-switch__htx" area-label="Мобильное меню" id="menu__button"><span>toggle menu</span></button>
+              </div></a>
+            <button class="cmn-toggle-switch cmn-toggle-switch__htx" id="menu__button"><span>toggle menu</span></button>
           </div>
           <div class="header-menu">
             <div class="header-top"><a class="header-top__block--1" href="index.html">
@@ -84,7 +82,7 @@
                 <nav class="nav">
                   <ul class="nav-list">
                     <li class="nav__item"><a class="nav__link" href="about.html">О нас</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Программа</a></li>
+                    <li class="nav__item"><a class="nav__link" href="program.html">Программа</a></li>
                     <li class="nav__item"><a class="nav__link" href="admission.html">Поступление</a></li>
                     <li class="nav__item"><a class="nav__link" href="camp.html">Лагерь</a></li>
                     <li class="nav__item"><a class="nav__link" href="bilingual.html">Билингвальная группа</a></li>
@@ -97,11 +95,11 @@
                   <ul class="nav-list">
                     <li class="nav__item"><a class="nav__link" href="schedule.html">Распорядок дня</a></li>
                     <li class="nav__item"><a class="nav__link" href="events.html">Мероприятия</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Стоимость</a></li>
+                    <li class="nav__item"><a class="nav__link" href="price-list.html">Стоимость</a></li>
                     <li class="nav__item"><a class="nav__link" href="galery.html">Галерея</a></li>
                     <li class="nav__item"><a class="nav__link" href="educators.html">Педагоги</a></li>
                     <li class="nav__item"><a class="nav__link" href="reviews.html">Отзывы</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Режим дня</a></li>
+                    <li class="nav__item"><a class="nav__link" href="day-schedule.html">Режим дня</a></li>
                   </ul>
                 </nav>
                 <button class="btn header-top__btn header-top__btn--mobile">Записаться на экскурсию</button>
@@ -179,8 +177,7 @@
         <div class="container">
           <div class="footer-cols">
             <div class="col col--first">
-              <div class="cols-wrap">
-                <div class="col__item">
+              <div class="cols-wrap"><a class="col__item" href="index.html">
                   <div class="col__icon col__icon--first">
                     <svg>
                       <use xlink:href="./wp-content/themes/twentytwenty-child/img/icons/sprite.svg#star"></use>
@@ -188,8 +185,7 @@
                   </div>
                   <div class="col__text"> 
                     <p>Детский сад </p><strong>«Ладошки»</strong>
-                  </div>
-                </div>
+                  </div></a>
                 <div class="col__item">
                   <div class="col__icon col__icon--second">
                     <svg>
@@ -235,7 +231,7 @@
               </div>
             </div>
           </div>
-          <div class="policy">Все права защищены © 2020</div>
+          <div class="policy year"></div>
           <div class="footer-bottom"><a href="#">Политика Конфиденциальности</a><a href="#">Пользовательское соглашение</a><a href="#">Разработка сайта</a></div>
         </div>
       </footer>
@@ -249,7 +245,7 @@
       </div>
       <form class="popup__form" id="popup-call" method="post" action="#!">
         <input class="header-form__phone" type="text" placeholder="ВАШЕ ИМЯ">
-        <input class="header-form__phone" type="text" placeholder="+7 (___) __ - __ - __">
+        <input class="header-form__phone" id="popup-call__input-phone" type="text" placeholder="+7 (___) ___-__-__">
         <button class="btn header-form__btn" type="submit">Записаться</button>
         <div class="policy-block">
           <input class="policy-block__checkbox" type="checkbox" checked>
@@ -266,7 +262,7 @@
       </div>
       <form class="popup__form" id="popup-excursion" method="post" action="#!">
         <input class="header-form__phone" type="text" placeholder="Ваше имя">
-        <input class="header-form__phone" type="text" placeholder="+7 (___) __ - __ - __">
+        <input class="header-form__phone input-phone" id="popup-excursion__input-phone" type="text" placeholder="+7 (___) ___-__-__">
         <input class="header-form__phone" type="text" placeholder="Возраст ребёнка">
         <button class="btn header-form__btn" type="submit">Записаться</button>
         <div class="policy-block">
@@ -283,6 +279,15 @@
         </svg>
       </div>
       <div class="popup__subtitle">Мы свяжемся с вами в часы работы детского сада!</div>
+    </div>
+    <div class="popup popup-message popup-message--excursion">
+      <div class="popup__title popup__title--message">Спасибо за заявку!</div>
+      <div class="popup-close">
+        <svg>
+          <use xlink:href="./wp-content/themes/twentytwenty-child/img/icons/sprite.svg#close"></use>
+        </svg>
+      </div>
+      <div class="popup__subtitle">Мы свяжемся с вами в рабочие часы сада для уточнения времени!</div>
     </div>
     <div class="popup popup-details">
       <div class="popup__title popup__title--details">Готовность к поступлению в международные школы</div>
