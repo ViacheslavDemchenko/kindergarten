@@ -646,13 +646,36 @@ template {
 /* SECTIONS */
 
 .header {
+  position: relative;
   padding: 2.3rem 0 0 0;
-  background: url(../img/header-bg-sm@1x.jpg) center/cover no-repeat;
+  background-image: url(../img/header-bg-sm@1x.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-@supports (background: -webkit-image-set(url(../img/header-bg-sm@1x.webp) 1x)) {
+@supports (background-image: -webkit-image-set(url(../img/header-bg-sm@1x.webp) 1x)) {
   .header {
-    background: -webkit-image-set(url(../img/header-bg-sm@1x.webp) 1x);
+    background-image: -webkit-image-set(url(../img/header-bg-sm@1x.webp) 1x);
+  }
+}
+
+.header::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1rem;
+  background-image: url(../img/header-bottom@1x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@supports (background-image: -webkit-image-set(url(../img/header-bottom@1x.webp) 1x)) {
+  .header::after {
+    background-image: -webkit-image-set(url(../img/header-bottom@1x.webp) 1x);
   }
 }
 
@@ -673,7 +696,7 @@ template {
   background-position: center;
 }
 
-@supports (background: -webkit-image-set(url(../img/header-bottom@1x.webp) 1x)) {
+@supports (background-image: -webkit-image-set(url(../img/header-bottom@1x.webp) 1x)) {
   .header--main::after {
     background-image: -webkit-image-set(url(../img/header-bottom@1x.webp) 1x);
   }
@@ -4321,12 +4344,12 @@ td {
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 0), screen and (min-resolution: 192dpi) and (min-width: 0) {
   .header {
-    background: url(../img/header-bg-sm@2x.jpg) center/cover no-repeat;
+    background-image: url(../img/header-bg-sm@2x.jpg) center/cover no-repeat;
   }
 
-@supports (background: -webkit-image-set(url(../img/header-bg-sm@2x.webp) 2x)) {
+@supports (background-image: -webkit-image-set(url(../img/header-bg-sm@2x.webp) 2x)) {
     .header {
-      background: -webkit-image-set(url(../img/header-bg-sm@2x.webp) 2x);
+      background-image: -webkit-image-set(url(../img/header-bg-sm@2x.webp) 2x);
     }
 }
 }
@@ -4695,12 +4718,12 @@ td {
 
 @media screen and (min-width: 768px) {
   .header {
-    background: url(../img/header-bg-desktop@1x.jpg) center/cover no-repeat;
+    background-image: url(../img/header-bg-desktop@1x.jpg) center/cover no-repeat;
   }
 
 @supports (background: -webkit-image-set(url(../img/header-bg-desktop@1x.webp) 1x)) {
     .header {
-      background: -webkit-image-set(url(../img/header-bg-desktop@1x.webp) 1x);
+      background-image: -webkit-image-set(url(../img/header-bg-desktop@1x.webp) 1x);
     }
 }
 
@@ -4861,12 +4884,12 @@ td {
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px) {
   .header {
-    background: url(../img/header-bg-desktop@2x.jpg) center/cover no-repeat;
+    background-image: url(../img/header-bg-desktop@2x.jpg) center/cover no-repeat;
   }
 
-@supports (background: -webkit-image-set(url(../img/header-bg-desktop@2x.webp) 2x)) {
+@supports (background-image: -webkit-image-set(url(../img/header-bg-desktop@2x.webp) 2x)) {
     .header {
-      background: -webkit-image-set(url(../img/header-bg-desktop@2x.webp) 2x);
+      background-image: -webkit-image-set(url(../img/header-bg-desktop@2x.webp) 2x);
     }
 }
 }
@@ -5375,7 +5398,11 @@ td {
 
 @media screen and (min-width: 1024px) {
   .header {
-    padding-left: 0;
+    padding: 0 0 5rem 0;
+  }
+
+  .header::after {
+    height: 14rem;
   }
 
   .header--main::after {
@@ -7016,6 +7043,19 @@ td {
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .header::after {
+    background-image: url(../img/header-bottom@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+@supports (background-image: -webkit-image-set(url(../img/header-bottom@2x.webp) 2x)) {
+    .header::after {
+      background-image: -webkit-image-set(url(../img/header-bottom@2x.webp) 2x);
+    }
+}
+
   .header--main::after {
     background-image: url(../img/header-bottom@2x.png);
     background-repeat: no-repeat;
@@ -7023,7 +7063,7 @@ td {
     background-position: center;
   }
 
-@supports (background: -webkit-image-set(url(../img/header-bottom@2x.webp) 2x)) {
+@supports (background-image: -webkit-image-set(url(../img/header-bottom@2x.webp) 2x)) {
     .header--main::after {
       background-image: -webkit-image-set(url(../img/header-bottom@2x.webp) 2x);
     }
