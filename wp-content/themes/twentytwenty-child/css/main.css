@@ -2104,8 +2104,8 @@ template {
 .advantages__item--seventh {
   background-image: url(../img/bubble@1x.png);
   background-repeat: no-repeat;
-  background-size: 45%;
-  background-position: 100% 0%;
+  background-size: 28%;
+  background-position: 93% 0%;
   background-color: rgba(145, 195, 223, 0.1);
 }
 
@@ -6096,7 +6096,7 @@ td {
   }
 
   .advantages__item--seventh {
-    background-size: 45%;
+    background-size: 28%;
   }
 
   .advantages__item--eighth {
@@ -7186,8 +7186,8 @@ td {
   .advantages__item--seventh {
     background-image: url(../img/bubble@2x.png);
     background-repeat: no-repeat;
-    background-size: 45%;
-    background-position: 100% 0%;
+    background-size: 28%;
+    background-position: 93% 0%;
     background-color: rgba(145, 195, 223, 0.1);
   }
 
