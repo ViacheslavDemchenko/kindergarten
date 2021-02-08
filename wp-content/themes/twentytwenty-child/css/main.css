@@ -3095,6 +3095,7 @@ template {
 
 .galery-list .galery__item .item__img {
   position: relative;
+  display: block;
   width: 27.8rem;
   height: 100%;
   overflow: hidden;
