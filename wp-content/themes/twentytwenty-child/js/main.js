@@ -276,7 +276,7 @@
       }
     });
     var galleryThumbs = new Swiper('.teachers-thumbs', {
-      spaceBetween: 14,
+      spaceBetween: 33,
       grabCursor: true,
       slidesPerView: 4,
       loopAdditionalSlides: 4,
