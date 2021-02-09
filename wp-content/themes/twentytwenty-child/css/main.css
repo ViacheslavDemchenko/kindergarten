@@ -29,6 +29,7 @@ body {
   text-rendering: optimizelegibility;
   -webkit-text-size-adjust: none;
   -ms-text-size-adjust: none;
+  overflow: auto;
 }
 
 .container-fluid {
@@ -1795,7 +1796,7 @@ template {
 }
 
 .header-center .nav__link {
-  padding: 0.5rem;
+  padding: .5rem;
   font-family: "MuseoSansCyrl-500";
   font-weight: 500;
   font-style: normal;
@@ -1807,6 +1808,7 @@ template {
 }
 
 .header-center .nav__link:hover {
+  text-shadow: 0 0 0.09rem #3F9DD2, 0 0 0.09rem #3F9DD2, 0 0 0.09rem #3F9DD2;
   color: #3F9DD2;
 }
 
@@ -1831,7 +1833,7 @@ template {
 }
 
 .header-bottom .nav__link {
-  padding: 0.5rem;
+  padding: .5rem;
   font-family: "MuseoSansCyrl-500";
   font-weight: 500;
   font-style: normal;
@@ -1843,6 +1845,7 @@ template {
 }
 
 .header-bottom .nav__link:hover {
+  text-shadow: 0 0 0.09rem #3F9DD2, 0 0 0.09rem #3F9DD2, 0 0 0.09rem #3F9DD2;
   color: #3F9DD2;
 }
 
@@ -2808,6 +2811,10 @@ template {
   margin-right: 1rem;
 }
 
+.footer .col:nth-child(2) {
+  margin-bottom: 0;
+}
+
 .footer .col__item {
   display: flex;
   margin-bottom: 1.9rem;
@@ -2897,6 +2904,8 @@ template {
   line-height: 2rem;
   -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
   color: #3F9DD2;
 }
 
@@ -3140,6 +3149,10 @@ template {
 
 .galery-list .galery__item:hover .eye svg {
   opacity: 1;
+}
+
+.fslightbox-container.fslightbox-full-dimension.fslightbox-fade-in-strong {
+  overflow: scroll;
 }
 
 .camp-top-content {
@@ -4000,72 +4013,6 @@ template {
   color: #4F4F4F;
 }
 
-.content__item--schedule {
-  padding-bottom: 2.3rem;
-}
-
-.content__item--schedule,
-.tabs-content__item--schedule {
-  width: 100% !important;
-}
-
-.tabs-content--schedule,
-.tabs-content--pricelist {
-  padding: 0 !important;
-  overflow-x: scroll;
-}
-
-.tabs-content--pricelist {
-  padding: 0 3.6rem !important;
-}
-
-.tabs--schedule {
-  margin-bottom: 2rem;
-}
-
-.tabs--schedule th,
-.tabs--schedule td {
-  text-align: center;
-}
-
-.cell-right--pricelist {
-  text-align: right;
-}
-
-th,
-td {
-  width: calc(100% / 12 * 2);
-  padding: 1rem .3rem;
-  font-family: "MuseoSansCyrl-700";
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  font-size: 1.4rem;
-  line-height: 2rem;
-  color: #727272;
-}
-
-.cell-center {
-  border: 1px solid #DDDDDD;
-}
-
-.cell-left,
-.cell-right {
-  border-bottom: 1px solid #DDD;
-}
-
-.cell-left,
-.cell-top,
-.cell-center {
-  border-right: 2px solid #DDD;
-}
-
-.cell-right,
-.cell-top,
-.cell-center {
-  border-left: 2px solid #DDD;
-}
-
 .schedule-top-content {
   display: flex;
   flex-direction: column;
@@ -4155,6 +4102,72 @@ td {
   align-items: center;
   justify-content: center;
   padding: 2rem .6rem;
+}
+
+.content__item--schedule {
+  padding-bottom: 2.3rem;
+}
+
+.content__item--schedule,
+.tabs-content__item--schedule {
+  width: 100% !important;
+}
+
+.tabs-content--schedule,
+.tabs-content--pricelist {
+  padding: 0 !important;
+  overflow-x: scroll;
+}
+
+.tabs-content--pricelist {
+  padding: 0 1rem !important;
+}
+
+.tabs--schedule {
+  margin-bottom: 2rem;
+}
+
+.tabs--schedule th,
+.tabs--schedule td {
+  text-align: center;
+}
+
+.cell-right--pricelist {
+  text-align: right;
+}
+
+th,
+td {
+  width: calc(100% / 12 * 2);
+  padding: 1rem .3rem;
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #727272;
+}
+
+.cell-center {
+  border: 1px solid #DDDDDD;
+}
+
+.cell-left,
+.cell-right {
+  border-bottom: 1px solid #DDD;
+}
+
+.cell-left,
+.cell-top,
+.cell-center {
+  border-right: 2px solid #DDD;
+}
+
+.cell-right,
+.cell-top,
+.cell-center {
+  border-left: 2px solid #DDD;
 }
 
 /* POP-UPS */
@@ -5412,14 +5425,14 @@ td {
     line-height: 3.8rem;
   }
 
-  .tabs-content--schedule,
-  .tabs-content--pricelist {
-    overflow-x: auto;
-  }
-
   .schedule-top-content__title {
     font-size: 2.5rem;
     line-height: 3.8rem;
+  }
+
+  .tabs-content--schedule,
+  .tabs-content--pricelist {
+    overflow-x: auto;
   }
 }
 
@@ -5751,7 +5764,7 @@ td {
   }
 
   .header-content {
-    padding: 0;
+    padding: 0 0 6.9rem 0;
   }
 
   .header-content__title {
@@ -5952,10 +5965,6 @@ td {
     line-height: 4.2rem;
   }
 
-  .tabs--schedule {
-    margin-bottom: 6rem;
-  }
-
   .schedule-top-content {
     padding: 0 0 7rem 0;
   }
@@ -5993,6 +6002,10 @@ td {
   .tabs--pricelist .title__item {
     width: calc(100% / 12 * 4) !important;
     padding: 2rem 3rem;
+  }
+
+  .tabs--schedule {
+    margin-bottom: 6rem;
   }
 }
 
