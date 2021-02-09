@@ -2116,16 +2116,16 @@ template {
 }
 
 .advantages__item--eighth {
-  background-image: url(../img/cup@1x.png);
+  background-image: url(../img/folder@1x.png);
   background-repeat: no-repeat;
-  background-size: 45%;
-  background-position: 100% 100%;
+  background-size: 25%;
+  background-position: 91% 100%;
   background-color: rgba(145, 195, 223, 0.1);
 }
 
-@supports (background: -webkit-image-set(url(../img/cup@1x.webp) 1x)) {
+@supports (background: -webkit-image-set(url(../img/folder@1x.webp) 1x)) {
   .advantages__item--eighth {
-    background-image: -webkit-image-set(url(../img/cup@1x.webp) 1x);
+    background-image: -webkit-image-set(url(../img/folder@1x.webp) 1x);
   }
 }
 
@@ -6101,7 +6101,7 @@ td {
   }
 
   .advantages__item--eighth {
-    background-size: 45%;
+    background-size: 25%;
   }
 
   .advantages__item .item__text {
@@ -7199,16 +7199,16 @@ td {
 }
 
   .advantages__item--eighth {
-    background-image: url(../img/cup@2x.png);
+    background-image: url(../img/folder@2x.png);
     background-repeat: no-repeat;
-    background-size: 45%;
-    background-position: 100% 100%;
+    background-size: 25%;
+    background-position: 91% 100%;
     background-color: rgba(145, 195, 223, 0.1);
   }
 
-@supports (background: -webkit-image-set(url(../img/cup@2x.webp) 2x)) {
+@supports (background: -webkit-image-set(url(../img/folder@2x.webp) 2x)) {
     .advantages__item--eighth {
-      background-image: -webkit-image-set(url(../img/cup@2x.webp) 2x);
+      background-image: -webkit-image-set(url(../img/folder@2x.webp) 2x);
     }
 }
 }
