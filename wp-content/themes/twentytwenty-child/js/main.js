@@ -121,6 +121,7 @@
   var menuLinks = document.querySelectorAll('.nav__link');
   var menu = document.querySelector('.header-menu-wrap');
   var menuTop = document.querySelector('.header-top--mobile');
+  var containerMobile = document.querySelector('.container--mobile');
   var screenWidth = window.screen.availWidth;
   hamburger.addEventListener('click', mobileMenu);
 
@@ -145,6 +146,7 @@
       menu.classList.add('header-menu-wrap--open');
       menuTop.classList.add('header-top--mobile--open');
       body.classList.add('no-scroll');
+      containerMobile.classList.add('container--mobile-no-padding');
     } else {
       mobileMenuHide();
     }
@@ -155,6 +157,7 @@
     menu.classList.remove('header-menu-wrap--open');
     menuTop.classList.remove('header-top--mobile--open');
     body.classList.remove('no-scroll');
+    containerMobile.classList.remove('container--mobile-no-padding');
   }
 
   window.addEventListener('resize', function () {
