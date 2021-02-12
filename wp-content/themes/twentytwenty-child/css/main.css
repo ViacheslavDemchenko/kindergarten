@@ -1804,7 +1804,9 @@ template {
 }
 
 .header-center .nav__link {
-  padding: .5rem;
+  position: relative;
+  display: inline-block;
+  padding: 2.4rem 1rem;
   font-family: "MuseoSansCyrl-500";
   font-weight: 500;
   font-style: normal;
@@ -1812,12 +1814,38 @@ template {
   font-size: 1.6rem;
   line-height: 2.2rem;
   color: #4F4F4F;
-  transition: all .3s linear;
 }
 
-.header-center .nav__link:hover {
-  text-shadow: 0 0 0.09rem #3F9DD2, 0 0 0.09rem #3F9DD2, 0 0 0.09rem #3F9DD2;
-  color: #3F9DD2;
+.header-center .nav__link::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 2.3rem;
+  width: 100%;
+  height: .1rem;
+  background: #4f4f4f;
+  pointer-events: none;
+  transform-origin: 50% 100%;
+  transition: transform 0.3s cubic-bezier(0.2, 1, 0.8, 1), -webkit-clip-path 0.3s;
+  transition: clip-path 0.3s, transform 0.3s cubic-bezier(0.2, 1, 0.8, 1);
+  transition: clip-path 0.3s, transform 0.3s cubic-bezier(0.2, 1, 0.8, 1), -webkit-clip-path 0.3s;
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 0 100%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%, 100% 100%, 100% 0%);
+  clip-path: polygon(0% 0%, 0% 100%, 0 100%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%, 100% 100%, 100% 0%);
+}
+
+.header-center .nav__link:hover::before {
+  transform: translate3d(0, 0.2rem, 0) scale3d(1.08, 3, 1);
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0, 50% 0, 50% 100%, 50% 100%, 0 100%, 100% 100%, 100% 0%);
+  clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0, 50% 0, 50% 100%, 50% 100%, 0 100%, 100% 100%, 100% 0%);
+}
+
+.header-center .nav__link span {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.2, 1, 0.8, 1);
+}
+
+.header-center .nav__link:hover span {
+  transform: translate3d(0, -0.2rem, 0);
 }
 
 .header-bottom {
@@ -1840,20 +1868,48 @@ template {
 }
 
 .header-bottom .nav__link {
-  padding: .5rem;
+  position: relative;
+  display: inline-block;
+  padding: 2.4rem 1rem;
   font-family: "MuseoSansCyrl-500";
   font-weight: 500;
   font-style: normal;
   font-display: swap;
   font-size: 1.6rem;
-  line-height: 1.9rem;
+  line-height: 2.2rem;
   color: #4F4F4F;
-  transition: all .3s linear;
 }
 
-.header-bottom .nav__link:hover {
-  text-shadow: 0 0 0.09rem #3F9DD2, 0 0 0.09rem #3F9DD2, 0 0 0.09rem #3F9DD2;
-  color: #3F9DD2;
+.header-bottom .nav__link::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 2.3rem;
+  width: 100%;
+  height: .1rem;
+  background: #4f4f4f;
+  pointer-events: none;
+  transform-origin: 50% 100%;
+  transition: transform 0.3s cubic-bezier(0.2, 1, 0.8, 1), -webkit-clip-path 0.3s;
+  transition: clip-path 0.3s, transform 0.3s cubic-bezier(0.2, 1, 0.8, 1);
+  transition: clip-path 0.3s, transform 0.3s cubic-bezier(0.2, 1, 0.8, 1), -webkit-clip-path 0.3s;
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 0 100%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%, 100% 100%, 100% 0%);
+  clip-path: polygon(0% 0%, 0% 100%, 0 100%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%, 100% 100%, 100% 0%);
+}
+
+.header-bottom .nav__link:hover::before {
+  transform: translate3d(0, 0.2rem, 0) scale3d(1.08, 3, 1);
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0, 50% 0, 50% 100%, 50% 100%, 0 100%, 100% 100%, 100% 0%);
+  clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0, 50% 0, 50% 100%, 50% 100%, 0 100%, 100% 100%, 100% 0%);
+}
+
+.header-bottom .nav__link span {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.2, 1, 0.8, 1);
+}
+
+.header-bottom .nav__link:hover span {
+  transform: translate3d(0, -0.2rem, 0);
 }
 
 .header-top__btn--mobile {
@@ -5709,7 +5765,7 @@ td {
 
   .header-center .nav {
     margin-bottom: 0;
-    padding: 2.4rem 5.3rem;
+    padding: 0 5.3rem;
     background: #FFFFFF;
     border-radius: .5rem;
   }
@@ -5729,7 +5785,7 @@ td {
 
   .header-bottom .nav {
     margin-bottom: 0;
-    padding: 2.7rem 10.3rem;
+    padding: 0 10.3rem;
   }
 
   .header-bottom .nav-list {
