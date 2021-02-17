@@ -320,12 +320,14 @@
     tabsTitles.forEach(function (title, i) {
       title.addEventListener('click', function () {
         tabsContent.forEach(function (content) {
-          content.style.display = 'none';
+          // content.style.display = 'none';
+          content.classList.remove('content__item--active');
         });
         tabsTitles.forEach(function (title) {
           title.classList.remove('title__item--active');
-        });
-        tabsContent[i].style.display = 'block';
+        }); // tabsContent[i].style.display = 'block';
+
+        tabsContent[i].classList.add('content__item--active');
         title.classList.add('title__item--active');
       });
     });

@@ -62,7 +62,7 @@ header {
 
 .section__title {
   text-align: center;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -717,7 +717,7 @@ template {
 .seventh-section__title {
   text-align: center;
   margin: 0.8rem 0 2rem 0;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -729,7 +729,7 @@ template {
 .seventh-section__desc {
   text-align: center;
   margin-bottom: 2rem;
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -784,7 +784,7 @@ template {
 .program-methods-list .list__item {
   position: relative;
   margin-bottom: 1rem;
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -811,7 +811,7 @@ template {
   text-align: center;
   max-width: 50rem;
   margin: 0 auto 1rem auto;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -871,7 +871,7 @@ template {
 .camp-list .list__item {
   position: relative;
   margin-bottom: 1rem;
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -896,7 +896,7 @@ template {
   text-align: center;
   max-width: 50rem;
   margin: 0 auto 1rem auto;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -948,7 +948,7 @@ template {
 }
 
 .camp-address-list .list__text {
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -961,7 +961,7 @@ template {
   text-align: center;
   max-width: 50rem;
   margin: 0 auto 2rem auto;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1002,7 +1002,7 @@ template {
 .info-list__item {
   position: relative;
   margin-bottom: 1rem;
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -1068,7 +1068,7 @@ template {
 
 .about-cards .card__item .card__title {
   margin: 0 0 1.8rem 1.2rem;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1078,7 +1078,7 @@ template {
 }
 
 .about-cards .card__item .card__text {
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -1119,7 +1119,7 @@ template {
 
 .event-info__text p {
   margin-bottom: 1rem;
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -1225,7 +1225,7 @@ template {
 .admission-info__text p,
 .program-info__text p {
   margin-bottom: 1rem;
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -1286,7 +1286,7 @@ template {
 
 .admission-cards .card__item .card__title {
   margin: 0 0 0 1.2rem;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1297,7 +1297,7 @@ template {
 
 .admission-cards .card__item .card__text,
 .admission-cards .card__item .list__item {
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -1339,7 +1339,7 @@ template {
   text-align: center;
   max-width: 50rem;
   margin: 0 auto 2rem auto;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1373,7 +1373,7 @@ template {
 .admission-terms__inner .working-periods__title,
 .admission-terms__inner .adaptation-conditions__title {
   margin-bottom: 2rem;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1385,7 +1385,7 @@ template {
 .admission-terms__inner .working-periods__item,
 .admission-terms__inner .adaptation-conditions__item {
   position: relative;
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -1415,7 +1415,7 @@ template {
   text-align: center;
   max-width: 50rem;
   margin: 0 auto 1rem auto;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1457,7 +1457,7 @@ template {
 .educators-english-list .educators-english__item .teacher__name {
   margin-bottom: .5rem;
   text-align: center;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1467,7 +1467,7 @@ template {
 }
 
 .educators-english-list .educators-english__item .teacher__position {
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -1484,7 +1484,7 @@ template {
   text-align: center;
   max-width: 50rem;
   margin: 0 auto 1rem auto;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1526,7 +1526,7 @@ template {
 .teaching-staff-list .teaching-staff__item .teacher__name {
   margin-bottom: .5rem;
   text-align: center;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1536,7 +1536,7 @@ template {
 }
 
 .teaching-staff-list .teaching-staff__item .teacher__position {
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -1553,7 +1553,7 @@ template {
   text-align: center;
   max-width: 50rem;
   margin: 0 auto 1rem auto;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1595,7 +1595,7 @@ template {
 .additional-education-list .additional-education__item .teacher__name {
   margin-bottom: .5rem;
   text-align: center;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1605,7 +1605,7 @@ template {
 }
 
 .additional-education-list .additional-education__item .teacher__position {
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -1635,7 +1635,7 @@ template {
 }
 
 .header-top__block--1 .header-top__text p:nth-child(2) {
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1648,7 +1648,7 @@ template {
 }
 
 .header-top__block--2 .header-top__text p:nth-child(1) {
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1668,7 +1668,7 @@ template {
 
 .header-top__block--4 .header-top__text a:first-child {
   display: block;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1716,7 +1716,7 @@ template {
 }
 
 .header-top__text {
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -1733,7 +1733,7 @@ template {
 }
 
 .btn {
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1806,7 +1806,7 @@ template {
   position: relative;
   display: inline-block;
   padding: 2.4rem 1rem;
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -1870,7 +1870,7 @@ template {
   position: relative;
   display: inline-block;
   padding: 2.4rem 1rem;
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -1924,7 +1924,7 @@ template {
   max-width: 25rem;
   margin: 0 0 4.1rem 0;
   text-align: center;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1978,7 +1978,7 @@ template {
   max-width: 37rem;
   display: inline;
   text-align: center;
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -1999,7 +1999,7 @@ template {
   width: 100%;
   margin-bottom: 1.2rem;
   padding: 2.6rem 4.4rem;
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -2040,7 +2040,7 @@ template {
 }
 
 .policy-block .policy {
-  font-family: "MuseoSansCyrl-300";
+  font-family: "MuseoSansCyrl-300, sans-serif" sans-serif;
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -2050,7 +2050,7 @@ template {
 }
 
 .policy-block .policy a {
-  font-family: "MuseoSansCyrl-300";
+  font-family: "MuseoSansCyrl-300, sans-serif" sans-serif;
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -2063,11 +2063,10 @@ template {
 .advantages {
   margin-bottom: 3rem;
   max-width: 57.5rem;
+  width: 100%;
   margin: auto;
-}
-
-.advantages-row {
-  margin-bottom: 2.1rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .advantages__item {
@@ -2192,8 +2191,8 @@ template {
 }
 
 .advantages__item .item__text {
-  max-width: 29rem;
-  font-family: "MuseoSansCyrl-500";
+  max-width: 26rem;
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -2205,7 +2204,7 @@ template {
 .advantages__item .item__more {
   position: relative;
   margin: 0 0 0 2.5rem;
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -2229,7 +2228,7 @@ template {
   background: url(../img/icons/more.svg) center/cover no-repeat;
 }
 
-.advantages__item:nth-child(odd) {
+.advantages__item:not(:last-child) {
   margin-bottom: 2.1rem;
 }
 
@@ -2282,7 +2281,7 @@ template {
   position: absolute;
   bottom: 1rem;
   left: 1.5rem;
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -2345,7 +2344,7 @@ template {
   padding: 2rem 0;
   margin: 0 !important;
   width: 100%;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -2378,18 +2377,14 @@ template {
 }
 
 .tabs-content .content__item--active {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .tabs .tabs-content-list {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 100%;
-}
-
-.tabs .tabs-content-list .list-col:not(:last-child) {
-  margin-bottom: 4rem;
+  -moz-column-count: 1;
+  column-count: 1;
 }
 
 .tabs .tabs-content-list .item__lesson {
@@ -2420,12 +2415,12 @@ template {
 
 .tabs .tabs-content-list .item__lesson-text {
   position: relative;
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
-  font-size: 1.4rem;
-  line-height: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
   color: #4F4F4F;
 }
 
@@ -2464,7 +2459,7 @@ template {
 }
 
 .teachers-top .slide__text .teacher__name {
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -2474,7 +2469,7 @@ template {
 }
 
 .teachers-top .slide__text p {
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -2532,7 +2527,7 @@ template {
 
 .subscription .subscription__item-title {
   margin-bottom: 1.5rem;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -2546,7 +2541,7 @@ template {
 .subscription .subscription__item-desc {
   margin: 0 0 1.8rem 2rem;
   align-self: flex-start;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -2588,7 +2583,7 @@ template {
 
 .subscription .subscription__item .rate-list .rate__item-text {
   max-width: 15rem;
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -2598,7 +2593,7 @@ template {
 }
 
 .subscription .subscription__item .subscription__price {
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -2905,7 +2900,7 @@ template {
 }
 
 .footer .col .col__text {
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -2916,7 +2911,7 @@ template {
 
 .footer .col .col__text a:first-child {
   display: block;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -2934,7 +2929,7 @@ template {
 .footer .col .address__item {
   display: block;
   margin-bottom: 1.5rem;
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -2950,7 +2945,7 @@ template {
 .footer .col .nav__item {
   display: block;
   margin-bottom: 1.5rem;
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -2998,7 +2993,7 @@ template {
 .footer .policy {
   text-align: center;
   margin-bottom: 0.9rem;
-  font-family: "MuseoSansCyrl-300";
+  font-family: "MuseoSansCyrl-300, sans-serif" sans-serif;
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -3015,7 +3010,7 @@ template {
 
 .footer-bottom a {
   display: block;
-  font-family: "MuseoSansCyrl-300";
+  font-family: "MuseoSansCyrl-300, sans-serif" sans-serif;
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -3080,7 +3075,7 @@ template {
 .bilingual__title,
 .bilingual__subtitle {
   text-align: center;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3090,7 +3085,7 @@ template {
   max-width: 70rem;
   margin: 0 0 2.5rem 0;
   text-align: center;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3122,7 +3117,7 @@ template {
   max-width: 70rem;
   margin: 0 0 3rem 0;
   text-align: center;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3213,7 +3208,7 @@ template {
 .camp__title,
 .camp__subtitle {
   text-align: center;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3223,7 +3218,7 @@ template {
   max-width: 70rem;
   margin: 0 0 2.5rem 0;
   text-align: center;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3265,7 +3260,7 @@ template {
   max-width: 70rem;
   margin: 0 0 2.5rem 0;
   text-align: center;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3276,7 +3271,7 @@ template {
 
 .contact__address .address__title {
   margin: 0 auto 1rem 2rem;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3292,7 +3287,7 @@ template {
 .contact__address .address-list .address__item {
   display: flex;
   align-items: center;
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -3323,7 +3318,7 @@ template {
 }
 
 .contact__address .address-list .address__text {
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3382,7 +3377,7 @@ template {
   max-width: 50rem;
   text-align: center;
   margin: 0 auto 1.6rem auto;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3392,7 +3387,7 @@ template {
 }
 
 .contact-form__subtitle {
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -3433,7 +3428,7 @@ template {
   max-width: 28.3rem;
   margin: 0 auto 2rem auto;
   padding: 2.6rem 4.4rem;
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -3457,7 +3452,7 @@ template {
   max-width: 70rem;
   margin: 0 0 2.5rem 0;
   text-align: center;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3512,7 +3507,7 @@ template {
 
 .reviews-top .slide__text .slide__review {
   margin-bottom: 4.5rem;
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -3527,7 +3522,7 @@ template {
 }
 
 .reviews-top .slide__text .slide__name {
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3537,7 +3532,7 @@ template {
 }
 
 .reviews-top .slide__text .slide__child {
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -3593,7 +3588,7 @@ template {
   max-width: 50rem;
   text-align: center;
   margin: 0 auto 1.6rem auto;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3603,7 +3598,7 @@ template {
 }
 
 .reviews-form__subtitle {
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -3645,7 +3640,7 @@ template {
   max-width: 28.3rem;
   margin: 0 auto 2rem auto;
   padding: 2.6rem 4.4rem;
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -3670,7 +3665,7 @@ template {
   max-width: 70rem;
   margin: 0 0 2.5rem 0;
   text-align: center;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3698,7 +3693,7 @@ template {
   align-items: center;
   padding: 1rem;
   margin: 0 auto 1rem auto;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3747,7 +3742,7 @@ template {
   display: inline-block;
   padding: .5rem 1rem;
   margin-bottom: 1rem;
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -3760,7 +3755,7 @@ template {
 
 .events .event-content .event-content__title {
   margin-bottom: 1rem;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3770,7 +3765,7 @@ template {
 }
 
 .events .event-content .event-content__more {
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -3797,7 +3792,7 @@ template {
   justify-content: center;
   align-items: center;
   padding: 1rem 1.7rem;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3831,7 +3826,7 @@ template {
 .about__title,
 .about__subtitle {
   text-align: center;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3841,7 +3836,7 @@ template {
   max-width: 70rem;
   margin: 0 0 2.5rem 0;
   text-align: center;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3871,7 +3866,7 @@ template {
 .event__title,
 .event__subtitle {
   text-align: center;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3881,7 +3876,7 @@ template {
   max-width: 70rem;
   margin: 0 0 2.5rem 0;
   text-align: center;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3914,7 +3909,7 @@ template {
 .admission__subtitle,
 .program__title {
   text-align: center;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3925,7 +3920,7 @@ template {
   max-width: 70rem;
   margin: 0 0 2.5rem 0;
   text-align: center;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3976,7 +3971,7 @@ template {
   max-width: 50rem;
   text-align: center;
   margin: 0 auto 1.6rem auto;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3986,7 +3981,7 @@ template {
 }
 
 .admission-form__subtitle {
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -4027,7 +4022,7 @@ template {
   max-width: 28.3rem;
   margin: 0 auto 2rem auto;
   padding: 2.6rem 4.4rem;
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -4052,7 +4047,7 @@ template {
   max-width: 70rem;
   margin: 0 0 2.5rem 0;
   text-align: center;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -4072,7 +4067,7 @@ template {
   max-width: 70rem;
   margin: 0 0 2.5rem 0;
   text-align: center;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -4101,7 +4096,7 @@ template {
 }
 
 .schedule-top-content .director-block .director__content .director__text {
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -4120,7 +4115,7 @@ template {
 
 .schedule-top-content .director-block .director__content .director__name {
   align-self: flex-end;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -4131,7 +4126,7 @@ template {
 
 .schedule-top-content .director-block .director__content .director__position {
   align-self: flex-end;
-  font-family: "MuseoSansCyrl-500";
+  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -4188,7 +4183,7 @@ th,
 td {
   width: calc(100% / 12 * 2);
   padding: 1rem .3rem;
-  font-family: "MuseoSansCyrl-700";
+  font-family: "MuseoSansCyrl-700, sans-serif";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -5009,18 +5004,13 @@ td {
   }
 
   .tabs .tabs-content-list {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+    -moz-column-count: 3;
+    column-count: 3;
   }
 
-  .tabs .tabs-content-list .list-col {
-    width: calc(100% / 12 * 6);
-    padding-left: 4.8rem;
-  }
-
-  .tabs .tabs-content-list .list-col:not(:last-child) {
-    margin-bottom: 2rem;
+  .tabs .tabs-content-list .item__lesson-text {
+    font-size: 1.3rem;
+    line-height: 2rem;
   }
 
   .teachers-top .swiper-slide {
@@ -5566,26 +5556,23 @@ td {
   }
 
   .advantages {
-    width: 57.5rem;
-    min-width: 100%;
-  }
-
-  .advantages-row {
-    display: flex;
-    margin-bottom: 0;
+    max-width: 100%;
+    justify-content: center;
   }
 
   .advantages__item {
-    width: 57.5rem;
+    width: 100%;
+    max-width: 49rem;
     height: 13.4rem;
   }
 
   .advantages__item:nth-child(odd) {
-    margin-right: 1rem;
+    margin-right: 2rem;
   }
 
-  .tabs .tabs-content-list .list-col {
-    justify-content: flex-start;
+  .tabs .tabs-content-list {
+    -moz-column-count: 3;
+    column-count: 3;
   }
 
   .tabs .tabs-content-list .item__lesson-text {
@@ -6115,11 +6102,6 @@ td {
 
   .advantages {
     margin-bottom: 6.5rem;
-  }
-
-  .advantages-row {
-    display: flex;
-    flex-wrap: wrap;
   }
 
   .advantages__item--first {
@@ -7006,8 +6988,10 @@ td {
 }
 
 @media (min-width: 1440px) {
-  .tabs .tabs-content-list .list-col {
-    width: calc(100% / 12 * 4);
+  .advantages__item {
+    max-width: 57.5rem;
+    height: 13.4rem;
+    width: 50%;
   }
 
   .subscription-list {
@@ -7145,10 +7129,6 @@ td {
     margin-right: 2.7rem;
     width: 13.7rem;
     height: 12.4rem;
-  }
-
-  .advantages__item:nth-child(odd) {
-    margin-right: 2rem;
   }
 }
 
