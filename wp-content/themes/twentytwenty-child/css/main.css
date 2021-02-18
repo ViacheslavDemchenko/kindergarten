@@ -850,6 +850,9 @@ template {
 
 .camp-top-btns {
   margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .camp-program {
@@ -924,8 +927,9 @@ template {
 }
 
 .camp-address-list {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 2.2rem;
 }
@@ -1035,11 +1039,11 @@ template {
   margin-bottom: 3rem;
 }
 
-.about-cards .cards-list .list-row {
+.about-cards .cards-list {
+  width: 100%;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
 }
 
 .about-cards .card-top {
@@ -1054,6 +1058,10 @@ template {
   background: #FFFFFF;
   box-shadow: 0 10rem 8rem rgba(206, 206, 206, 0.07), 0 2.23363rem 1.7869rem rgba(206, 206, 206, 0.0417275), 0 0.66501rem 0.53201rem rgba(206, 206, 206, 0.0282725);
   border-radius: .5rem;
+}
+
+.about-cards .card__item:last-child {
+  margin-right: 0;
 }
 
 .about-cards .card__item .card__icon {
@@ -1247,10 +1255,10 @@ template {
 }
 
 .admission-cards .cards-list {
+  width: 100%;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
 }
 
 .admission-cards .card-top {
@@ -1268,6 +1276,10 @@ template {
   background: #FFFFFF;
   box-shadow: 0 10rem 8rem rgba(206, 206, 206, 0.07), 0 2.23363rem 1.7869rem rgba(206, 206, 206, 0.0417275), 0 0.66501rem 0.53201rem rgba(206, 206, 206, 0.0282725);
   border-radius: .5rem;
+}
+
+.admission-cards .card__item:last-child {
+  margin-right: 0;
 }
 
 .admission-cards .card__item .card__icon {
@@ -4070,7 +4082,7 @@ td {
 }
 
 .top-content__img {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .top-content__title,
@@ -4084,7 +4096,7 @@ td {
 
 .top-content__title {
   max-width: 70rem;
-  margin: 0 0 2.5rem 0;
+  margin: 0 0 3rem 0;
   text-align: center;
   font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
@@ -4444,6 +4456,16 @@ td {
     width: calc(100% / 12 * 6);
   }
 
+  .about-cards .cards-list {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .admission-cards .cards-list {
+    width: 70%;
+    margin: 0 auto;
+  }
+
   .subscription-list {
     justify-content: center;
   }
@@ -4514,20 +4536,6 @@ td {
 }
 
 @media screen and (min-width: 560px) {
-  .about-cards .cards-list .list-row {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .about-cards .card__item {
-    width: calc(100% / 12 * 6);
-    max-width: 27rem;
-  }
-
-  .about-cards .card__item:nth-child(odd) {
-    margin-right: 1rem;
-  }
-
   .event-galery .galery-list {
     justify-content: space-between;
     max-width: 54.8rem;
@@ -4541,20 +4549,6 @@ td {
   .event-galery .galery__item {
     width: calc(100% / 12 * 6);
     max-width: 27rem;
-  }
-
-  .admission-cards .cards-list {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .admission-cards .card__item {
-    width: calc(100% / 12 * 6);
-    max-width: 32rem;
-  }
-
-  .admission-cards .card__item:not(:last-child) {
-    margin-right: 1rem;
   }
 
   .header-center {
@@ -4700,6 +4694,12 @@ td {
     margin: 0 auto;
   }
 
+  .camp-top-btns {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
   .camp-program__row .camp-program__img-wrap {
     max-width: 57.4rem;
     margin: 0 auto;
@@ -4708,6 +4708,14 @@ td {
   .about-info__inner .info__img-wrap {
     max-width: 57.4rem;
     margin: 0 0 0 auto;
+  }
+
+  .about-cards .card__item {
+    max-width: 32rem;
+  }
+
+  .about-cards .card__item:nth-child(even) {
+    margin: 0 1rem 2rem 1rem;
   }
 
   .event-info__inner .event-info__img-wrap {
@@ -4721,6 +4729,14 @@ td {
   .program-info__inner .program-info__img-wrap {
     max-width: 57.4rem;
     margin: 0 auto;
+  }
+
+  .admission-cards .card__item {
+    max-width: 32rem;
+  }
+
+  .admission-cards .card__item:nth-child(even) {
+    margin: 0 1rem 2rem 1rem;
   }
 
   .educators-english-list {
@@ -4870,6 +4886,14 @@ td {
 }
 
 @media (min-width: 768px) {
+  .about-cards .cards-list {
+    width: 90%;
+  }
+
+  .admission-cards .cards-list {
+    width: 90%;
+  }
+
   .tabs-titles {
     flex-direction: row;
   }
@@ -5136,14 +5160,6 @@ td {
     max-width: 57.4rem;
   }
 
-  .about-cards .card__item:nth-child(odd) {
-    margin-right: 0;
-  }
-
-  .about-cards .card__item:not(:last-child) {
-    margin-right: 1rem;
-  }
-
   .event-info {
     flex-direction: row;
     padding-bottom: 5rem;
@@ -5364,6 +5380,14 @@ td {
     width: calc(100% / 12 * 3);
   }
 
+  .about-cards .cards-list {
+    width: 100%;
+  }
+
+  .admission-cards .cards-list {
+    width: 100%;
+  }
+
   .header-content-cols {
     flex-wrap: nowrap;
   }
@@ -5501,7 +5525,7 @@ td {
   }
 
   .about-cards .card__item {
-    width: calc(100% / 12 * 6);
+    width: calc(100% / 12 * 4);
     max-width: 37.7rem;
     padding: 2.8rem 3rem 3.7rem 3rem;
   }
@@ -5848,16 +5872,6 @@ td {
 @media (min-width: 1109px) {
   .reviews-list .reviews__item:not(:last-child) {
     margin: 0 1rem 0 0;
-  }
-}
-
-@media screen and (min-width: 1171px) {
-  .about-cards .cards-list .list-row {
-    justify-content: space-between;
-  }
-
-  .admission-cards .cards-list {
-    justify-content: space-between;
   }
 }
 
@@ -6472,10 +6486,6 @@ td {
     height: 1.5rem;
   }
 
-  .about-cards .card__item {
-    width: calc(100% / 12 * 4);
-  }
-
   .event-info {
     padding-bottom: 7rem;
   }
@@ -6862,7 +6872,11 @@ td {
   .top-content__img {
     max-width: 117.5rem;
     height: 20rem;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .top-content__title {
+    margin: 0 auto 4rem auto;
   }
 }
 
