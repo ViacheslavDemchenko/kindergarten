@@ -757,163 +757,11 @@ template {
   margin-top: 3rem;
 }
 
-.bilingual-program {
-  padding-bottom: 3rem;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-.bilingual-program__inner {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-.bilingual-program__inner .bilingual-program__list {
-  width: 100%;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-.bilingual-list,
-.program-methods-list {
-  padding-left: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.bilingual-list .list__item,
-.program-methods-list .list__item {
-  position: relative;
-  margin-bottom: 1rem;
-  font-family: "MuseoSansCyrl-500", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-  font-size: 1.4rem;
-  line-height: 2rem;
-  color: #4F4F4F;
-}
-
-.bilingual-list .list__item::before,
-.program-methods-list .list__item::before {
-  position: absolute;
-  content: "";
-  top: 1rem;
-  left: -2rem;
-  transform: translateY(-50%);
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  background: linear-gradient(90deg, #91C3DF 0%, #62B7E7 112.5%);
-}
-
-.bilingual-section__title,
-.program-methods-section__title {
-  text-align: center;
-  max-width: 50rem;
-  margin: 0 auto 1rem auto;
-  font-family: "MuseoSansCyrl-700", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  font-size: 1.8rem;
-  line-height: 2.5rem;
-  color: #4F4F4F;
-}
-
-.bilingual-principles,
-.program-methods {
-  padding-bottom: 3.3rem;
-}
-
-.bilingual-principles__inner,
-.program-methods__inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-.program-methods {
-  padding-bottom: 6rem;
-}
-
-.bilingual-list--principles,
-.program-methods-list--principles {
-  margin-bottom: 4rem;
-}
-
 .camp-top-btns {
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.camp-program {
-  padding-bottom: 3rem;
-}
-
-.camp-program__row {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-}
-
-.camp-program__row:not(:last-child) {
-  margin-bottom: 2rem;
-}
-
-.camp-program__row .camp-program__list:nth-child(even) {
-  order: -1;
-}
-
-.camp-list {
-  padding-left: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.camp-list .list__item {
-  position: relative;
-  margin-bottom: 1rem;
-  font-family: "MuseoSansCyrl-500", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-  font-size: 1.4rem;
-  line-height: 2rem;
-  color: #4F4F4F;
-}
-
-.camp-list .list__item::before {
-  position: absolute;
-  content: "";
-  top: 1rem;
-  left: -2rem;
-  transform: translateY(-50%);
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  background: linear-gradient(90deg, #91C3DF 0%, #62B7E7 112.5%);
-}
-
-.camp-section__title {
-  text-align: center;
-  max-width: 50rem;
-  margin: 0 auto 1rem auto;
-  font-family: "MuseoSansCyrl-700", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  font-size: 1.8rem;
-  line-height: 2.5rem;
-  color: #4F4F4F;
 }
 
 .camp-address {
@@ -980,59 +828,6 @@ template {
   font-size: 1.8rem;
   line-height: 2.5rem;
   color: #4F4F4F;
-}
-
-.about-info {
-  padding-bottom: 3rem;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-.about-info__inner {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  max-width: 56.7rem;
-  margin: 0 auto;
-}
-
-.about-info__inner .info-list {
-  width: 100%;
-}
-
-.about-info__inner .info__img {
-  margin: 0 auto;
-}
-
-.info-list {
-  padding-left: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.info-list__item {
-  position: relative;
-  margin-bottom: 1rem;
-  font-family: "MuseoSansCyrl-500", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-  font-size: 1.4rem;
-  line-height: 2rem;
-  color: #4F4F4F;
-}
-
-.info-list__item::before {
-  position: absolute;
-  content: "";
-  top: 1rem;
-  left: -2rem;
-  transform: translateY(-50%);
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  background: linear-gradient(90deg, #91C3DF 0%, #62B7E7 112.5%);
 }
 
 .about-cards {
@@ -1199,57 +994,6 @@ template {
   height: 17rem;
 }
 
-.admission-info,
-.program-info {
-  padding-bottom: 3rem;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-.admission-info__inner,
-.program-info__inner {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  max-width: 56.7rem;
-  margin: 0 auto;
-}
-
-.admission-info__inner .admission-info__text,
-.admission-info__inner .program-info__text,
-.program-info__inner .admission-info__text,
-.program-info__inner .program-info__text {
-  width: 100%;
-  padding-left: 0;
-}
-
-.admission-info__inner .admission-info__img,
-.admission-info__inner .program-info__img,
-.program-info__inner .admission-info__img,
-.program-info__inner .program-info__img {
-  margin: 0 auto;
-}
-
-.admission-info__text,
-.program-info__text {
-  padding: 0 3.5rem 0 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.admission-info__text p,
-.program-info__text p {
-  margin-bottom: 1rem;
-  font-family: "MuseoSansCyrl-500", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-  font-size: 1.4rem;
-  line-height: 2rem;
-  color: #4F4F4F;
-}
-
 .admission-cards {
   margin-bottom: 2rem;
 }
@@ -1351,47 +1095,11 @@ template {
   color: #3F9DD2;
 }
 
-.admission-terms {
-  margin-bottom: 3rem;
-}
-
-.admission-terms__title {
-  text-align: center;
-  max-width: 50rem;
-  margin: 0 auto 2rem auto;
-  font-family: "MuseoSansCyrl-700", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  font-size: 1.8rem;
-  line-height: 2.5rem;
-  color: #4F4F4F;
-}
-
-.admission-terms__inner {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  max-width: 56.7rem;
-  margin: 0 auto;
-}
-
-.admission-terms__inner .working-periods-list {
-  padding-left: 2.7rem;
-  margin-bottom: 1rem;
-}
-
-.admission-terms__inner .adaptation-conditions-list {
-  padding-left: 2.7rem;
-}
-
-.admission-terms__inner .working-periods,
-.admission-terms__inner .adaptation-conditions {
+.terms-block {
   width: 100%;
 }
 
-.admission-terms__inner .working-periods__title,
-.admission-terms__inner .adaptation-conditions__title {
+.terms-block__title {
   margin-bottom: 2rem;
   font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
@@ -1400,31 +1108,6 @@ template {
   font-size: 1.4rem;
   line-height: 2.8rem;
   color: #4F4F4F;
-}
-
-.admission-terms__inner .working-periods__item,
-.admission-terms__inner .adaptation-conditions__item {
-  position: relative;
-  font-family: "MuseoSansCyrl-500", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-  font-size: 1.6rem;
-  line-height: 3.2rem;
-  color: #4F4F4F;
-}
-
-.admission-terms__inner .working-periods__item::before,
-.admission-terms__inner .adaptation-conditions__item::before {
-  position: absolute;
-  content: "";
-  top: 1.6rem;
-  left: -2rem;
-  transform: translateY(-50%);
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  background: linear-gradient(90deg, #91C3DF 0%, #62B7E7 112.5%);
 }
 
 .educators-english {
@@ -4114,6 +3797,104 @@ td {
   color: #727272;
 }
 
+.list-block {
+  width: 100%;
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.list-block__item {
+  position: relative;
+  margin-bottom: 1rem;
+  font-family: "MuseoSansCyrl-500", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #4F4F4F;
+}
+
+.list-block__item::before {
+  position: absolute;
+  content: "";
+  top: 1rem;
+  left: -2rem;
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #91C3DF 0%, #62B7E7 112.5%);
+}
+
+.list-block--long {
+  width: 100% !important;
+}
+
+.list-block--admission {
+  width: 100% !important;
+}
+
+.list-block--admission__item {
+  position: relative;
+  font-family: "MuseoSansCyrl-500", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  color: #4F4F4F;
+}
+
+.list-block--admission__item::before {
+  position: absolute;
+  content: "";
+  top: 1.6rem;
+  left: -2rem;
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #91C3DF 0%, #62B7E7 112.5%);
+}
+
+.img-block {
+  margin: 0 auto;
+}
+
+.img-block:not(:last-child) {
+  margin-bottom: 3.8rem;
+}
+
+.section-info {
+  padding-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.section-info__inner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  max-width: 56.7rem;
+  margin: 0 auto;
+}
+
+.section-infon__title {
+  text-align: center;
+  max-width: 50rem;
+  margin: 0 auto 1rem auto;
+  font-family: "MuseoSansCyrl-700", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: #4F4F4F;
+}
+
 /* POP-UPS */
 
 .popup {
@@ -4424,25 +4205,11 @@ td {
 }
 
 @media screen and (min-width: 500px) {
-  .bilingual-list,
-  .program-methods-list {
-    padding-left: 2rem;
-  }
-
-  .camp-list {
-    padding-left: 2rem;
-  }
-
-  .info-list {
-    padding-left: 2rem;
-  }
-
   .event-info__text {
     padding-left: 2rem;
   }
 
-  .admission-info__text,
-  .program-info__text {
+  .list-block {
     padding-left: 2rem;
   }
 }
@@ -4689,25 +4456,10 @@ td {
     }
 }
 
-  .bilingual-program__inner .bilingual-program__img-wrap {
-    max-width: 57.4rem;
-    margin: 0 auto;
-  }
-
   .camp-top-btns {
     width: 100%;
     flex-direction: row;
     justify-content: center;
-  }
-
-  .camp-program__row .camp-program__img-wrap {
-    max-width: 57.4rem;
-    margin: 0 auto;
-  }
-
-  .about-info__inner .info__img-wrap {
-    max-width: 57.4rem;
-    margin: 0 0 0 auto;
   }
 
   .about-cards .card__item {
@@ -4719,14 +4471,6 @@ td {
   }
 
   .event-info__inner .event-info__img-wrap {
-    max-width: 57.4rem;
-    margin: 0 auto;
-  }
-
-  .admission-info__inner .admission-info__img-wrap,
-  .admission-info__inner .program-info__img-wrap,
-  .program-info__inner .admission-info__img-wrap,
-  .program-info__inner .program-info__img-wrap {
     max-width: 57.4rem;
     margin: 0 auto;
   }
@@ -4864,6 +4608,11 @@ td {
 
   .admission-form__age {
     margin-right: 0;
+  }
+
+  .img-block__wrap {
+    max-width: 57.4rem;
+    margin: 0 0 0 auto;
   }
 }
 
@@ -5066,98 +4815,8 @@ td {
 }
 
 @media screen and (min-width: 900px) {
-  .bilingual-program {
-    flex-direction: row;
-    padding-bottom: 5rem;
-  }
-
-  .bilingual-program__inner {
-    flex-direction: row;
-  }
-
-  .bilingual-program__inner .bilingual-program__list {
-    width: calc(100% / 12 * 6);
-  }
-
-  .bilingual-program__inner .bilingual-program__img {
-    width: calc(100% / 12 * 6);
-  }
-
-  .bilingual-program__inner .bilingual-program__img-wrap {
-    max-width: 57.4rem;
-  }
-
-  .bilingual-section__title,
-  .program-methods-section__title {
-    margin: 0 auto 2rem auto;
-  }
-
-  .bilingual-program__list,
-  .program-methods__list {
-    align-self: flex-start;
-  }
-
-  .camp-program {
-    flex-direction: row;
-    padding-bottom: 5rem;
-  }
-
-  .camp-program__row {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-  .camp-program__row .camp-program__list {
-    width: calc(100% / 12 * 6);
-  }
-
-  .camp-program__row .camp-program__list:nth-child(even) {
-    order: 0;
-  }
-
-  .camp-program__row .camp-program__img {
-    width: calc(100% / 12 * 6);
-  }
-
-  .camp-program__row .camp-program__img-wrap {
-    max-width: 57.4rem;
-  }
-
-  .camp-list {
-    padding-left: 3rem;
-    margin-bottom: 0;
-  }
-
-  .camp-section__title {
-    margin: 0 auto 2rem auto;
-  }
-
   .camp-address__section-title {
     margin: 0 auto 2rem auto;
-  }
-
-  .about-info {
-    flex-direction: row;
-    padding-bottom: 5rem;
-  }
-
-  .about-info__inner {
-    flex-direction: row;
-    align-items: flex-start;
-    max-width: 100%;
-  }
-
-  .about-info__inner .info-list {
-    width: calc(100% / 12 * 6);
-  }
-
-  .about-info__inner .info__img {
-    width: calc(100% / 12 * 6);
-  }
-
-  .about-info__inner .info__img-wrap {
-    max-width: 57.4rem;
   }
 
   .event-info {
@@ -5195,62 +4854,17 @@ td {
     max-width: 27.8rem;
   }
 
-  .admission-info,
-  .program-info {
-    flex-direction: row;
-    padding-bottom: 5rem;
-  }
-
-  .admission-info__inner,
-  .program-info__inner {
-    flex-direction: row;
-    align-items: flex-start;
-    max-width: 100%;
-  }
-
-  .admission-info__inner .admission-info__text,
-  .admission-info__inner .program-info__text,
-  .program-info__inner .admission-info__text,
-  .program-info__inner .program-info__text {
-    width: calc(100% / 12 * 6);
-  }
-
-  .admission-info__inner .admission-info__img,
-  .admission-info__inner .program-info__img,
-  .program-info__inner .admission-info__img,
-  .program-info__inner .program-info__img {
-    width: calc(100% / 12 * 6);
-  }
-
-  .admission-info__inner .admission-info__img-wrap,
-  .admission-info__inner .program-info__img-wrap,
-  .program-info__inner .admission-info__img-wrap,
-  .program-info__inner .program-info__img-wrap {
-    max-width: 57.4rem;
-  }
-
   .admission-cards .card__item {
     width: calc(100% / 12 * 4);
     max-width: 37.7rem;
     min-height: 32rem;
   }
 
-  .admission-terms__title {
-    margin: 0 auto 2rem auto;
-  }
-
-  .admission-terms__inner {
-    flex-direction: row;
-    max-width: 100%;
-  }
-
-  .admission-terms__inner .working-periods,
-  .admission-terms__inner .adaptation-conditions {
+  .terms-block {
     width: calc(100% / 12 * 6);
   }
 
-  .admission-terms__inner .working-periods__title,
-  .admission-terms__inner .adaptation-conditions__title {
+  .terms-block__title {
     width: calc(100% / 12 * 6);
     font-size: 1.8rem;
     line-height: 3.6rem;
@@ -5354,6 +4968,33 @@ td {
   .top-content__title {
     font-size: 2.5rem;
     line-height: 3.8rem;
+  }
+
+  .list-block {
+    width: calc(100% / 12 * 6);
+  }
+
+  .img-block {
+    width: calc(100% / 12 * 6);
+  }
+
+  .img-block__wrap {
+    max-width: 57.4rem;
+  }
+
+  .section-info {
+    flex-direction: row;
+    padding-bottom: 5rem;
+  }
+
+  .section-info__inner {
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+
+  .section-infon__title {
+    margin: 0 auto 2rem auto;
   }
 }
 
@@ -5515,11 +5156,6 @@ td {
 }
 
 @media screen and (min-width: 1024px) {
-  .bilingual-program__list,
-  .program-methods__list {
-    align-self: center;
-  }
-
   .about-cards {
     margin-bottom: 7rem;
   }
@@ -6403,87 +6039,11 @@ td {
 }
 
 @media screen and (min-width: 1440px) {
-  .bilingual-program {
-    padding-bottom: 9rem;
-  }
-
-  .bilingual-list .list__item,
-  .program-methods-list .list__item {
-    margin-bottom: 0;
-    font-size: 1.6rem;
-    line-height: 3.2rem;
-  }
-
-  .bilingual-list .list__item::before,
-  .program-methods-list .list__item::before {
-    top: 1.5rem;
-    left: -2.9rem;
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-
-  .bilingual-section__title,
-  .program-methods-section__title {
-    max-width: calc(100% / 12 * 10);
-    margin: 0 auto 4rem auto;
-    font-size: 3.6rem;
-    line-height: 5rem;
-  }
-
-  .bilingual-program__list,
-  .program-methods__list {
-    align-self: flex-start;
-  }
-
-  .camp-program {
-    padding-bottom: 9rem;
-  }
-
-  .camp-program__row:not(:last-child) {
-    margin-bottom: 3.8rem;
-  }
-
-  .camp-list .list__item {
-    margin-bottom: 0;
-    font-size: 1.6rem;
-    line-height: 3.2rem;
-  }
-
-  .camp-list .list__item::before {
-    top: 1.5rem;
-    left: -2.9rem;
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-
-  .camp-section__title {
-    max-width: calc(100% / 12 * 10);
-    margin: 0 auto 4rem auto;
-    font-size: 3.6rem;
-    line-height: 5rem;
-  }
-
   .camp-address__section-title {
     width: calc(100% / 12 * 9);
     margin: 0 auto 4rem auto;
     font-size: 3.6rem;
     line-height: 5rem;
-  }
-
-  .about-info {
-    padding-bottom: 7rem;
-  }
-
-  .info-list__item {
-    font-size: 1.6rem;
-    line-height: 3.2rem;
-  }
-
-  .info-list__item::before {
-    top: 1.5rem;
-    left: -2.9rem;
-    width: 1.5rem;
-    height: 1.5rem;
   }
 
   .event-info {
@@ -6499,40 +6059,10 @@ td {
     margin-bottom: 2rem !important;
   }
 
-  .admission-info,
-  .program-info {
-    padding-bottom: 7rem;
-  }
-
-  .admission-info__text p,
-  .program-info__text p {
-    font-size: 1.6rem;
-    line-height: 3.2rem;
-  }
-
   .admission-cards .card__item .list__item::before {
     top: 50%;
     transform: translateY(-50%);
     left: -2.9rem;
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-
-  .admission-terms {
-    margin-bottom: 6.7rem;
-  }
-
-  .admission-terms__title {
-    max-width: calc(100% / 12 * 10);
-    margin: 0 auto 4rem auto;
-    font-size: 3.6rem;
-    line-height: 5rem;
-  }
-
-  .admission-terms__inner .working-periods__item::before,
-  .admission-terms__inner .adaptation-conditions__item::before {
-    top: 1.5rem;
-    left: -2.5rem;
     width: 1.5rem;
     height: 1.5rem;
   }
@@ -6756,6 +6286,35 @@ td {
     font-size: 2.2rem;
     line-height: 3.1rem;
   }
+
+  .list-block__item {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+  }
+
+  .list-block__item::before {
+    top: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .list-block--admission__item::before {
+    top: 1.5rem;
+    left: -2.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .section-info {
+    padding-bottom: 7rem;
+  }
+
+  .section-infon__title {
+    max-width: calc(100% / 12 * 10);
+    margin: 0 auto 4rem auto;
+    font-size: 3.6rem;
+    line-height: 5rem;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -6796,34 +6355,7 @@ td {
 }
 
 @media screen and (min-width: 1920px) {
-  .bilingual-list,
-  .program-methods-list {
-    padding-left: 3rem;
-    margin-bottom: 0;
-  }
-
-  .bilingual-principles,
-  .program-methods {
-    padding-bottom: 8.6rem;
-  }
-
-  .bilingual-program__list,
-  .program-methods__list {
-    margin-bottom: 4rem;
-  }
-
-  .info-list {
-    padding-left: 3rem;
-    margin-bottom: 0;
-  }
-
   .event-info__text {
-    padding-left: 3rem;
-    margin-bottom: 0;
-  }
-
-  .admission-info__text,
-  .program-info__text {
     padding-left: 3rem;
     margin-bottom: 0;
   }
@@ -6877,6 +6409,11 @@ td {
 
   .top-content__title {
     margin: 0 auto 4rem auto;
+  }
+
+  .list-block {
+    padding-left: 3rem;
+    margin-bottom: 0;
   }
 }
 
