@@ -62,7 +62,7 @@ header {
 
 .section__title {
   text-align: center;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -717,7 +717,7 @@ template {
 .seventh-section__title {
   text-align: center;
   margin: 0.8rem 0 2rem 0;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -729,7 +729,7 @@ template {
 .seventh-section__desc {
   text-align: center;
   margin-bottom: 2rem;
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -751,6 +751,10 @@ template {
 
 .footer {
   padding: 3.7rem 3rem 2.6rem 2rem;
+}
+
+.btn--long {
+  margin-top: 3rem;
 }
 
 .bilingual-program {
@@ -784,7 +788,7 @@ template {
 .program-methods-list .list__item {
   position: relative;
   margin-bottom: 1rem;
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -811,7 +815,7 @@ template {
   text-align: center;
   max-width: 50rem;
   margin: 0 auto 1rem auto;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -844,6 +848,10 @@ template {
   margin-bottom: 4rem;
 }
 
+.camp-top-btns {
+  margin-top: 3rem;
+}
+
 .camp-program {
   padding-bottom: 3rem;
 }
@@ -871,7 +879,7 @@ template {
 .camp-list .list__item {
   position: relative;
   margin-bottom: 1rem;
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -896,7 +904,7 @@ template {
   text-align: center;
   max-width: 50rem;
   margin: 0 auto 1rem auto;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -948,7 +956,7 @@ template {
 }
 
 .camp-address-list .list__text {
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -961,7 +969,7 @@ template {
   text-align: center;
   max-width: 50rem;
   margin: 0 auto 2rem auto;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1002,7 +1010,7 @@ template {
 .info-list__item {
   position: relative;
   margin-bottom: 1rem;
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -1068,7 +1076,7 @@ template {
 
 .about-cards .card__item .card__title {
   margin: 0 0 1.8rem 1.2rem;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1078,7 +1086,7 @@ template {
 }
 
 .about-cards .card__item .card__text {
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -1119,7 +1127,7 @@ template {
 
 .event-info__text p {
   margin-bottom: 1rem;
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -1225,7 +1233,7 @@ template {
 .admission-info__text p,
 .program-info__text p {
   margin-bottom: 1rem;
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -1286,7 +1294,7 @@ template {
 
 .admission-cards .card__item .card__title {
   margin: 0 0 0 1.2rem;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1297,7 +1305,7 @@ template {
 
 .admission-cards .card__item .card__text,
 .admission-cards .card__item .list__item {
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -1339,7 +1347,7 @@ template {
   text-align: center;
   max-width: 50rem;
   margin: 0 auto 2rem auto;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1373,7 +1381,7 @@ template {
 .admission-terms__inner .working-periods__title,
 .admission-terms__inner .adaptation-conditions__title {
   margin-bottom: 2rem;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1385,7 +1393,7 @@ template {
 .admission-terms__inner .working-periods__item,
 .admission-terms__inner .adaptation-conditions__item {
   position: relative;
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -1415,7 +1423,7 @@ template {
   text-align: center;
   max-width: 50rem;
   margin: 0 auto 1rem auto;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1457,7 +1465,7 @@ template {
 .educators-english-list .educators-english__item .teacher__name {
   margin-bottom: .5rem;
   text-align: center;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1467,7 +1475,7 @@ template {
 }
 
 .educators-english-list .educators-english__item .teacher__position {
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -1484,7 +1492,7 @@ template {
   text-align: center;
   max-width: 50rem;
   margin: 0 auto 1rem auto;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1526,7 +1534,7 @@ template {
 .teaching-staff-list .teaching-staff__item .teacher__name {
   margin-bottom: .5rem;
   text-align: center;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1536,7 +1544,7 @@ template {
 }
 
 .teaching-staff-list .teaching-staff__item .teacher__position {
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -1553,7 +1561,7 @@ template {
   text-align: center;
   max-width: 50rem;
   margin: 0 auto 1rem auto;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1595,7 +1603,7 @@ template {
 .additional-education-list .additional-education__item .teacher__name {
   margin-bottom: .5rem;
   text-align: center;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1605,7 +1613,7 @@ template {
 }
 
 .additional-education-list .additional-education__item .teacher__position {
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -1635,7 +1643,7 @@ template {
 }
 
 .header-top__block--1 .header-top__text p:nth-child(2) {
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1648,7 +1656,7 @@ template {
 }
 
 .header-top__block--2 .header-top__text p:nth-child(1) {
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1668,7 +1676,7 @@ template {
 
 .header-top__block--4 .header-top__text a:first-child {
   display: block;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1716,7 +1724,7 @@ template {
 }
 
 .header-top__text {
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -1733,7 +1741,7 @@ template {
 }
 
 .btn {
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1806,7 +1814,7 @@ template {
   position: relative;
   display: inline-block;
   padding: 2.4rem 1rem;
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -1870,7 +1878,7 @@ template {
   position: relative;
   display: inline-block;
   padding: 2.4rem 1rem;
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -1924,7 +1932,7 @@ template {
   max-width: 25rem;
   margin: 0 0 4.1rem 0;
   text-align: center;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1978,7 +1986,7 @@ template {
   max-width: 37rem;
   display: inline;
   text-align: center;
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -1999,7 +2007,7 @@ template {
   width: 100%;
   margin-bottom: 1.2rem;
   padding: 2.6rem 4.4rem;
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -2040,7 +2048,7 @@ template {
 }
 
 .policy-block .policy {
-  font-family: "MuseoSansCyrl-300, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-300", sans-serif;
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -2050,7 +2058,7 @@ template {
 }
 
 .policy-block .policy a {
-  font-family: "MuseoSansCyrl-300, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-300", sans-serif;
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -2192,7 +2200,7 @@ template {
 
 .advantages__item .item__text {
   max-width: 26rem;
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -2204,7 +2212,7 @@ template {
 .advantages__item .item__more {
   position: relative;
   margin: 0 0 0 2.5rem;
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -2281,7 +2289,7 @@ template {
   position: absolute;
   bottom: 1rem;
   left: 1.5rem;
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -2344,7 +2352,7 @@ template {
   padding: 2rem 0;
   margin: 0 !important;
   width: 100%;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -2377,9 +2385,7 @@ template {
 }
 
 .tabs-content .content__item--active {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: block;
 }
 
 .tabs .tabs-content-list {
@@ -2415,7 +2421,7 @@ template {
 
 .tabs .tabs-content-list .item__lesson-text {
   position: relative;
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -2459,7 +2465,7 @@ template {
 }
 
 .teachers-top .slide__text .teacher__name {
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -2469,7 +2475,7 @@ template {
 }
 
 .teachers-top .slide__text p {
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -2527,7 +2533,7 @@ template {
 
 .subscription .subscription__item-title {
   margin-bottom: 1.5rem;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -2541,7 +2547,7 @@ template {
 .subscription .subscription__item-desc {
   margin: 0 0 1.8rem 2rem;
   align-self: flex-start;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -2583,7 +2589,7 @@ template {
 
 .subscription .subscription__item .rate-list .rate__item-text {
   max-width: 15rem;
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -2593,7 +2599,7 @@ template {
 }
 
 .subscription .subscription__item .subscription__price {
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -2663,6 +2669,7 @@ template {
 }
 
 .reviews-list {
+  width: 85%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -2675,7 +2682,7 @@ template {
 }
 
 .reviews-list .reviews__item:not(:last-child) {
-  margin: 0 0 1rem 0;
+  margin-bottom: 1rem;
 }
 
 .reviews .reviews-img {
@@ -2685,7 +2692,7 @@ template {
 }
 
 .reviews .reviews-img img {
-  width: 30rem;
+  width: 100%;
   border-radius: 0.5rem;
 }
 
@@ -2900,7 +2907,7 @@ template {
 }
 
 .footer .col .col__text {
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -2911,7 +2918,7 @@ template {
 
 .footer .col .col__text a:first-child {
   display: block;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -2929,7 +2936,7 @@ template {
 .footer .col .address__item {
   display: block;
   margin-bottom: 1.5rem;
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -2945,7 +2952,7 @@ template {
 .footer .col .nav__item {
   display: block;
   margin-bottom: 1.5rem;
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -2993,7 +3000,7 @@ template {
 .footer .policy {
   text-align: center;
   margin-bottom: 0.9rem;
-  font-family: "MuseoSansCyrl-300, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-300", sans-serif;
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -3010,7 +3017,7 @@ template {
 
 .footer-bottom a {
   display: block;
-  font-family: "MuseoSansCyrl-300, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-300", sans-serif;
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -3061,47 +3068,6 @@ template {
   display: none;
 }
 
-.bilingual-top-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 0 4rem 0;
-}
-
-.bilingual-img {
-  margin-bottom: 1rem;
-}
-
-.bilingual__title,
-.bilingual__subtitle {
-  text-align: center;
-  font-family: "MuseoSansCyrl-700, sans-serif";
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-.bilingual__title {
-  max-width: 70rem;
-  margin: 0 0 2.5rem 0;
-  text-align: center;
-  font-family: "MuseoSansCyrl-700, sans-serif";
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  font-size: 2rem;
-  line-height: 3rem;
-  color: #4F4F4F;
-}
-
-.bilingual__subtitle {
-  max-width: 66.5rem;
-  margin: 0 0 4rem 0;
-  font-size: 1.6rem;
-  line-height: 2.2rem;
-  color: #727272;
-}
-
 .galery-top-content {
   display: flex;
   flex-direction: column;
@@ -3117,7 +3083,7 @@ template {
   max-width: 70rem;
   margin: 0 0 3rem 0;
   text-align: center;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3194,53 +3160,6 @@ template {
   overflow: scroll;
 }
 
-.camp-top-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 0 4rem 0;
-}
-
-.camp-img {
-  margin-bottom: 3rem;
-}
-
-.camp__title,
-.camp__subtitle {
-  text-align: center;
-  font-family: "MuseoSansCyrl-700, sans-serif";
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-.camp__title {
-  max-width: 70rem;
-  margin: 0 0 2.5rem 0;
-  text-align: center;
-  font-family: "MuseoSansCyrl-700, sans-serif";
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  font-size: 2rem;
-  line-height: 3rem;
-  color: #4F4F4F;
-}
-
-.camp__subtitle {
-  max-width: 66.5rem;
-  margin: 0 0 4rem 0;
-  font-size: 1.6rem;
-  line-height: 2.2rem;
-  color: #727272;
-}
-
-.camp-top-btns {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .schedule-top-content {
   display: flex;
   flex-direction: column;
@@ -3260,7 +3179,7 @@ template {
   max-width: 70rem;
   margin: 0 0 2.5rem 0;
   text-align: center;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3271,7 +3190,7 @@ template {
 
 .contact__address .address__title {
   margin: 0 auto 1rem 2rem;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3287,7 +3206,7 @@ template {
 .contact__address .address-list .address__item {
   display: flex;
   align-items: center;
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -3318,7 +3237,7 @@ template {
 }
 
 .contact__address .address-list .address__text {
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3377,7 +3296,7 @@ template {
   max-width: 50rem;
   text-align: center;
   margin: 0 auto 1.6rem auto;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3387,7 +3306,7 @@ template {
 }
 
 .contact-form__subtitle {
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -3428,7 +3347,7 @@ template {
   max-width: 28.3rem;
   margin: 0 auto 2rem auto;
   padding: 2.6rem 4.4rem;
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -3452,7 +3371,7 @@ template {
   max-width: 70rem;
   margin: 0 0 2.5rem 0;
   text-align: center;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3507,7 +3426,7 @@ template {
 
 .reviews-top .slide__text .slide__review {
   margin-bottom: 4.5rem;
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -3522,7 +3441,7 @@ template {
 }
 
 .reviews-top .slide__text .slide__name {
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3532,7 +3451,7 @@ template {
 }
 
 .reviews-top .slide__text .slide__child {
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -3588,7 +3507,7 @@ template {
   max-width: 50rem;
   text-align: center;
   margin: 0 auto 1.6rem auto;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3598,7 +3517,7 @@ template {
 }
 
 .reviews-form__subtitle {
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -3640,7 +3559,7 @@ template {
   max-width: 28.3rem;
   margin: 0 auto 2rem auto;
   padding: 2.6rem 4.4rem;
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -3665,7 +3584,7 @@ template {
   max-width: 70rem;
   margin: 0 0 2.5rem 0;
   text-align: center;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3693,13 +3612,6 @@ template {
   align-items: center;
   padding: 1rem;
   margin: 0 auto 1rem auto;
-  font-family: "MuseoSansCyrl-700, sans-serif";
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  font-size: 1.4rem;
-  line-height: 2rem;
-  color: #FFF;
   background: #828282;
   border-radius: 1rem;
   cursor: pointer;
@@ -3713,10 +3625,26 @@ template {
   background: linear-gradient(278.41deg, #B4734E 3.22%, #CE8F6F 39.41%, #DFA184 63.97%, #F3B79D 94.64%);
 }
 
+.years .years-list .years__item a {
+  font-family: "MuseoSansCyrl-700", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #FFF;
+}
+
+.years .years-list .years__item:hover {
+  background: #CE8F70;
+}
+
 .events {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  align-items: center;
   margin-bottom: 1.9rem;
 }
 
@@ -3742,7 +3670,7 @@ template {
   display: inline-block;
   padding: .5rem 1rem;
   margin-bottom: 1rem;
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -3755,7 +3683,7 @@ template {
 
 .events .event-content .event-content__title {
   margin-bottom: 1rem;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3765,7 +3693,7 @@ template {
 }
 
 .events .event-content .event-content__more {
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -3792,13 +3720,6 @@ template {
   justify-content: center;
   align-items: center;
   padding: 1rem 1.7rem;
-  font-family: "MuseoSansCyrl-700, sans-serif";
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  font-size: 1.4rem;
-  line-height: 2rem;
-  color: #FFF;
   background: #828282;
   border-radius: 1rem;
   cursor: pointer;
@@ -3812,44 +3733,18 @@ template {
   background: linear-gradient(278.41deg, #B4734E 3.22%, #CE8F6F 39.41%, #DFA184 63.97%, #F3B79D 94.64%);
 }
 
-.about-top-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem 0 4rem 0;
-}
-
-.about-img {
-  margin-bottom: 1rem;
-}
-
-.about__title,
-.about__subtitle {
-  text-align: center;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+.events-pagination .pagination-list .pagination__btn a {
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #FFF;
 }
 
-.about__title {
-  max-width: 70rem;
-  margin: 0 0 2.5rem 0;
-  text-align: center;
-  font-family: "MuseoSansCyrl-700, sans-serif";
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  font-size: 2rem;
-  line-height: 3rem;
-  color: #4F4F4F;
-}
-
-.about__subtitle {
-  max-width: 66.5rem;
-  font-size: 1.6rem;
-  line-height: 2.2rem;
-  color: #727272;
+.events-pagination .pagination-list .pagination__btn:hover {
+  background: #CE8F70;
 }
 
 .event-top-content {
@@ -3866,7 +3761,7 @@ template {
 .event__title,
 .event__subtitle {
   text-align: center;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3876,7 +3771,7 @@ template {
   max-width: 70rem;
   margin: 0 0 2.5rem 0;
   text-align: center;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3887,52 +3782,6 @@ template {
 
 .event__subtitle {
   max-width: 66.5rem;
-  font-size: 1.6rem;
-  line-height: 2.2rem;
-  color: #727272;
-}
-
-.admission-top-content,
-.program-top-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 0 4rem 0;
-}
-
-.admission-img,
-.program-img {
-  margin-bottom: 1rem;
-}
-
-.admission__title,
-.admission__subtitle,
-.program__title {
-  text-align: center;
-  font-family: "MuseoSansCyrl-700, sans-serif";
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-.admission__title,
-.program__title {
-  max-width: 70rem;
-  margin: 0 0 2.5rem 0;
-  text-align: center;
-  font-family: "MuseoSansCyrl-700, sans-serif";
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  font-size: 2rem;
-  line-height: 3rem;
-  color: #4F4F4F;
-}
-
-.admission__subtitle,
-.program__subtitle {
-  max-width: 66.5rem;
-  text-align: center;
   font-size: 1.6rem;
   line-height: 2.2rem;
   color: #727272;
@@ -3971,7 +3820,7 @@ template {
   max-width: 50rem;
   text-align: center;
   margin: 0 auto 1.6rem auto;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -3981,7 +3830,7 @@ template {
 }
 
 .admission-form__subtitle {
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -4022,7 +3871,7 @@ template {
   max-width: 28.3rem;
   margin: 0 auto 2rem auto;
   padding: 2.6rem 4.4rem;
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -4047,7 +3896,7 @@ template {
   max-width: 70rem;
   margin: 0 0 2.5rem 0;
   text-align: center;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -4067,7 +3916,7 @@ template {
   max-width: 70rem;
   margin: 0 0 2.5rem 0;
   text-align: center;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -4096,7 +3945,7 @@ template {
 }
 
 .schedule-top-content .director-block .director__content .director__text {
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -4115,7 +3964,7 @@ template {
 
 .schedule-top-content .director-block .director__content .director__name {
   align-self: flex-end;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -4126,7 +3975,7 @@ template {
 
 .schedule-top-content .director-block .director__content .director__position {
   align-self: flex-end;
-  font-family: "MuseoSansCyrl-500, sans-serif" sans-serif;
+  font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -4183,7 +4032,7 @@ th,
 td {
   width: calc(100% / 12 * 2);
   padding: 1rem .3rem;
-  font-family: "MuseoSansCyrl-700, sans-serif";
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -4211,6 +4060,46 @@ td {
 .cell-top,
 .cell-center {
   border-left: 2px solid #DDD;
+}
+
+.top-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0 4rem 0;
+}
+
+.top-content__img {
+  margin-bottom: 1rem;
+}
+
+.top-content__title,
+.top-content__subtitle {
+  text-align: center;
+  font-family: "MuseoSansCyrl-700", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.top-content__title {
+  max-width: 70rem;
+  margin: 0 0 2.5rem 0;
+  text-align: center;
+  font-family: "MuseoSansCyrl-700", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #4F4F4F;
+}
+
+.top-content__subtitle {
+  max-width: 66.5rem;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #727272;
 }
 
 /* POP-UPS */
@@ -4546,12 +4435,6 @@ td {
   }
 }
 
-@media (min-width: 548px) {
-  .subscription .subscription__item:first-child {
-    margin-right: .5rem;
-  }
-}
-
 @media (min-width: 560px) {
   .camp-address-list {
     flex-direction: row;
@@ -4565,9 +4448,17 @@ td {
     justify-content: center;
   }
 
+  .subscription .subscription__item {
+    width: 33.2rem;
+  }
+
   .excursion-form__img {
     bottom: -4rem;
     width: 35rem;
+  }
+
+  .reviews .reviews-img {
+    width: 32rem;
   }
 
   .header-top--mobile--open {
@@ -4695,11 +4586,6 @@ td {
     max-width: 32.4rem;
   }
 
-  .bilingual__title {
-    font-size: 3.2rem;
-    line-height: 4.2rem;
-  }
-
   .galery__title {
     font-size: 3.2rem;
     line-height: 4.2rem;
@@ -4707,11 +4593,6 @@ td {
 
   .galery-list .galery__item .item__img {
     max-width: 26rem;
-  }
-
-  .camp__title {
-    font-size: 3.2rem;
-    line-height: 4.2rem;
   }
 
   .contact__title {
@@ -4760,18 +4641,7 @@ td {
     margin-right: 1rem;
   }
 
-  .about__title {
-    font-size: 3.2rem;
-    line-height: 4.2rem;
-  }
-
   .event__title {
-    font-size: 3.2rem;
-    line-height: 4.2rem;
-  }
-
-  .admission__title,
-  .program__title {
     font-size: 3.2rem;
     line-height: 4.2rem;
   }
@@ -4789,11 +4659,16 @@ td {
     font-size: 3.2rem;
     line-height: 4.2rem;
   }
+
+  .top-content__title {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
 }
 
-@media (min-width: 612px) {
-  .reviews-list .reviews__item:first-child {
-    margin-right: 1rem;
+@media (min-width: 676px) {
+  .subscription .subscription__item:not(:last-child) {
+    margin: 0 1rem 1rem 0;
   }
 }
 
@@ -4918,10 +4793,6 @@ td {
     max-width: 27.8rem;
   }
 
-  .camp-top-btns {
-    flex-direction: row;
-  }
-
   .schedule-top-content__inner {
     flex-direction: row;
     align-items: flex-start;
@@ -5028,14 +4899,6 @@ td {
     width: 50%;
   }
 
-  .subscription .subscription__item {
-    width: 32.9rem;
-  }
-
-  .subscription .subscription__item:first-child {
-    margin-right: 1rem;
-  }
-
   .excursion {
     padding-bottom: 23rem;
   }
@@ -5044,8 +4907,17 @@ td {
     bottom: -4.2rem;
   }
 
-  .reviews .reviews-img {
-    width: 30rem;
+  .reviews-list {
+    width: 90%;
+  }
+
+  .reviews-list .reviews__item:not(:last-child) {
+    margin: 0 1rem 1rem 0;
+  }
+
+  .reviews .reviews-img img {
+    width: 37.9rem;
+    height: 20.9rem;
   }
 
   .footer-cols {
@@ -5387,17 +5259,7 @@ td {
     line-height: 3.8rem;
   }
 
-  .bilingual__title {
-    font-size: 2.5rem;
-    line-height: 3.8rem;
-  }
-
   .galery__title {
-    font-size: 2.5rem;
-    line-height: 3.8rem;
-  }
-
-  .camp__title {
     font-size: 2.5rem;
     line-height: 3.8rem;
   }
@@ -5439,18 +5301,7 @@ td {
     line-height: 3.8rem;
   }
 
-  .about__title {
-    font-size: 2.5rem;
-    line-height: 3.8rem;
-  }
-
   .event__title {
-    font-size: 2.5rem;
-    line-height: 3.8rem;
-  }
-
-  .admission__title,
-  .program__title {
     font-size: 2.5rem;
     line-height: 3.8rem;
   }
@@ -5483,21 +5334,10 @@ td {
   .tabs-content--pricelist {
     overflow-x: auto;
   }
-}
 
-@media (min-width: 930px) {
-  .subscription .subscription__item:not(:last-child) {
-    margin: 0 1rem 1rem 0;
-  }
-
-  .reviews-list .reviews__item:not(:last-child) {
-    margin-right: 1rem;
-  }
-}
-
-@media (min-width: 940px) {
-  .reviews-list .reviews__item:not(:last-child) {
-    margin-bottom: 0;
+  .top-content__title {
+    font-size: 2.5rem;
+    line-height: 3.8rem;
   }
 }
 
@@ -5586,6 +5426,10 @@ td {
 
   .teachers-top .slide__text {
     padding: 5.5rem 6.5rem 6.9rem 5.6rem;
+  }
+
+  .subscription .subscription__item:not(:last-child) {
+    margin: 0 3rem 1rem 0;
   }
 
   .excursion {
@@ -5838,31 +5682,11 @@ td {
     background: transparent;
   }
 
-  .bilingual-top-content {
-    padding: 0 0 8.7rem 0;
-  }
-
-  .bilingual__title {
-    max-width: 96rem;
-    font-size: 3.2rem;
-    line-height: 4.2rem;
-  }
-
   .galery-top-content {
     padding: 0 0 10.4rem 0;
   }
 
   .galery__title {
-    max-width: 96rem;
-    font-size: 3.2rem;
-    line-height: 4.2rem;
-  }
-
-  .camp-top-content {
-    padding: 0 0 9rem 0;
-  }
-
-  .camp__title {
     max-width: 96rem;
     font-size: 3.2rem;
     line-height: 4.2rem;
@@ -5935,33 +5759,11 @@ td {
     line-height: 3.2rem;
   }
 
-  .about-top-content {
-    padding: 0 0 7rem 0;
-  }
-
-  .about__title {
-    max-width: 96rem;
-    font-size: 3.2rem;
-    line-height: 4.2rem;
-  }
-
   .event-top-content {
     padding: 0 0 7rem 0;
   }
 
   .event__title {
-    max-width: 96rem;
-    font-size: 3.2rem;
-    line-height: 4.2rem;
-  }
-
-  .admission-top-content,
-  .program-top-content {
-    padding: 0 0 4.7rem 0;
-  }
-
-  .admission__title,
-  .program__title {
     max-width: 96rem;
     font-size: 3.2rem;
     line-height: 4.2rem;
@@ -6025,11 +5827,27 @@ td {
   .tabs--schedule {
     margin-bottom: 6rem;
   }
+
+  .top-content {
+    padding: 0 0 7rem 0;
+  }
+
+  .top-content__title {
+    max-width: 96rem;
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
 }
 
-@media (min-width: 1027px) {
+@media (min-width: 1076px) {
   .subscription .subscription__item:not(:last-child) {
-    margin-bottom: 0;
+    margin: 0 3rem 0 0;
+  }
+}
+
+@media (min-width: 1109px) {
+  .reviews-list .reviews__item:not(:last-child) {
+    margin: 0 1rem 0 0;
   }
 }
 
@@ -6252,17 +6070,11 @@ td {
   }
 
   .reviews-list {
-    justify-content: space-between;
+    width: 100%;
   }
 
   .reviews .reviews-img {
     width: 37.9rem;
-    height: 20.9rem;
-  }
-
-  .reviews .reviews-img img {
-    width: 37.9rem;
-    height: 20.9rem;
   }
 
   .reviews .reviews__btn {
@@ -6649,7 +6461,6 @@ td {
   }
 
   .info-list__item {
-    margin-bottom: 0;
     font-size: 1.6rem;
     line-height: 3.2rem;
   }
@@ -6782,21 +6593,6 @@ td {
     max-width: 27.7rem;
   }
 
-  .bilingual__title {
-    max-width: calc(100% / 12 * 9);
-    margin: 0 auto 3rem auto;
-    font-size: 4rem;
-    line-height: 5.6rem;
-  }
-
-  .bilingual__subtitle {
-    max-width: calc(100% / 12 * 10);
-    margin: 0 auto 4rem auto;
-    padding: 0 3.5rem;
-    font-size: 2.2rem;
-    line-height: 3.1rem;
-  }
-
   .galery__title {
     max-width: calc(100% / 12 * 9);
     margin: 0 auto 3rem auto;
@@ -6814,21 +6610,6 @@ td {
 
   .galery-list .galery__item {
     max-width: 27.8rem;
-  }
-
-  .camp__title {
-    max-width: calc(100% / 12 * 9);
-    margin: 0 auto 3rem auto;
-    font-size: 4rem;
-    line-height: 5.6rem;
-  }
-
-  .camp__subtitle {
-    max-width: calc(100% / 12 * 10);
-    margin: 0 auto 4rem auto;
-    padding: 0 3.5rem;
-    font-size: 2.2rem;
-    line-height: 3.1rem;
   }
 
   .contact__title {
@@ -6892,35 +6673,17 @@ td {
     line-height: 5.6rem;
   }
 
-  .events {
-    justify-content: space-between;
-  }
-
   .events .event {
     max-width: 57.5rem;
   }
 
   .events .event:not(:nth-child(even)) {
-    margin-right: 0;
+    margin-right: 2rem;
   }
 
   .events .event-content .event-content__title {
     font-size: 2.4rem;
     line-height: 3.4rem;
-  }
-
-  .about__title {
-    max-width: calc(100% / 12 * 9);
-    margin: 0 auto 3rem auto;
-    font-size: 4rem;
-    line-height: 5.6rem;
-  }
-
-  .about__subtitle {
-    max-width: calc(100% / 12 * 10);
-    padding: 0 3.5rem;
-    font-size: 2.2rem;
-    line-height: 3.1rem;
   }
 
   .event__title {
@@ -6933,22 +6696,6 @@ td {
   .event__subtitle {
     max-width: calc(100% / 12 * 10);
     margin: 0 auto;
-    padding: 0 3.5rem;
-    font-size: 2.2rem;
-    line-height: 3.1rem;
-  }
-
-  .admission__title,
-  .program__title {
-    max-width: calc(100% / 12 * 9);
-    margin: 0 auto 3rem auto;
-    font-size: 4rem;
-    line-height: 5.6rem;
-  }
-
-  .admission__subtitle,
-  .program__subtitle {
-    max-width: calc(100% / 12 * 10);
     padding: 0 3.5rem;
     font-size: 2.2rem;
     line-height: 3.1rem;
@@ -6985,6 +6732,20 @@ td {
   .tabs--pricelist .title__item {
     padding: .6rem;
   }
+
+  .top-content__title {
+    max-width: calc(100% / 12 * 9);
+    margin: 0 auto 3rem auto;
+    font-size: 4rem;
+    line-height: 5.6rem;
+  }
+
+  .top-content__subtitle {
+    max-width: calc(100% / 12 * 10);
+    padding: 0 3.5rem;
+    font-size: 2.2rem;
+    line-height: 3.1rem;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -6994,8 +6755,12 @@ td {
     width: 50%;
   }
 
-  .subscription-list {
-    justify-content: space-between;
+  .subscription .subscription__item:not(:last-child) {
+    margin: 0 7.8rem 0 0;
+  }
+
+  .reviews-list .reviews__item:not(:last-child) {
+    margin: 0 1.6rem 0 0;
   }
 
   .contact-form-wrap {
@@ -7082,25 +6847,7 @@ td {
     line-height: 3.5rem;
   }
 
-  .bilingual-img {
-    max-width: 117.5rem;
-    height: 20rem;
-    margin-bottom: 3rem;
-  }
-
   .galery-img {
-    max-width: 117.5rem;
-    height: 20rem;
-    margin-bottom: 3rem;
-  }
-
-  .camp-img {
-    max-width: 117.5rem;
-    height: 20rem;
-    margin-bottom: 3rem;
-  }
-
-  .about-img {
     max-width: 117.5rem;
     height: 20rem;
     margin-bottom: 3rem;
@@ -7112,8 +6859,7 @@ td {
     margin-bottom: 3rem;
   }
 
-  .admission-img,
-  .program-img {
+  .top-content__img {
     max-width: 117.5rem;
     height: 20rem;
     margin-bottom: 3rem;
