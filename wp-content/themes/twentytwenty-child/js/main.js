@@ -256,6 +256,31 @@
 ;
 
 (function () {
+  var popupAdvantages = document.querySelector('.popup-advantages');
+  var advantagesLinks = document.querySelectorAll('.item__more');
+  var popupClose = document.querySelectorAll('.popup-close');
+  var body = document.getElementsByTagName('body')[0];
+  var html = body.parentNode;
+  advantagesLinks.forEach(function (item) {
+    item.addEventListener('click', function () {
+      popupAdvantages.style.display = 'block';
+      body.classList.add('no-scroll');
+      html.classList.add('html-overflow');
+    });
+  });
+  popupClose.forEach(function (close) {
+    close.addEventListener('click', function () {
+      close.parentElement.style.display = 'none';
+      body.classList.remove('no-scroll');
+      html.classList.remove('html-overflow');
+    });
+  });
+})();
+"use strict";
+
+;
+
+(function () {
   var btnExcursionHead = document.querySelector('.header-top__btn');
   var popupExcursion = document.querySelector('.popup-excursion');
   var popupCall = document.querySelector('.popup-call');
