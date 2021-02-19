@@ -95,16 +95,31 @@
   if (document.getElementById('map')) {
     var init = function init() {
       myMap = new ymaps.Map('map', {
-        center: [55.848511, 37.397703],
-        zoom: 16
+        center: [55.775429, 37.764204],
+        zoom: 16,
+        controls: []
       });
+      var myGeoObjects = [];
       myMap.behaviors.enable('scrollZoom');
       myMap.behaviors.enable('drag');
-      myPlacemark = new ymaps.Placemark([55.848511, 37.397703], {}, {
+      myGeoObjects = new ymaps.Placemark([55.775429, 37.764204], {
+        balloonContentBody: 'Детский сад «Ладошки»'
+      }, {
         iconLayout: 'default#image',
-        iconImageSize: [70, 70]
+        // Путь до нашей картинки
+        iconImageHref: './wp-content/themes/twentytwenty-child/img/map-marker.png',
+        // Размер по ширине и высоте
+        iconImageSize: [40, 40],
+        // Смещение левого верхнего угла иконки относительно
+        // её «ножки» (точки привязки).
+        iconImageOffset: [-20, -20]
       });
-      myMap.geoObjects.add(myPlacemark);
+      var clusterer = new ymaps.Clusterer({
+        clusterDisableClickZoom: false,
+        clusterOpenBalloonOnClick: false
+      });
+      clusterer.add(myGeoObjects);
+      myMap.geoObjects.add(clusterer);
     };
 
     ymaps.ready(init);
