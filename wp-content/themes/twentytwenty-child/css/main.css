@@ -1491,16 +1491,24 @@ template {
   padding: 4.2rem 0 0 0;
 }
 
+.header-center .nav {
+  margin-bottom: 2.6rem;
+}
+
 .header-center .nav-list {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
 
+.nav__item:not(:last-child) {
+  margin-bottom: 2.6rem;
+}
+
 .nav__link {
   position: relative;
-  display: block;
-  padding: 1.5rem 1rem;
+  display: inline;
+  padding: 1.5rem 0;
   font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -1528,7 +1536,7 @@ template {
 }
 
 .nav__link:hover::before {
-  transform: translate3d(0, 0.2rem, 0) scale3d(1.08, 3, 1);
+  transform: translate3d(0, 0.8rem, 0) scale3d(1.08, 3, 1);
   -webkit-clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0, 50% 0, 50% 100%, 50% 100%, 0 100%, 100% 100%, 100% 0%);
   clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0, 50% 0, 50% 100%, 50% 100%, 0 100%, 100% 100%, 100% 0%);
 }
@@ -5281,12 +5289,22 @@ td {
 
   .header-center .nav {
     padding: 0 5.3rem;
+    margin-bottom: 0;
     background: #FFFFFF;
     border-radius: .5rem;
   }
 
   .header-center .nav-list {
     flex-direction: row;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .nav__link {
+    display: block;
+    padding: 1.5rem 1rem;
   }
 
   .header-bottom {
@@ -6142,7 +6160,7 @@ td {
   }
 
   .nav__link {
-    padding: 2.4rem 1rem;
+    padding: 2.75rem 1rem;
   }
 
   .galery__title {
