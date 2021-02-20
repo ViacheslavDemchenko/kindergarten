@@ -188,143 +188,141 @@
 ;
 
 (function () {
+  var body = document.getElementsByTagName('body')[0];
+  var html = body.parentNode;
+  var modal = '';
+  var div = document.createElement('div');
+  div.classList.add('current-modal');
+  var options = [{
+    modal_call_btn: 'call__link',
+    modal_call: 'popup popup-call',
+    modal_call_title: 'Закажите обратный звонок',
+    modal_form_id: 'popup-call',
+    phone_input_id: 'popup-call__phone'
+  }, {
+    modal_excursion_btn: 'btn--excursion',
+    modal_excursion: 'popup popup-excursion',
+    modal_excursion_title: 'Запись на экскурсию в детский сад',
+    modal_form_id: 'popup-excursion',
+    phone_input_id: 'popup-excursion__phone'
+  }, {
+    modal_lesson_btn: 'btn--lesson',
+    modal_lesson: 'popup popup-lesson',
+    modal_lesson_title: 'Записаться на бесплатное занятие',
+    modal_form_id: 'popup-lesson',
+    phone_input_id: 'popup-lesson__phone'
+  }, {
+    modal_camp_btn: 'btn--camp',
+    modal_camp: 'popup popup-camp',
+    modal_camp_title: 'Записаться в лагерь',
+    modal_form_id: 'popup-camp',
+    phone_input_id: 'popup-camp__phone'
+  }];
+  document.addEventListener('click', function (e) {
+    if (e.target.classList.contains(options[0].modal_call_btn)) {
+      modalShow(options[0].modal_call, options[0].modal_call_title, options[0].modal_form_id, options[0].phone_input_id);
+    }
+
+    if (e.target.classList.contains(options[1].modal_excursion_btn)) {
+      modalShow(options[1].modal_excursion, options[1].modal_excursion_title, options[1].modal_form_id, options[1].phone_input_id);
+    }
+
+    if (e.target.classList.contains(options[2].modal_lesson_btn)) {
+      modalShow(options[2].modal_lesson, options[2].modal_lesson_title, options[2].modal_form_id, options[2].phone_input_id);
+    }
+
+    if (e.target.classList.contains(options[3].modal_camp_btn)) {
+      modalShow(options[3].modal_camp, options[3].modal_camp_title, options[3].modal_form_id, options[3].phone_input_id);
+    }
+
+    if (e.target.classList.contains('popup__close') || e.target.classList.contains('close__icon') || e.target.classList.contains('use__icon')) {
+      modalHide();
+    }
+  });
+
+  function modalShow(currentModal, modalTitle, formID, phoneInputID) {
+    modal += "\n            <div class=\"overlay overlay--active overlay--second\">\n                <div class=\"".concat(currentModal, "\">\n                    <h3 class=\"popup__title\">").concat(modalTitle, "</h3>\n                    <div class=\"popup__close\">\n                        <svg class=\"close__icon\">\n                            <use class=\"use__icon\" xlink:href=\"./wp-content/themes/twentytwenty-child/img/icons/sprite.svg#close\"></use>\n                        </svg>\n                    </div>\n                    <form id=\"").concat(formID, "\" class=\"popup__form\" method=\"post\" action=\"#!\">\n                        <input class=\"header-form__phone\" name=\"name\" type=\"text\" placeholder=\"\u0412\u0410\u0428\u0415 \u0418\u041C\u042F\">\n                        <input class=\"header-form__phone\" name=\"phone\" id=\"").concat(phoneInputID, "\" type=\"text\" placeholder=\"+7 (___) ___-__-__\">\n                        <button class=\"btn header-form__btn\" type=\"submit\">\u0417\u0430\u043F\u0438\u0441\u0430\u0442\u044C\u0441\u044F</button>\n                        <div class=\"policy-block\">\n                            <input class=\"policy-block__checkbox\" name=\"policy\" type=\"checkbox\" checked>\n                            <p class=\"policy\">\u0412\u044B \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044C \u0441 \n                                <a href=\"#!\"> \u0443\u0441\u043B\u043E\u0432\u0438\u044F\u043C\u0438 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0438 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445</a>\n                            </p>\n                        </div>\n                    </form>\n                </div>\n            </div>\n        ");
+    div.innerHTML = modal;
+    body.appendChild(div);
+    body.classList.add('no-scroll');
+    html.classList.add('html-overflow');
+    inputMask(document.getElementById(phoneInputID));
+  }
+
+  function modalHide() {
+    modal = '';
+    body.removeChild(div);
+    body.classList.remove('no-scroll');
+    html.classList.remove('html-overflow');
+  }
+
   function inputMask(input) {
-    //Функция маски инпута
     function setMask(event) {
-      //Задаем в переменную нажатую клавишу
-      var pressedKey; //Условие, проверяющее нажатую клавишу
-
-      event.keyCode && pressedKey === event.keyCode; //Устанавливаем возможность ввода цифр только с последней позиции  
-
-      input.setSelectionRange(input.value.length, input.value.length); //Задаем внешний вид маски инпута
-
+      var pressedKey;
+      event.keyCode && pressedKey === event.keyCode;
+      input.setSelectionRange(input.value.length, input.value.length);
       var maskType = '+7 (___) ___-__-__',
           i = 0,
-          //Проверка и замена value инпута по буквенно
-      replaceValue = maskType.replace(/\D/g, ''),
+          replaceValue = maskType.replace(/\D/g, ''),
           prevValue = this.value.replace(/\D/g, ''),
           currentValue = maskType.replace(/[_\d]/g, function (a) {
         return i < prevValue.length ? prevValue.charAt(i++) || replaceValue.charAt(i) : a;
-      }); //Защита от стирания первых двух цифр (+7)            
-
+      });
       i = currentValue.indexOf('_');
 
       if (i != -1) {
         i < 5 && (i = 3);
         currentValue = currentValue.slice(0, i);
-      } //Регулярное выражение для проверки value инпута        
-
+      }
 
       var reg = maskType.substr(0, this.value.length).replace(/_+/g, function (a) {
         return '\\d{1,' + a.length + '}';
       }).replace(/[+()]/g, '\\$&');
-      reg = new RegExp('^' + reg + '$'); //Проверка содержимого инпута на регулярное выражение, длинну и нажимаемые клавиши
+      reg = new RegExp('^' + reg + '$');
 
       if (!reg.test(this.value) || this.value.length < 5 || pressedKey > 47 && pressedKey < 58) {
         this.value = currentValue;
       } else if (event.type === 'blur' && this.value.length < 5) {
         this.value = '';
-      } // Устанавливаем курсор в конец строки в инпуте, если при нажатии кнопки он стоит не в конце
-
+      }
 
       input.setSelectionRange(input.value.length, input.value.length);
-    } //Запуск функции setMask через обработчик событий
-
+    }
 
     input.addEventListener('input', setMask, false);
     input.addEventListener('focus', setMask, false);
     input.addEventListener('blur', setMask, false);
     input.addEventListener('keydown', setMask, false);
   }
-
-  if (document.querySelector('.header__input-mask')) {
-    var input = document.querySelector('.header__input-mask');
-    inputMask(input);
-  }
-
-  if (document.querySelector('.popup-excursion__input-mask')) {
-    var _input = document.querySelector('.popup-excursion__input-mask');
-
-    inputMask(_input);
-  }
-
-  if (document.querySelector('.excursion__input-mask')) {
-    var _input2 = document.querySelector('.excursion__input-mask');
-
-    inputMask(_input2);
-  }
-
-  if (document.querySelector('.contact-form__phone-input-mask')) {
-    var _input3 = document.querySelector('.contact-form__phone-input-mask');
-
-    inputMask(_input3);
-  }
-
-  if (document.querySelector('.popup-call__input-mask')) {
-    var _input4 = document.querySelector('.popup-call__input-mask');
-
-    inputMask(_input4);
-  }
 })();
 "use strict";
 
 ;
 
 (function () {
-  var popupAdvantages = document.querySelector('.popup-advantages');
-  var advantagesLinks = document.querySelectorAll('.item__more');
-  var popupClose = document.querySelectorAll('.popup-close');
-  var body = document.getElementsByTagName('body')[0];
-  var html = body.parentNode;
-  advantagesLinks.forEach(function (item) {
-    item.addEventListener('click', function () {
-      popupAdvantages.style.display = 'block';
-      body.classList.add('no-scroll');
-      html.classList.add('html-overflow');
+  if (document.querySelector('.advantages')) {
+    var popupAdvantages = document.querySelector('.popup-advantages');
+    var advantagesLinks = document.querySelectorAll('.item__more');
+    var popupClose = document.querySelector('.popup__close');
+    var body = document.getElementsByTagName('body')[0];
+    var html = body.parentNode;
+    var overlay = document.createElement('div');
+    advantagesLinks.forEach(function (item) {
+      item.addEventListener('click', function () {
+        popupAdvantages.style.display = 'block';
+        body.classList.add('no-scroll');
+        html.classList.add('html-overflow');
+        overlay.classList.add('overlay', 'overlay--active');
+        body.appendChild(overlay);
+      });
     });
-  });
-  popupClose.forEach(function (close) {
-    close.addEventListener('click', function () {
-      close.parentElement.style.display = 'none';
+    popupClose.addEventListener('click', function () {
+      popupClose.parentElement.style.display = 'none';
       body.classList.remove('no-scroll');
       html.classList.remove('html-overflow');
+      overlay.classList.remove('overlay', 'overlay--active');
+      body.removeChild(overlay);
     });
-  });
-})();
-"use strict";
-
-;
-
-(function () {
-  var btnExcursionHead = document.querySelector('.header-top__btn');
-  var popupExcursion = document.querySelector('.popup-excursion');
-  var popupCall = document.querySelector('.popup-call');
-  var popupClose = document.querySelectorAll('.popup-close');
-  var callLink = document.querySelectorAll('.call__link');
-  var body = document.getElementsByTagName('body')[0];
-  var html = body.parentNode;
-  btnExcursionHead.addEventListener('click', popupExcursionShow);
-  popupClose.forEach(function (close) {
-    close.addEventListener('click', function () {
-      close.parentElement.style.display = 'none';
-      body.classList.remove('no-scroll');
-      html.classList.remove('html-overflow');
-    });
-  });
-  callLink.forEach(function (link) {
-    link.addEventListener('click', popupCallShow);
-  });
-
-  function popupExcursionShow() {
-    popupExcursion.style.display = 'block';
-    body.classList.add('no-scroll');
-    html.classList.add('html-overflow');
-  }
-
-  function popupCallShow() {
-    popupCall.style.display = 'block';
-    body.classList.add('no-scroll');
-    html.classList.add('html-overflow');
   }
 })();
 "use strict";

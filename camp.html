@@ -74,7 +74,7 @@
                   </div>
                   <div class="header-top__text"> <a href="tel:+74952302386">+7 (495) 230-23-86 </a><a class="call__link">Перезвонить вам?</a></div>
                 </div>
-                <button class="btn header-top__btn">Записаться на экскурсию</button>
+                <button class="btn header-top__btn btn--excursion" id="btn__excursion--mobile">Записаться на экскурсию</button>
               </div>
             </div>
           </div>
@@ -107,7 +107,7 @@
                   </ul>
                 </nav>
               </div>
-              <button class="btn header-top__btn header-top__btn--mobile">Записаться на экскурсию</button>
+              <button class="btn header-top__btn header-top__btn--mobile btn--excursion">Записаться на экскурсию</button>
             </div>
           </div>
         </div>
@@ -127,8 +127,7 @@
             <h1 class="top-content__title">Летний городской лагерь</h1>
             <h3 class="top-content__subtitle">Ваших детей ждет увлекательная программа, которая позволит детям нескучно провести лето с пользой и в компании сверстников.</h3>
             <div class="camp-top-btns">
-              <button class="btn btn--camp">Записаться в лагерь</button>
-              <button class="btn btn--camp">Смотреть отзывы</button>
+              <button class="btn btn--camp">Записаться в лагерь</button><a class="btn btn--reviews" href="reviews.html">Смотреть отзывы</a>
             </div>
           </div>
         </div>
@@ -236,7 +235,7 @@
                 <div class="list__text">метро Пятницкое шоссе</div>
               </div>
             </div>
-            <button class="btn btn--camp">Записаться в лагерь</button>
+            <button class="btn btn--camp btn--camp">Записаться в лагерь</button>
           </div>
         </div>
       </section>
@@ -302,76 +301,6 @@
           <div class="footer-bottom"><a href="#!">Политика Конфиденциальности</a><a href="#!">Пользовательское соглашение</a><a href="#!">Разработка сайта</a></div>
         </div>
       </footer>
-    </div>
-    <div class="popup popup-call">
-      <div class="popup__title">Закажите обратный звонок</div>
-      <div class="popup-close">
-        <svg>
-          <use xlink:href="./wp-content/themes/twentytwenty-child/img/icons/sprite.svg#close"></use>
-        </svg>
-      </div>
-      <form class="popup__form" id="popup-call" method="post" action="#!">
-        <input class="header-form__phone" type="text" placeholder="ВАШЕ ИМЯ">
-        <input class="header-form__phone popup-call__input-mask" id="popup-call__input-phone" type="text" placeholder="+7 (___) ___-__-__">
-        <button class="btn header-form__btn" type="submit">Записаться</button>
-        <div class="policy-block">
-          <input class="policy-block__checkbox" type="checkbox" checked>
-          <p class="policy">Вы соглашаетесь с <a href="#!">условиями обработки персональных данных</a></p>
-        </div>
-      </form>
-    </div>
-    <div class="popup popup-excursion">
-      <div class="popup__title popup__title--excursion">Запись на экскурсию в детский сад</div>
-      <div class="popup-close">
-        <svg>
-          <use xlink:href="./wp-content/themes/twentytwenty-child/img/icons/sprite.svg#close"></use>
-        </svg>
-      </div>
-      <form class="popup__form" id="popup-excursion" method="post" action="#!">
-        <input class="header-form__phone" type="text" placeholder="Ваше имя">
-        <input class="header-form__phone popup-excursion__input-mask" id="popup-excursion__input-phone" type="text" placeholder="+7 (___) ___-__-__">
-        <input class="header-form__phone" type="text" placeholder="Возраст ребёнка">
-        <button class="btn header-form__btn" type="submit">Записаться</button>
-        <div class="policy-block">
-          <input class="policy-block__checkbox" type="checkbox" checked>
-          <p class="policy">Вы соглашаетесь с <a href="#">условиями обработки персональных данных</a></p>
-        </div>
-      </form>
-    </div>
-    <div class="popup popup-message">
-      <div class="popup__title popup__title--message">Спасибо за заявку!</div>
-      <div class="popup-close">
-        <svg>
-          <use xlink:href="./wp-content/themes/twentytwenty-child/img/icons/sprite.svg#close"></use>
-        </svg>
-      </div>
-      <div class="popup__subtitle">Мы свяжемся с вами в часы работы детского сада!</div>
-    </div>
-    <div class="popup popup-message popup-message--excursion">
-      <div class="popup__title popup__title--message">Спасибо за заявку!</div>
-      <div class="popup-close">
-        <svg>
-          <use xlink:href="./wp-content/themes/twentytwenty-child/img/icons/sprite.svg#close"></use>
-        </svg>
-      </div>
-      <div class="popup__subtitle">Мы свяжемся с вами в рабочие часы сада для уточнения времени!</div>
-    </div>
-    <div class="popup popup-details">
-      <div class="popup__title popup__title--details">Готовность к поступлению в международные школы</div>
-      <div class="popup-close">
-        <svg>
-          <use xlink:href="./wp-content/themes/twentytwenty-child/img/icons/sprite.svg#close"></use>
-        </svg>
-      </div>
-      <div class="popup-details-wrap">
-        <div class="popup-details-content">
-          <p class="popup-details__text">Для некоторых родителей важна также готовность ребенка к поступлению в международные школы, например, если планируется переезд в другую страну, если один из родителей иностранец или если родители изначально настроены на получение среднего и высшего образования на иностранном языке.</p>
-          <p class="popup-details__text">Разумеется, требования международных школ выше, чем московских. Дополнительно предъявляются требования знаний английского (в основном) языка, считать, писать, рассказывать о себе и окружающем мире также необходимо на английском.</p>
-          <p class="popup-details__text">В нашем саду реализуется программа двуязычного обучения с использованием методики PYP IB (Oxford).</p>
-          <p class="popup-details__text">Начиная с 3 лет дети получают первоначальные знания английского языка на занятиях с носителем языка (из Великобритании), а затем с 5 лет по желанию родителей переходят к обучению по программе на уровне К3 в первой половине дня, при этом обучение по русскоязычной программе продолжается во второй половине дня.</p>
-        </div>
-      </div>
-      <button class="btn header-top__btn popup-details__btn">Записаться на экскурсию</button>
     </div>
   </body>
 </html>

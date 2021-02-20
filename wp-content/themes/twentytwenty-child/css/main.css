@@ -75,21 +75,6 @@ header {
   overflow: hidden;
 }
 
-.overlay {
-  position: relative;
-}
-
-.overlay::before {
-  position: absolute;
-  content: "";
-  z-index: 9990;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(128, 128, 128, 0.5);
-}
-
 input {
   text-align: center;
 }
@@ -1467,12 +1452,14 @@ template {
   padding: 2.6rem 5.8rem;
 }
 
-.btn--camp {
+.btn--camp,
+.btn--reviews {
   padding: 2.6rem 2rem;
   min-width: 23.7rem;
 }
 
-.btn--camp:first-child {
+.btn--camp:first-child,
+.btn--reviews:first-child {
   margin-bottom: 1rem;
 }
 
@@ -2390,6 +2377,7 @@ template {
 
 .cmn-toggle-switch {
   position: relative;
+  z-index: 7000;
   display: block;
   margin: 0;
   padding: 0;
@@ -2698,7 +2686,7 @@ template {
 }
 
 .header-menu-wrap--open {
-  z-index: 9999;
+  z-index: 8000;
   transform: translateX(0);
 }
 
@@ -3856,34 +3844,11 @@ td {
   color: #4F4F4F;
 }
 
-.popup__content {
-  max-width: 80rem;
-  margin-bottom: 2rem;
-}
-
-.popup__text {
-  font-family: "MuseoSansCyrl-500", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-  font-size: 1.6rem;
-  line-height: 2.6rem;
-  color: #727272;
-}
-
-.popup__text:not(:last-child) {
-  margin-bottom: 2rem;
-}
-
-.excursion__btn--popup {
-  max-width: 33.6rem;
-}
-
 /* POP-UPS */
 
 .popup {
   position: fixed;
-  z-index: 5;
+  z-index: 9000;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -3894,15 +3859,13 @@ td {
   box-shadow: 0 10rem 8rem rgba(71, 71, 71, 0.07), 0 3.65016rem 2.92013rem rgba(71, 71, 71, 0.0482987), 0 1.77209rem 1.41767rem rgba(71, 71, 71, 0.0389404), 0 0.86871rem 0.69497rem rgba(71, 71, 71, 0.0310596), 0 0.34349rem 0.27479rem rgba(71, 71, 71, 0.0217013);
   border-radius: .5rem;
   max-height: 80vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
 }
 
 .popup::-webkit-scrollbar {
   display: none;
 }
 
-.popup-close {
+.popup__close {
   position: absolute;
   top: 2rem;
   right: 2rem;
@@ -3915,23 +3878,10 @@ td {
   cursor: pointer;
 }
 
-.popup-close svg {
+.popup__close svg {
   height: 4rem;
   width: 4.2rem;
   fill: #3F9DD2;
-}
-
-.popup-advantages {
-  display: none;
-}
-
-.popup-call {
-  display: none;
-}
-
-.popup-excursion {
-  display: none;
-  padding: 3.25rem 5rem 7.15rem 5rem !important;
 }
 
 .popup-message,
@@ -4077,6 +4027,70 @@ td {
 
 .popup-details-content::-webkit-scrollbar-thumb {
   background: #3F9DD2;
+}
+
+.popup-advantages {
+  position: fixed;
+  z-index: 8500;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  padding: 2rem 1rem 1rem 1rem;
+  width: 90%;
+  margin: auto;
+  background: #FBFBFC;
+  box-shadow: 0 10rem 8rem rgba(71, 71, 71, 0.07), 0 3.65016rem 2.92013rem rgba(71, 71, 71, 0.0482987), 0 1.77209rem 1.41767rem rgba(71, 71, 71, 0.0389404), 0 0.86871rem 0.69497rem rgba(71, 71, 71, 0.0310596), 0 0.34349rem 0.27479rem rgba(71, 71, 71, 0.0217013);
+  border-radius: .5rem;
+  max-height: 80vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.popup-advantages::-webkit-scrollbar {
+  display: none;
+}
+
+.popup__content {
+  max-width: 80rem;
+  margin-bottom: 2rem;
+}
+
+.popup__text {
+  font-family: "MuseoSansCyrl-500", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #727272;
+}
+
+.popup__text:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.excursion__btn--popup {
+  max-width: 33.6rem;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 8000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.overlay--active {
+  display: block;
+}
+
+.overlay--second {
+  z-index: 8500;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 0), screen and (min-resolution: 192dpi) and (min-width: 0) {
@@ -4280,10 +4294,6 @@ td {
     padding: 2rem 0;
   }
 
-  .popup-advantages {
-    padding: 2rem 1rem 1rem 1rem;
-  }
-
   .popup-details__btn {
     width: 33.6rem;
   }
@@ -4304,6 +4314,15 @@ td {
 
   .popup .policy-block {
     max-width: 100%;
+  }
+
+  .popup-advantages {
+    width: 70%;
+    padding: 2rem 0;
+  }
+
+  .popup-advantages {
+    padding: 2rem 1rem 1rem 1rem;
   }
 }
 
@@ -4515,7 +4534,8 @@ td {
     max-width: 32rem;
   }
 
-  .btn--camp:first-child {
+  .btn--camp:first-child,
+  .btn--reviews:first-child {
     margin: 0 1.9rem 0 0;
   }
 
@@ -4778,12 +4798,11 @@ td {
     padding: 3.25rem 7.74rem 4.75rem 7.74rem;
   }
 
-  .popup-advantages {
-    padding: 4rem 2rem 2rem 2rem;
-  }
-
-  .popup-call {
-    padding: 5.95rem 7.74rem 4.75rem !important;
+  .popup-call,
+  .popup-excursion,
+  .popup-lesson,
+  .popup-camp {
+    padding: 5.95rem 6.74rem 4.75rem !important;
   }
 
   .popup-message,
@@ -4830,6 +4849,15 @@ td {
 
   .popup .header-form__phone {
     margin: 0 0 2.7rem 0;
+  }
+
+  .popup-advantages {
+    width: 60rem;
+    padding: 3.25rem 7.74rem 4.75rem 7.74rem;
+  }
+
+  .popup-advantages {
+    padding: 4rem 2rem 2rem 2rem;
   }
 }
 
@@ -5168,13 +5196,31 @@ td {
     line-height: 2.6rem;
   }
 
-  .popup__content {
-    margin-bottom: 3.5rem;
-  }
-
   .popup {
     width: 90%;
     height: 90vh;
+  }
+
+  .popup-call,
+  .popup-excursion,
+  .popup-lesson,
+  .popup-camp {
+    max-width: 60rem;
+    max-height: 53rem;
+  }
+
+  .popup-advantages {
+    width: 90%;
+    height: 90vh;
+  }
+
+  .popup-advantages {
+    max-width: 117rem;
+    max-height: 77rem;
+  }
+
+  .popup__content {
+    margin-bottom: 3.5rem;
   }
 }
 
@@ -6383,22 +6429,26 @@ td {
     padding: 3.5rem 11.2rem 5.1rem 11.2rem;
   }
 
-  .popup__content {
-    margin-bottom: 5.2rem;
-  }
-
-  .popup__text:not(:last-child) {
-    margin-bottom: 3.3rem;
-  }
-
   .popup {
     width: 100%;
     height: 100vh;
   }
 
   .popup-advantages {
-    width: 117rem;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .popup-advantages {
     padding: 2.5rem 5.2rem 4.6rem 5.2rem;
+  }
+
+  .popup__content {
+    margin-bottom: 5.2rem;
+  }
+
+  .popup__text:not(:last-child) {
+    margin-bottom: 3.3rem;
   }
 }
 
@@ -6474,10 +6524,6 @@ td {
     margin-right: 2.7rem;
     width: 13.7rem;
     height: 12.4rem;
-  }
-
-  .popup-advantages {
-    min-height: 77rem;
   }
 }
 
