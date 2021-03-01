@@ -3867,8 +3867,8 @@ td {
 
 .popup__close {
   position: absolute;
-  top: 2rem;
-  right: 2rem;
+  top: 1rem;
+  right: 0;
   height: 4rem;
   width: 4.2rem;
   padding: .5rem;
@@ -3882,6 +3882,12 @@ td {
   height: 4rem;
   width: 4.2rem;
   fill: #3F9DD2;
+}
+
+.popup-call .header-form__child,
+.popup-lesson .header-form__child,
+.popup-camp .header-form__child {
+  display: none;
 }
 
 .popup-message,
@@ -4799,8 +4805,12 @@ td {
   }
 
   .popup-call,
-  .popup-excursion,
   .popup-lesson,
+  .popup-camp,
+  .popup-excursion {
+    padding: 5.95rem 6.74rem 4.75rem !important;
+  }
+
   .popup-camp {
     padding: 5.95rem 6.74rem 4.75rem !important;
   }
@@ -5202,11 +5212,21 @@ td {
   }
 
   .popup-call,
-  .popup-excursion,
   .popup-lesson,
-  .popup-camp {
+  .popup-camp,
+  .popup-excursion {
     max-width: 60rem;
     max-height: 53rem;
+  }
+
+  .popup-camp {
+    max-width: 60rem;
+    max-height: 50rem;
+  }
+
+  .popup-excursion {
+    max-width: 60rem;
+    max-height: 60rem;
   }
 
   .popup-advantages {
