@@ -3904,9 +3904,10 @@ td {
 }
 
 .popup-details__text {
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrl-500", sans-serif;
+  font-weight: 500;
   font-style: normal;
-  font-weight: normal;
+  font-display: swap;
   font-size: 1.6rem;
   line-height: 2.6rem;
   color: #727272;
@@ -3955,8 +3956,10 @@ td {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrl-700", sans-serif;
+  font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 .popup__subtitle {
