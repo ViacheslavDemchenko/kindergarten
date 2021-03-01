@@ -190,6 +190,7 @@
 (function () {
   var body = document.getElementsByTagName('body')[0];
   var html = body.parentNode;
+  var wrap = document.querySelector('.wrap-feedback');
   var modal = '';
   var div = document.createElement('div');
   div.classList.add('current-modal');
@@ -243,7 +244,7 @@
   function modalShow(currentModal, modalTitle, formID, phoneInputID) {
     modal += "\n            <div class=\"overlay overlay--active overlay--second\">\n                <div class=\"".concat(currentModal, "\">\n                    <h3 class=\"popup__title\">").concat(modalTitle, "</h3>\n                    <div class=\"popup__close\">\n                        <svg class=\"close__icon\">\n                            <use class=\"use__icon\" xlink:href=\"./wp-content/themes/twentytwenty-child/img/icons/sprite.svg#close\"></use>\n                        </svg>\n                    </div>\n                    <form id=\"").concat(formID, "\" class=\"popup__form\" method=\"post\" action=\"#!\">\n                        <input class=\"header-form__phone\" name=\"name\" type=\"text\" placeholder=\"\u0412\u0410\u0428\u0415 \u0418\u041C\u042F\">\n                        <input class=\"header-form__phone\" name=\"phone\" id=\"").concat(phoneInputID, "\" type=\"text\" placeholder=\"+7 (___) ___-__-__\">\n                        <input class=\"header-form__phone header-form__child\" name=\"child\" type=\"text\" placeholder=\"\u0418\u041C\u042F \u0420\u0415\u0411\u0415\u041D\u041A\u0410\">\n                        <button class=\"btn header-form__btn\" type=\"submit\">\u0417\u0430\u043F\u0438\u0441\u0430\u0442\u044C\u0441\u044F</button>\n                        <div class=\"policy-block\">\n                            <input class=\"policy-block__checkbox\" name=\"policy\" type=\"checkbox\" checked>\n                            <p class=\"policy\">\u0412\u044B \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044C \u0441 \n                                <a href=\"#!\"> \u0443\u0441\u043B\u043E\u0432\u0438\u044F\u043C\u0438 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0438 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445</a>\n                            </p>\n                        </div>\n                    </form>\n                </div>\n            </div>\n        ");
     div.innerHTML = modal;
-    body.appendChild(div);
+    wrap.appendChild(div);
     body.classList.add('no-scroll');
     html.classList.add('html-overflow');
     inputMask(document.getElementById(phoneInputID));
@@ -251,7 +252,7 @@
 
   function modalHide() {
     modal = '';
-    body.removeChild(div);
+    wrap.removeChild(div);
     body.classList.remove('no-scroll');
     html.classList.remove('html-overflow');
   }
