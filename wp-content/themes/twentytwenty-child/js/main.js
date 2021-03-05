@@ -199,14 +199,12 @@
     modal_call: 'popup popup-call',
     modal_call_title: 'Закажите обратный звонок',
     modal_form_id: 'popup-call',
-    phone_input_id: 'popup-call__phone',
     modal_btn_text: 'Перезвоните мне'
   }, {
     modal_excursion_btn: 'btn--excursion',
     modal_excursion: 'popup popup-excursion',
     modal_excursion_title: 'Запись на экскурсию в детский сад',
     modal_form_id: 'popup-excursion',
-    phone_input_id: 'popup-excursion__phone',
     modal_btn_text: 'Записаться на экскурсию'
   }, {
     modal_lesson_btn: 'btn--lesson',
@@ -219,24 +217,23 @@
     modal_camp: 'popup popup-camp',
     modal_camp_title: 'Записаться в лагерь',
     modal_form_id: 'popup-camp',
-    phone_input_id: 'popup-camp__phone',
     modal_btn_text: 'Записаться в лагерь'
   }];
   document.addEventListener('click', function (e) {
     if (e.target.classList.contains(options[0].modal_call_btn)) {
-      modalShow(options[0].modal_call, options[0].modal_call_title, options[0].modal_form_id, options[0].phone_input_id, options[0].modal_btn_text);
+      modalShow(options[0].modal_call, options[0].modal_call_title, options[0].modal_form_id, options[0].modal_btn_text);
     }
 
     if (e.target.classList.contains(options[1].modal_excursion_btn)) {
-      modalShow(options[1].modal_excursion, options[1].modal_excursion_title, options[1].modal_form_id, options[1].phone_input_id, options[1].modal_btn_text);
+      modalShow(options[1].modal_excursion, options[1].modal_excursion_title, options[1].modal_form_id, options[1].modal_btn_text);
     }
 
     if (e.target.classList.contains(options[2].modal_lesson_btn)) {
-      modalShow(options[2].modal_lesson, options[2].modal_lesson_title, options[2].modal_form_id, options[2].phone_input_id, options[2].modal_btn_text);
+      modalShow(options[2].modal_lesson, options[2].modal_lesson_title, options[2].modal_form_id, options[2].modal_btn_text);
     }
 
     if (e.target.classList.contains(options[3].modal_camp_btn)) {
-      modalShow(options[3].modal_camp, options[3].modal_camp_title, options[3].modal_form_id, options[3].phone_input_id, options[3].modal_btn_text);
+      modalShow(options[3].modal_camp, options[3].modal_camp_title, options[3].modal_form_id, options[3].modal_btn_text);
     }
 
     if (e.target.classList.contains('popup__close') || e.target.classList.contains('close__icon') || e.target.classList.contains('use__icon')) {
@@ -244,13 +241,13 @@
     }
   });
 
-  function modalShow(currentModal, modalTitle, formID, phoneInputID, btnText) {
-    modal += "\n            <div class=\"overlay overlay--active overlay--second\">\n                <div class=\"".concat(currentModal, "\">\n                    <h3 class=\"popup__title\">").concat(modalTitle, "</h3>\n                    <div class=\"popup__close\">\n                        <svg class=\"close__icon\">\n                            <use class=\"use__icon\" xlink:href=\"./wp-content/themes/twentytwenty-child/img/icons/sprite.svg#close\"></use>\n                        </svg>\n                    </div>\n                    <form id=\"").concat(formID, "\" class=\"popup__form\" method=\"post\" action=\"#!\">\n                        <input class=\"header-form__phone\" name=\"name\" type=\"text\" placeholder=\"\u0412\u0410\u0428\u0415 \u0418\u041C\u042F\">\n                        <input class=\"header-form__phone\" name=\"phone\" id=\"").concat(phoneInputID, "\" type=\"text\" placeholder=\"+7 (___) ___-__-__\">\n                        <input class=\"header-form__phone header-form__child\" name=\"child\" type=\"text\" placeholder=\"\u0418\u041C\u042F \u0420\u0415\u0411\u0415\u041D\u041A\u0410\">\n                        <button class=\"btn header-form__btn\" type=\"submit\">").concat(btnText, "</button>\n                        <div class=\"policy-block\">\n                            <input class=\"policy-block__checkbox\" name=\"policy\" type=\"checkbox\" checked>\n                            <p class=\"policy\">\u0412\u044B \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044C \u0441 \n                                <a href=\"#!\"> \u0443\u0441\u043B\u043E\u0432\u0438\u044F\u043C\u0438 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0438 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445</a>\n                            </p>\n                        </div>\n                    </form>\n                </div>\n            </div>\n        ");
+  function modalShow(currentModal, modalTitle, formID, btnText) {
+    modal += "\n            <div class=\"overlay overlay--active overlay--second\">\n                <div class=\"".concat(currentModal, "\">\n                    <h3 class=\"popup__title\">").concat(modalTitle, "</h3>\n                    <div class=\"popup__close\">\n                        <svg class=\"close__icon\">\n                            <use class=\"use__icon\" xlink:href=\"./wp-content/themes/twentytwenty-child/img/icons/sprite.svg#close\"></use>\n                        </svg>\n                    </div>\n                    <form id=\"").concat(formID, "\" class=\"popup__form\" method=\"post\" action=\"#!\">\n                        <input class=\"header-form__phone\" name=\"name\" type=\"text\" placeholder=\"\u0412\u0410\u0428\u0415 \u0418\u041C\u042F\">\n                        <input class=\"header-form__phone phone-input\" name=\"phone\" type=\"text\" placeholder=\"+7 (___) ___-__-__\">\n                        <input class=\"header-form__phone header-form__child\" name=\"child\" type=\"text\" placeholder=\"\u0418\u041C\u042F \u0420\u0415\u0411\u0415\u041D\u041A\u0410\">\n                        <button class=\"btn header-form__btn\" type=\"submit\">").concat(btnText, "</button>\n                        <div class=\"policy-block\">\n                            <input class=\"policy-block__checkbox\" name=\"policy\" type=\"checkbox\" checked>\n                            <p class=\"policy\">\u0412\u044B \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044C \u0441 \n                                <a href=\"#!\"> \u0443\u0441\u043B\u043E\u0432\u0438\u044F\u043C\u0438 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0438 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445</a>\n                            </p>\n                        </div>\n                    </form>\n                </div>\n            </div>\n        ");
     div.innerHTML = modal;
     wrap.appendChild(div);
     body.classList.add('no-scroll');
     html.classList.add('html-overflow');
-    inputMask(document.getElementById(phoneInputID));
+    inputMask(document.querySelector('.phone-input'));
   }
 
   function modalHide() {
@@ -297,6 +294,66 @@
     input.addEventListener('focus', setMask, false);
     input.addEventListener('blur', setMask, false);
     input.addEventListener('keydown', setMask, false);
+  }
+})();
+"use strict";
+
+;
+
+(function () {
+  function inputMask(input) {
+    function setMask(event) {
+      var pressedKey;
+      event.keyCode && pressedKey === event.keyCode;
+      input.setSelectionRange(input.value.length, input.value.length);
+      var maskType = '+7 (___) ___-__-__',
+          i = 0,
+          replaceValue = maskType.replace(/\D/g, ''),
+          prevValue = this.value.replace(/\D/g, ''),
+          currentValue = maskType.replace(/[_\d]/g, function (a) {
+        return i < prevValue.length ? prevValue.charAt(i++) || replaceValue.charAt(i) : a;
+      });
+      i = currentValue.indexOf('_');
+
+      if (i != -1) {
+        i < 5 && (i = 3);
+        currentValue = currentValue.slice(0, i);
+      }
+
+      var reg = maskType.substr(0, this.value.length).replace(/_+/g, function (a) {
+        return '\\d{1,' + a.length + '}';
+      }).replace(/[+()]/g, '\\$&');
+      reg = new RegExp('^' + reg + '$');
+
+      if (!reg.test(this.value) || this.value.length < 5 || pressedKey > 47 && pressedKey < 58) {
+        this.value = currentValue;
+      } else if (event.type === 'blur' && this.value.length < 5) {
+        this.value = '';
+      }
+
+      input.setSelectionRange(input.value.length, input.value.length);
+    }
+
+    input.addEventListener('input', setMask, false);
+    input.addEventListener('focus', setMask, false);
+    input.addEventListener('blur', setMask, false);
+    input.addEventListener('keydown', setMask, false);
+  }
+
+  if (document.getElementById('header-form__phone')) {
+    inputMask(document.getElementById('header-form__phone'));
+  }
+
+  if (document.getElementById('excursion__input-phone')) {
+    inputMask(document.getElementById('excursion__input-phone'));
+  }
+
+  if (document.querySelector('.excursion__input-mask')) {
+    inputMask(document.querySelector('.excursion__input-mask'));
+  }
+
+  if (document.querySelector('.contact-form__phone-input-mask')) {
+    inputMask(document.querySelector('.contact-form__phone-input-mask'));
   }
 })();
 "use strict";
