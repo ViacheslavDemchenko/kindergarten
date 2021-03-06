@@ -24,7 +24,6 @@
 
 (function () {
   var close = document.querySelectorAll('.popup__close');
-  console.log(close);
   close.forEach(function (close) {
     close.addEventListener('click', function () {
       if (close.parentNode.classList.contains('popup-message--active')) {
@@ -149,6 +148,47 @@
 
 ;
 
+(function () {// const body = document.getElementsByTagName('body')[0];
+  // const html = body.parentNode;
+  // const wrap = document.querySelector('.wrap-feedback');
+  // const close = document.querySelector('.popup__close');
+  // let modal = '';
+  // let div = document.createElement('div');
+  //     div.classList.add('current-modal');
+  // function callMessage() {
+  //     modal += `
+  //         <div class="overlay overlay--active overlay--second">
+  //             <div class="popup popup-message">
+  //                 <h3 class="popup__title popup__title--message">Спасибо за заявку!</h3>
+  //                 <div class="popup__close">
+  //                     <svg class="close__icon">
+  //                         <use class="use__icon" xlink:href="./wp-content/themes/twentytwenty-child/img/icons/sprite.svg#close"></use>
+  //                     </svg>
+  //                 </div>
+  //                 <p class="popup__title">Мы свяжемся с вами в рабочие часы сада для уточнения времени!</p>
+  //             </div>
+  //         </div>
+  //     `;
+  //     div.innerHTML = modal;
+  //     wrap.appendChild(div);
+  //     body.classList.add('no-scroll');
+  //     html.classList.add('html-overflow');
+  // }
+  // callMessage();
+  // function modalHide() {
+  //     modal = '';
+  //     wrap.removeChild(div);
+  //     body.classList.remove('no-scroll');
+  //     html.classList.remove('html-overflow');
+  // }
+  // close.addEventListener('click', () => {
+  //     modalHide();
+  // });
+})();
+"use strict";
+
+;
+
 (function () {
   var hamburger = document.getElementById('menu__button');
   var body = document.getElementsByTagName('body')[0];
@@ -261,7 +301,7 @@
   });
 
   function modalShow(currentModal, modalTitle, formID, btnText) {
-    modal += "\n            <div class=\"overlay overlay--active overlay--second\">\n                <div class=\"".concat(currentModal, "\">\n                    <h3 class=\"popup__title\">").concat(modalTitle, "</h3>\n                    <div class=\"popup__close\">\n                        <svg class=\"close__icon\">\n                            <use class=\"use__icon\" xlink:href=\"./wp-content/themes/twentytwenty-child/img/icons/sprite.svg#close\"></use>\n                        </svg>\n                    </div>\n                    <form id=\"").concat(formID, "\" class=\"popup__form\" method=\"post\" action=\"#!\">\n                        <input class=\"header-form__phone\" name=\"name\" type=\"text\" placeholder=\"\u0412\u0410\u0428\u0415 \u0418\u041C\u042F\">\n                        <input class=\"header-form__phone phone-input\" name=\"phone\" type=\"text\" placeholder=\"+7 (___) ___-__-__\">\n                        <input class=\"header-form__phone header-form__child\" name=\"child\" type=\"text\" placeholder=\"\u0418\u041C\u042F \u0420\u0415\u0411\u0415\u041D\u041A\u0410\">\n                        <button class=\"btn header-form__btn\" type=\"submit\">").concat(btnText, "</button>\n                        <div class=\"policy-block\">\n                            <input class=\"policy-block__checkbox\" name=\"policy\" type=\"checkbox\" checked>\n                            <p class=\"policy\">\u0412\u044B \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044C \u0441 \n                                <a href=\"#!\"> \u0443\u0441\u043B\u043E\u0432\u0438\u044F\u043C\u0438 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0438 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445</a>\n                            </p>\n                        </div>\n                    </form>\n                </div>\n            </div>\n        ");
+    modal += "\n            <div class=\"overlay overlay--active overlay--second\">\n                <div class=\"".concat(currentModal, "\">\n                    <h3 class=\"popup__title\">").concat(modalTitle, "</h3>\n                    <div class=\"popup__close\">\n                        <svg class=\"close__icon\">\n                            <use class=\"use__icon\" xlink:href=\"./wp-content/themes/twentytwenty-child/img/icons/sprite.svg#close\"></use>\n                        </svg>\n                    </div>\n                    <form id=\"").concat(formID, "\" class=\"popup__form\" method=\"post\" action=\"#!\">\n                        <input class=\"header-form__phone\" name=\"name\" type=\"text\" placeholder=\"\u0412\u0410\u0428\u0415 \u0418\u041C\u042F\">\n                        <input class=\"header-form__phone phone-input\" name=\"phone\" type=\"text\" placeholder=\"+7 (___) ___-__-__\">\n                        <input class=\"header-form__phone header-form__child\" name=\"child\" type=\"text\" placeholder=\"\u0418\u041C\u042F \u0420\u0415\u0411\u0415\u041D\u041A\u0410\">\n                        <button class=\"btn header-form__btn\" type=\"submit\">").concat(btnText, "</button>\n                        <div class=\"policy-block\">\n                            <input id=\"policy\" class=\"policy-block__checkbox\" name=\"policy\" type=\"checkbox\" checked>\n                            <label for=\"policy\" class=\"policy\">\u0412\u044B \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044C \u0441 \n                                <a href=\"#!\"> \u0443\u0441\u043B\u043E\u0432\u0438\u044F\u043C\u0438 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0438 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445</a>\n                            </label>\n                        </div>\n                    </form>\n                </div>\n            </div>\n        ");
     div.innerHTML = modal;
     wrap.appendChild(div);
     body.classList.add('no-scroll');

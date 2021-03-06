@@ -3263,6 +3263,11 @@ template {
 }
 
 .years .years-list .years__item a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -3894,15 +3899,9 @@ td {
 
 .popup-message,
 .popup-message--excursion {
-  display: none;
   background: url(../img/children-mobile@1x.png) 50% 97%/25rem 17rem no-repeat, #FBFBFC;
   width: 28rem;
   height: 34rem;
-}
-
-.popup-message--active,
-.popup-message--excursion--active {
-  display: block;
 }
 
 .popup-details {
