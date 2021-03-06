@@ -671,9 +671,10 @@ template {
 .fourth-section__title {
   text-align: center;
   margin: 0.8rem 0 3rem 0;
-  font-family: "Museo Sans Cyrl";
-  font-style: normal;
+  font-family: "MuseoSansCyrl-700", sans-serif;
   font-weight: 700;
+  font-style: normal;
+  font-display: swap;
   font-size: 2rem;
   line-height: 2.8rem;
   color: #4F4F4F;
@@ -3245,7 +3246,8 @@ template {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  min-width: 5.2rem;
+  min-height: 4rem;
   margin: 0 auto 1rem auto;
   background: #828282;
   border-radius: 1rem;
@@ -3896,6 +3898,11 @@ td {
   background: url(../img/children-mobile@1x.png) 50% 97%/25rem 17rem no-repeat, #FBFBFC;
   width: 28rem;
   height: 34rem;
+}
+
+.popup-message--active,
+.popup-message--excursion--active {
+  display: block;
 }
 
 .popup-details {
@@ -5067,7 +5074,7 @@ td {
   }
 
   .fourth-section__title {
-    width: 55rem;
+    width: 56rem;
     text-align: left;
     margin: 4.4rem 0 5.1rem 0;
     font-size: 4rem;

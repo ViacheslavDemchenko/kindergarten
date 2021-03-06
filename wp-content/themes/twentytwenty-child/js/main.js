@@ -23,6 +23,25 @@
 ;
 
 (function () {
+  var close = document.querySelectorAll('.popup__close');
+  console.log(close);
+  close.forEach(function (close) {
+    close.addEventListener('click', function () {
+      if (close.parentNode.classList.contains('popup-message--active')) {
+        close.parentNode.classList.remove('popup-message--active');
+      }
+
+      if (close.parentNode.classList.contains('popup-message--excursion--active')) {
+        close.parentNode.classList.remove('popup-message--excursion--active');
+      }
+    });
+  });
+})();
+"use strict";
+
+;
+
+(function () {
   if (document.querySelector('.gallery-top')) {
     var galleryTop = new Swiper('.gallery-top', {
       spaceBetween: 22,
