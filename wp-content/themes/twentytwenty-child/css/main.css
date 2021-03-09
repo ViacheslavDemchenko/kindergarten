@@ -1523,7 +1523,8 @@ template {
   clip-path: polygon(0% 0%, 0% 100%, 0 100%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%, 100% 100%, 100% 0%);
 }
 
-.nav__link:hover::before {
+.nav__link:hover::before,
+.nav__link--current::before {
   transform: translate3d(0, 0.8rem, 0) scale3d(1.08, 3, 1);
   -webkit-clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0, 50% 0, 50% 100%, 50% 100%, 0 100%, 100% 100%, 100% 0%);
   clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0, 50% 0, 50% 100%, 50% 100%, 0 100%, 100% 100%, 100% 0%);
@@ -1534,7 +1535,8 @@ template {
   transition: transform 0.3s cubic-bezier(0.2, 1, 0.8, 1);
 }
 
-.nav__link:hover span {
+.nav__link:hover span,
+.nav__link--current span {
   transform: translate3d(0, -0.2rem, 0);
 }
 
@@ -1633,13 +1635,14 @@ template {
   font-weight: 400;
 }
 
-.header-form {
+.form {
   width: 100%;
 }
 
-.header-form__phone {
+.form__phone,
+.form__child,
+.form__name {
   width: 100%;
-  margin-bottom: 1.2rem;
   padding: 2.6rem 4.4rem;
   font-family: "MuseoSansCyrl-500", sans-serif;
   font-weight: 500;
@@ -1655,16 +1658,29 @@ template {
   outline: none;
 }
 
-.header-form__phone:focus {
+.form__phone:focus,
+.form__child:focus,
+.form__name:focus {
   border: .1rem solid #EECBBA;
 }
 
-.header-form__btn {
+.form__phone--modal,
+.form__child--modal,
+.form__name--modal {
+  margin-bottom: 1.2rem;
+}
+
+.form__btn {
   padding: 2.55rem 3rem;
   width: 100%;
 }
 
-.header-form .inner-wrap {
+.form__btn--header {
+  max-width: 38.5rem !important;
+  margin-top: 1.3rem;
+}
+
+.inner-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2295,6 +2311,7 @@ template {
 .excursion__btn {
   width: 100%;
   padding: 2.55rem 3rem;
+  margin-top: 1.3rem;
 }
 
 .reviews {
@@ -4384,7 +4401,7 @@ td {
     line-height: 4.2rem;
   }
 
-  .header-form {
+  .form {
     max-width: 32.4rem;
   }
 
@@ -4561,17 +4578,18 @@ td {
     text-align: center;
   }
 
-  .header-form__phone {
-    margin-right: 0;
+  .form__phone,
+  .form__child,
+  .form__name {
     font-size: 1.6rem;
     line-height: 2.6rem;
   }
 
-  .header-form__btn {
+  .form__btn {
     width: 100%;
   }
 
-  .header-form .inner-wrap {
+  .inner-wrap {
     width: 100%;
     margin: auto;
   }
@@ -4816,9 +4834,12 @@ td {
   }
 
   .popup-call,
-  .popup-lesson,
   .popup-camp,
   .popup-excursion {
+    padding: 5.95rem 6.74rem 4.75rem !important;
+  }
+
+  .popup-lesson {
     padding: 5.95rem 6.74rem 4.75rem !important;
   }
 
@@ -5104,17 +5125,23 @@ td {
     margin: 0 2rem 0 0;
   }
 
-  .header-form {
+  .form {
     max-width: 100%;
   }
 
-  .header-form__phone {
+  .form__phone,
+  .form__child,
+  .form__name {
     width: 100%;
-    margin: 0 1.3rem 0 0;
     padding: 2.1rem 4.4rem;
   }
 
-  .header-form .inner-wrap {
+  .form__btn--header {
+    max-width: 18rem !important;
+    margin: 0 0 0 1.3rem;
+  }
+
+  .inner-wrap {
     flex-direction: row;
   }
 
@@ -5223,11 +5250,15 @@ td {
   }
 
   .popup-call,
-  .popup-lesson,
   .popup-camp,
   .popup-excursion {
     max-width: 60rem;
     max-height: 53rem;
+  }
+
+  .popup-lesson {
+    max-width: 60rem;
+    max-height: 58rem;
   }
 
   .popup-camp {
@@ -5388,7 +5419,7 @@ td {
 
   .nav__link {
     display: block;
-    padding: 1.5rem 1rem;
+    padding: 2.6rem 1rem;
   }
 
   .header-bottom {
@@ -5434,8 +5465,8 @@ td {
     line-height: 2.5rem;
   }
 
-  .header-form__btn {
-    max-width: 18rem;
+  .form__btn {
+    max-width: 28.3rem;
     width: 100%;
   }
 
@@ -6126,12 +6157,13 @@ td {
     align-items: flex-start;
   }
 
-  .header-form__phone {
+  .form__phone,
+  .form__child,
+  .form__name {
     max-width: 28.3rem;
-    margin-right: 1.3rem;
   }
 
-  .header-form .inner-wrap {
+  .inner-wrap {
     flex-direction: row;
   }
 }
@@ -6143,8 +6175,12 @@ td {
     margin: 0 0 3.6rem 2rem;
   }
 
-  .header-form__btn {
+  .form__btn {
     padding: 2.55rem 3.92rem;
+  }
+
+  .excursion__btn {
+    margin: 0 0 0 1.3rem;
   }
 }
 
@@ -6241,10 +6277,6 @@ td {
   .btn--reviews-form,
   .btn--admission-form {
     max-width: 27.7rem;
-  }
-
-  .nav__link {
-    padding: 2.6rem 1rem;
   }
 
   .galery__title {

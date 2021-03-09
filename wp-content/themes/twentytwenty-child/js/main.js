@@ -1,5 +1,44 @@
 "use strict";
 
+function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+;
+
+(function () {
+  function currentLinkStyle() {
+    var curPage = document.URL;
+    var links = document.getElementsByTagName('a');
+
+    var _iterator = _createForOfIteratorHelper(links),
+        _step;
+
+    try {
+      for (_iterator.s(); !(_step = _iterator.n()).done;) {
+        var link = _step.value;
+
+        if (link.href == curPage) {
+          link.classList.add('nav__link--current');
+        }
+      }
+    } catch (err) {
+      _iterator.e(err);
+    } finally {
+      _iterator.f();
+    }
+  }
+
+  document.onreadystatechange = function () {
+    if (document.readyState === 'complete') {
+      currentLinkStyle();
+    }
+  };
+})();
+"use strict";
+
 ;
 
 (function () {
@@ -144,47 +183,45 @@
     var myMap, myPlacemark;
   }
 })();
+// ;(function () {
+//     const body = document.getElementsByTagName('body')[0];
+//     const html = body.parentNode;
+//     const wrap = document.querySelector('.wrap-feedback');
+//     const close = document.querySelector('.popup__close');
+//     let modal = '';
+//     let div = document.createElement('div');
+//         div.classList.add('current-modal');
+//     function callMessage() {
+//         modal += `
+//             <div class="overlay overlay--active overlay--second">
+//                 <div class="popup popup-message">
+//                     <h3 class="popup__title popup__title--message">Спасибо за заявку!</h3>
+//                     <div class="popup__close">
+//                         <svg class="close__icon">
+//                             <use class="use__icon" xlink:href="./wp-content/themes/twentytwenty-child/img/icons/sprite.svg#close"></use>
+//                         </svg>
+//                     </div>
+//                     <p class="popup__subtitle">Мы свяжемся с вами в рабочие часы сада для уточнения времени!</p>
+//                 </div>
+//             </div>
+//         `;
+//         div.innerHTML = modal;
+//         wrap.appendChild(div);
+//         body.classList.add('no-scroll');
+//         html.classList.add('html-overflow');
+//     }
+//     callMessage();
+//     function modalHide() {
+//         modal = '';
+//         wrap.removeChild(div);
+//         body.classList.remove('no-scroll');
+//         html.classList.remove('html-overflow');
+//     }
+//     close.addEventListener('click', () => {
+//         modalHide();
+//     });
+// })();
 "use strict";
-
-;
-
-(function () {// const body = document.getElementsByTagName('body')[0];
-  // const html = body.parentNode;
-  // const wrap = document.querySelector('.wrap-feedback');
-  // const close = document.querySelector('.popup__close');
-  // let modal = '';
-  // let div = document.createElement('div');
-  //     div.classList.add('current-modal');
-  // function callMessage() {
-  //     modal += `
-  //         <div class="overlay overlay--active overlay--second">
-  //             <div class="popup popup-message">
-  //                 <h3 class="popup__title popup__title--message">Спасибо за заявку!</h3>
-  //                 <div class="popup__close">
-  //                     <svg class="close__icon">
-  //                         <use class="use__icon" xlink:href="./wp-content/themes/twentytwenty-child/img/icons/sprite.svg#close"></use>
-  //                     </svg>
-  //                 </div>
-  //                 <p class="popup__title">Мы свяжемся с вами в рабочие часы сада для уточнения времени!</p>
-  //             </div>
-  //         </div>
-  //     `;
-  //     div.innerHTML = modal;
-  //     wrap.appendChild(div);
-  //     body.classList.add('no-scroll');
-  //     html.classList.add('html-overflow');
-  // }
-  // callMessage();
-  // function modalHide() {
-  //     modal = '';
-  //     wrap.removeChild(div);
-  //     body.classList.remove('no-scroll');
-  //     html.classList.remove('html-overflow');
-  // }
-  // close.addEventListener('click', () => {
-  //     modalHide();
-  // });
-})();
 "use strict";
 
 ;
@@ -301,7 +338,7 @@
   });
 
   function modalShow(currentModal, modalTitle, formID, btnText) {
-    modal += "\n            <div class=\"overlay overlay--active overlay--second\">\n                <div class=\"".concat(currentModal, "\">\n                    <h3 class=\"popup__title\">").concat(modalTitle, "</h3>\n                    <div class=\"popup__close\">\n                        <svg class=\"close__icon\">\n                            <use class=\"use__icon\" xlink:href=\"./wp-content/themes/twentytwenty-child/img/icons/sprite.svg#close\"></use>\n                        </svg>\n                    </div>\n                    <form id=\"").concat(formID, "\" class=\"popup__form\" method=\"post\" action=\"#!\">\n                        <input class=\"header-form__phone\" name=\"name\" type=\"text\" placeholder=\"\u0412\u0410\u0428\u0415 \u0418\u041C\u042F\">\n                        <input class=\"header-form__phone phone-input\" name=\"phone\" type=\"text\" placeholder=\"+7 (___) ___-__-__\">\n                        <input class=\"header-form__phone header-form__child\" name=\"child\" type=\"text\" placeholder=\"\u0418\u041C\u042F \u0420\u0415\u0411\u0415\u041D\u041A\u0410\">\n                        <button class=\"btn header-form__btn\" type=\"submit\">").concat(btnText, "</button>\n                        <div class=\"policy-block\">\n                            <input id=\"policy\" class=\"policy-block__checkbox\" name=\"policy\" type=\"checkbox\" checked>\n                            <label for=\"policy\" class=\"policy\">\u0412\u044B \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044C \u0441 \n                                <a href=\"#!\"> \u0443\u0441\u043B\u043E\u0432\u0438\u044F\u043C\u0438 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0438 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445</a>\n                            </label>\n                        </div>\n                    </form>\n                </div>\n            </div>\n        ");
+    modal += "\n        <div class=\"overlay overlay--active overlay--second\">               \n            <div class=\"".concat(currentModal, "\">                    \n                <h3 class=\"popup__title\"> ").concat(modalTitle, "</h3>                    \n                <div class=\"popup__close\">                       \n                    <svg class=\"close__icon\">                           \n                        <use class=\"use__icon\" xlink:href=\"/wp-content/themes/kindergarten_1/assets/img/icons/sprite.svg#close\"></use>\n                    </svg>                    \n                </div>   \n                <form  method=\"post\" action=\"#!\" id=\"").concat(formID, "\" class=\"main__form popup__form\">\n                    <input class=\"form__name form__name--modal _req\" name=\"name\" type=\"text\" placeholder=\"\u0412\u0410\u0428\u0415 \u0418\u041C\u042F\"> \n                    <input class=\"form__phone form__phone--modal phone-input\" name=\"phone\"  type=\"text\" placeholder=\"+7 (___) ___-__-__\">\n                    <input class=\"form__child form__child--modal\" name=\"child\" type=\"text\" placeholder=\"\u0418\u041C\u042F \u0420\u0415\u0411\u0415\u041D\u041A\u0410\">\n                    <button class=\"btn form__btn\" type=\"submit\">").concat(btnText, "</button>    \n                    <div class=\"policy-block\">                            \n                        <input class=\"policy-block__checkbox _req\" name=\"policy\" type=\"checkbox\" checked value=\"true\">                  \n                        <p class=\"policy\">\u0412\u044B \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044C \u0441\n                            <a href=\"#!\" target=\"_blank\">\u0443\u0441\u043B\u043E\u0432\u0438\u044F\u043C\u0438 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0438 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445</a>                            \n                        </p> \n                    </div>\n                </form>\n            </div>           \n        </div>\n    ");
     div.innerHTML = modal;
     wrap.appendChild(div);
     body.classList.add('no-scroll');
@@ -413,36 +450,6 @@
 
   if (document.querySelector('.contact-form__phone-input-mask')) {
     inputMask(document.querySelector('.contact-form__phone-input-mask'));
-  }
-})();
-"use strict";
-
-;
-
-(function () {
-  if (document.querySelector('.advantages')) {
-    var popupAdvantages = document.querySelector('.popup-advantages');
-    var advantagesLinks = document.querySelectorAll('.item__more');
-    var popupClose = document.querySelector('.popup__close');
-    var body = document.getElementsByTagName('body')[0];
-    var html = body.parentNode;
-    var overlay = document.createElement('div');
-    advantagesLinks.forEach(function (item) {
-      item.addEventListener('click', function () {
-        popupAdvantages.style.display = 'block';
-        body.classList.add('no-scroll');
-        html.classList.add('html-overflow');
-        overlay.classList.add('overlay', 'overlay--active');
-        body.appendChild(overlay);
-      });
-    });
-    popupClose.addEventListener('click', function () {
-      popupClose.parentElement.style.display = 'none';
-      body.classList.remove('no-scroll');
-      html.classList.remove('html-overflow');
-      overlay.classList.remove('overlay', 'overlay--active');
-      body.removeChild(overlay);
-    });
   }
 })();
 "use strict";
